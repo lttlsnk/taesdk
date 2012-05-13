@@ -2,7 +2,11 @@ class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
-    @people = Person.all
+    # @people = Person.all
+    # @people = []
+    # @people << Person.find(:last)
+    # @people << Person.find(:first)
+    @people = Person.find(:all, :order => "age")
 
     respond_to do |format|
       format.html # index.html.erb

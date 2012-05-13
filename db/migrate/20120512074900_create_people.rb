@@ -1,9 +1,9 @@
 class CreatePeople < ActiveRecord::Migration
   def change
     create_table :people do |t|
-      t.varchar(20) :name
-      t.int :age
-      t.varchar(2) :sex
+      t.string :name ,:limit => 20
+      t.integer :age
+      t.string :sex ,:limit => 2
 
       t.timestamps
     end

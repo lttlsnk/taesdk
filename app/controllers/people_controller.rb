@@ -1,12 +1,17 @@
+# encoding: utf-8
+
 class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
     # @people = Person.all
-    # @people = []
+    @people = []
     # @people << Person.find(:last)
     # @people << Person.find(:first)
-    @people = Person.find(:all, :order => "age")
+    # @people = Person.find(:all, :order => "age")
+    @people = Person.find_all_by_sex("男")
+    # @people << Person.find_by_sex_and_age("男","22")
+    # @people = Person.find_all_by_sex_and_age("男","22")
 
     respond_to do |format|
       format.html # index.html.erb

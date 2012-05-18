@@ -4,12 +4,12 @@ class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
-    # @people = Person.all
-    @people = []
+    @Person = people.all
+    # @people = []
     # @people << Person.find(:last)
     # @people << Person.find(:first)
     # @people = Person.find(:all, :order => "age")
-    @people = Person.find_all_by_sex("男")
+    # @people = Person.find_all_by_sex("男")
     # @people << Person.find_by_sex_and_age("男","22")
     # @people = Person.find_all_by_sex_and_age("男","22")
 

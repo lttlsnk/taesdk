@@ -4,7 +4,7 @@ class PeopleController < ApplicationController
   # GET /people
   # GET /people.json
   def index
-    @Person = people.all
+    @people = Person.all
     # @people = []
     # @people << Person.find(:last)
     # @people << Person.find(:first)

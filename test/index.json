@@ -1,0 +1,13 @@
+{
+  "layouts" : [ {
+    "type" : "grid-s5m0",
+    "modules" : {
+      "sub" : [ {
+        "moduleID" : "tshop-um-checkbox"
+      } ],
+      "main" : [ {
+        "moduleID" : "tshop-um-module"
+      } ]
+    }
+  } ]
+}

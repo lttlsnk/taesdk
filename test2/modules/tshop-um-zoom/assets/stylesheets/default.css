@@ -39,6 +39,11 @@
   height: 160px;
   display: block;
 }
+.tshop-um-zoom .zoom_bd .zoom_popup .hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .tshop-um-zoom .zoom_bd .popup_item {
   width: 310px;
   border: 1px solid #E5E4E2;

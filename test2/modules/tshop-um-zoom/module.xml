@@ -15,42 +15,42 @@
     <parameters>
         <group title="模块">
             <section folded="false" title="整体设置">
-                <param ptype="text" name="modulewidth" label="宽度" formType="select" description="设置模块的宽度" >
-                    <option value="w950">950像素</option>
+                <param ptype="text" name="modulewidth" label="宽度" formType="select" description="设置模块的宽度">
+                    <option selected="selected" value="w950">950像素</option>
                     <option value="w750">750像素</option>
                 </param>
                 <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">放大镜模块</param>
             </section>
             <section folded="false" title="标题右侧">
                 <param ptype="text" name="moduletxt" label="标题" formType="text" description="留空则不显示">查看所有宝贝</param>
-                <param label="链接" ptype="text" name="moduletxtlink" formType="text" description="链接">#</param>
+                <param ptype="text" name="moduletxtlink" label="链接" formType="text" description="链接">#</param>
             </section>
         </group>
         <group title="宝贝">
             <section folded="false" title="整体设置">
-                <param ptype="text" name="itemgroup" label="宝贝排数" formType="select" description="选择宝贝排数，每排5个宝贝" >
+                <param ptype="text" name="itemgroup" label="宝贝排数" formType="select" description="选择宝贝排数，每排5个宝贝">
                     <option value="1">1排宝贝</option>
-                    <option value="2" selected="selected">2排宝贝</option>
-                    <option value="3">3排宝贝</option>
+                    <option value="2">2排宝贝</option>
+                    <option selected="selected" value="3">3排宝贝</option>
                     <option value="4">4排宝贝</option>
                     <option value="5">5排宝贝</option>
                 </param>
                 <param ptype="text" name="itemshare" label="显示分享" formType="select" description="设置是否显示宝贝分享">
-                    <option value="1">显示</option>
+                    <option selected="selected" value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
             </section>
             <section folded="false" title="数据">
-                <param ptype="text" name="resources" label="数据来源" formType="select"  description="选择数据的来源" >
-                    <option value="1">按所选类目自动获取宝贝</option>
+                <param ptype="text" name="resources" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected" value="1">按所选类目自动获取宝贝</option>
                     <option value="2">按宝贝选择器手动选择宝贝</option>
                     <option value="3">按关键字自动获取宝贝</option>
                 </param>
-                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝" />
-                <param ptype="item" name="item" label="宝贝选择器(限6个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限6个" />
-                <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"/>
-                <param ptype="text" name="order" label="宝贝排序" formType="select"  description="选择宝贝的排列顺序" >
-                    <option value="price">按宝贝价格的升序排列</option>
+                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
+                <param ptype="item" name="item" label="宝贝选择器(限6个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限6个"></param>
+                <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="text" name="order" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected" value="price">按宝贝价格的升序排列</option>
                     <option value="_price">按宝贝价格的降序排列</option>
                     <option value="ceofp">人气宝贝升序排序</option>
                     <option value="_ceofp">人气宝贝降序排序</option>

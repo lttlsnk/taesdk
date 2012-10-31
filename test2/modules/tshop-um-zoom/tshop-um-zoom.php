@@ -21,9 +21,9 @@
     $catesLink = 'http://shop'. $_shop->id .'.taobao.com/?search=y';
     $popRandom = rand(10000,20000);
     //宝贝
-    $itemGroup = $tbm_itemgroup;
-    $itemRow = $tbm_modulewidth == "w750" ? 4 : 5;
-    $itemNum = $itemRow*$itemGroup;
+    $itemRow = $tbm_itemgroup;
+    $itemColumn = $tbm_modulewidth == "w750" ? 4 : 5;
+    $itemNum = $itemRow*$itemColumn;
     if($tbm_resources == 1){//按类目自动获取
       if($tbm_cate){
         $ids=json_decode($cates);
@@ -73,7 +73,26 @@
             $price = $item->price;
             $title = $item->title;
             $url = $uriManager->detailURI($item);
-            $points = '["cc","cc"]';
+            //points
+            
+            //set points 先行后列判断
+            $curRow = floor($k/$itemColumn);
+            $point = "cc";
+            if($curRow==0){//首行
+              $point = "t";
+            }else if($curRow==($itemRow-1)){//末行
+              $point = "b";
+            }else{
+              $point = "c";
+            }
+            //判断列
+            switch (floor($k%$itemColumn)) {
+              case 0:  $point = $point."l"; break;
+              case ($itemColumn-1): $point = $point."r"; break;
+              default: $point = $point."c"; break;
+            }
+            $points = '["'.$point.'","'.$point.'"]';
+            //config
             $config = '{
               "trigger":".'.$popRandom.'item'.$k.'",
               "align":{
@@ -82,26 +101,21 @@
                 "points":'.$points.'
               }
             }';
-            //set points 先行后列判断
-            if(floor($k%$itemRow)==0){
-              switch ($k%$itemGroup) {
-                case 0:  $points=["tl","tl"]; break;
-                case ($itemGroup-1): $points=["tr","tr"]; break;
-                default: $points=["tc","tc"]; break;
-              }
-            }
-            $shareStr = "<div class='share'></div>";
+            //share
+            $shareConfig = '{"skinType":"1"}';
+            $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
             $shareStr = $tbm_itemshare == 2 ? "" : $shareStr;
-                    echo "<div class='J_TWidget hidden' data-widget-type='Popup' data-widget-config='{$config}'>".
-                        "<div class='popup_item'>".
-                          "<div class='pic'><a href='{$url}' style='background-image:url({$pic});' target='_blank'></a></div>".
-                          "<div class='detail'>".
-                            "<div class='title'><a href='{$url}' target='_blank'>".$title."</a></div>".
-                            "<div class='price itemprice'><span>￥".$price.".00</span><i></i></div>".
-                            $shareStr.
-                          "</div>".
-                        "</div>".
-                      "</div>";
+            //render
+            echo "<div class='J_TWidget hidden' data-widget-type='Popup' data-widget-config='{$config}' style='visibility:hidden;'>".
+                "<div class='popup_item'>".
+                  "<div class='pic'><a href='{$url}' style='background-image:url({$pic});' target='_blank'></a></div>".
+                  "<div class='detail'>".
+                    "<div class='title'><a href='{$url}' target='_blank'>".$title."</a></div>".
+                    "<div class='price itemprice'><span>￥".$price.".00</span><i></i></div>".
+                    $shareStr.
+                  "</div>".
+                "</div>".
+              "</div>";
           }
         ?>
       </div>

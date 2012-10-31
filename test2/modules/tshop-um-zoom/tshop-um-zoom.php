@@ -89,7 +89,7 @@
             switch (floor($k%$itemColumn)) {
               case 0:  $point = $point."l"; break;
               case ($itemColumn-1): $point = $point."r"; break;
-              default: $point = $point."c"; break;
+              default: $point = $point."c"; break; 
             }
             $points = '["'.$point.'","'.$point.'"]';
             //config

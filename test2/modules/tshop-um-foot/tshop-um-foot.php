@@ -16,6 +16,13 @@
 /**
  * 开始设计PHP页面
  */
+  //main-vars
+  extract($_MODULE,EXTR_PREFIX_ALL,"tbm");
+  //other
 ?>
-	<div class="process">这是底部</div>
+	<div class="process">
+    <?php 
+      echo $tbm_desc;
+    ?>
+  </div>
 </div>

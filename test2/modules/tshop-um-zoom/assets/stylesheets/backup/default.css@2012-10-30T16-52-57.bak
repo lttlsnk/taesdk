@@ -1,0 +1,70 @@
+/**
+ * 模块：tshop-um-zoom 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-zoom"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-zoom .w750 {
+  width: 750px;
+}
+.tshop-um-zoom .w750 .zoom_bd .zoom_list {
+  width: 780px;
+}
+.tshop-um-zoom .w750 .zoom_bd .zoom_list li {
+  margin-right: 31px;
+}
+.tshop-um-zoom .zoom_bd .zoom_list {
+  width: 950px;
+  overflow-x: hidden;
+  margin-top: 10px;
+}
+.tshop-um-zoom .zoom_bd .zoom_list {
+  width: 950px;
+  overflow-x: hidden;
+  margin-top: 10px;
+}
+.tshop-um-zoom .zoom_bd .zoom_list ul {
+  width: 980px;
+}
+.tshop-um-zoom .zoom_bd .zoom_list li {
+  float: left;
+  width: 162px;
+  margin: 0 32px 22px 0;
+}
+.zoom_bd .zoom_list.zoom_bd .zoom_list.zoom_bd .zoom_list li a {
+  width: 160px;
+  height: 160px;
+}
+.zoom_bd .popup_item {
+  width: 310px;
+  border: 1px solid #E5E4E2;
+  background-color: #FFF;
+  padding: 4px;
+}
+.zoom_bd .popup_item .pic a {
+  width: 310px;
+  height: 310px;
+  display: block;
+}
+.zoom_bd .popup_item .detail {
+  background-color: #F4F4F4;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 4px;
+  color: #6C6C6C;
+  zoom: 1;
+  width: 310px;
+}
+.zoom_bd .popup_item .detail .title a {
+  color: #6D6D6D;
+  line-height: 20px;
+}
+.zoom_bd .popup_item .detail .share {
+  margin-left: 62px;
+}
+.zoom_bd .popup_item .detail .share em {
+  float: left;
+}

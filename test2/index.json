@@ -13,8 +13,18 @@
     "type" : "grid-m0",
     "modules" : {
       "main" : [ {
-        "moduleID" : "tshop-um-foot"
+        "moduleID" : "tshop-um-zoom"
       } ]
+    }
+  }, {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ ]
+    }
+  }, {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ ]
     }
   } ]
 }

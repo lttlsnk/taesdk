@@ -27,7 +27,7 @@
                     <option value="violent">暴力</option>
                     <option value="reactionary">反动</option>
             </param>
-                <param ptype="text" name="desc" label="描述内容" formType="textarea" description="书籍描述信息">adasda</param>
+                <param ptype="text" name="desc" label="描述内容" formType="textarea" description="书籍描述信息">是的士大夫是的</param>
             </section>
         </group>
         <group title="选择器组">

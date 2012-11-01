@@ -7,7 +7,112 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
-
-.tshop-um-calendar {}
-
- 
+.tshop-um-calendar .calendar_con {
+  padding: 10px;
+  position: relative;
+  border: 1px solid #E5E3E4;
+}
+.tshop-um-calendar .calendar_date {
+  width: 258px;
+  height: 304px;
+  border: 1px solid #E5E3E4;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.tshop-um-calendar .calendar_date .now {
+  text-align: center;
+  position: relative;
+  padding-top: 29px;
+}
+.tshop-um-calendar .calendar_date .now .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFF;
+  background-position: 0 -55px;
+  width: 272px;
+  height: 29px;
+  position: absolute;
+  top: 5px;
+  right: -7px;
+}
+.tshop-um-calendar .calendar_date .now .today {
+  color: #6C6C6C;
+  padding: 8px 0;
+}
+.tshop-um-calendar .calendar_date .list {
+  width: 259px;
+  overflow: hidden;
+  margin-right: -1px;
+}
+.tshop-um-calendar .calendar_date .list ul li {
+  float: left;
+  width: 36px;
+  text-align: center;
+}
+.tshop-um-calendar .calendar_date .list ul li.weekday {
+  height: 30px;
+  line-height: 30px;
+  background-color: #F3F3F3;
+  border-right: 1px solid #E5E3E4;
+}
+.tshop-um-calendar .calendar_date .list ul li.day {
+  color: #747275;
+  height: 27px;
+  line-height: 27px;
+  border: solid #E5E3E4;
+  border-width: 0 1px 1px 0;
+}
+.tshop-um-calendar .calendar_slide {
+  height: 305px;
+  position: relative;
+}
+.tshop-um-calendar .calendar_slide .calendar_content {
+  width: 655px;
+  height: 305px;
+  overflow: hidden;
+}
+.tshop-um-calendar .calendar_slide .calendar_content a {
+  display: block;
+  width: 655px;
+  height: 305px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav {
+  position: absolute;
+  top: 91px;
+  _top: 90px;
+  right: 1px;
+  _right: 0;
+  width: 258px;
+  height: 216px;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav li {
+  height: 0px;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav li .day {
+  width: 36px;
+  height: 27px;
+  cursor: pointer;
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  background-color: #EDEDED;
+  color: #747275;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav li .share {
+  position: absolute;
+  bottom: 14px;
+  right: 34px;
+  display: none;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav li .share em {
+  float: left;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav li.ks-active .day {
+  color: #FFF;
+}
+.tshop-um-calendar .calendar_slide .ks-switchable-nav li.ks-active .share {
+  display: block;
+}

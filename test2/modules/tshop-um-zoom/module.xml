@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="GBK"?>
 <module>
     <id>tshop-um-zoom</id>
-    <name>放大效果</name>
+    <name>放大镜模块</name>
     <file>tshop-um-zoom.php</file>
     <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
     <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">鼠标经过时，显示宝贝对应的大图。最多可选择显示5排的宝贝。</description>
@@ -29,9 +29,9 @@
         <group title="宝贝">
             <section folded="false" title="整体设置">
                 <param ptype="text" name="itemgroup" label="宝贝排数" formType="select" description="选择宝贝排数，每排5个宝贝">
-                    <option value="1">1排宝贝</option>
+                    <option selected="selected" value="1">1排宝贝</option>
                     <option value="2">2排宝贝</option>
-                    <option selected="selected" value="3">3排宝贝</option>
+                    <option value="3">3排宝贝</option>
                     <option value="4">4排宝贝</option>
                     <option value="5">5排宝贝</option>
                 </param>
@@ -46,9 +46,12 @@
                     <option value="2">按宝贝选择器手动选择宝贝</option>
                     <option value="3">按关键字自动获取宝贝</option>
                 </param>
-                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
-                <param ptype="item" name="item" label="宝贝选择器(限6个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限6个"></param>
-                <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝">[ {&#xd;
+  "rid" : "140",&#xd;
+  "childIds" : ""&#xd;
+} ]</param>
+                <param ptype="item" name="item" label="宝贝选择器(限6个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限6个">1,2,3,4,5</param>
+                <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）">裙</param>
                 <param ptype="text" name="order" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
                     <option selected="selected" value="price">按宝贝价格的升序排列</option>
                     <option value="_price">按宝贝价格的降序排列</option>

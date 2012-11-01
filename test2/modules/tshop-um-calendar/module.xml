@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-calendar</id>
+    <name>活动日历</name>
+    <file>tshop-um-calendar.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">活动日历模块，最多可添加5个活动。</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>190,550,750,950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+</module>

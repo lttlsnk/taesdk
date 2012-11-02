@@ -14,7 +14,7 @@
     </themes>
     <parameters>
         <group title="模块">
-            <section folded="false" title="整体设置">
+            <section folded="false" title="基本设置">
                 <param ptype="text" name="modulewidth" label="宽度" formType="select" description="设置模块的宽度">
                     <option selected="selected" value="w950">950像素</option>
                     <option value="w750">750像素</option>
@@ -46,10 +46,7 @@
                     <option value="2">按宝贝选择器手动选择宝贝</option>
                     <option value="3">按关键字自动获取宝贝</option>
                 </param>
-                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝">[ {&#xd;
-  "rid" : "140",&#xd;
-  "childIds" : ""&#xd;
-} ]</param>
+                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
                 <param ptype="item" name="item" label="宝贝选择器(限6个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限6个">1,2,3,4,5</param>
                 <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）">裙</param>
                 <param ptype="text" name="order" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">

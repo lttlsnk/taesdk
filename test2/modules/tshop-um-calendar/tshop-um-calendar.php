@@ -114,7 +114,8 @@
                 $top=(ceil(($date+$nullday)/7)-1)*28+1;
               }
               $first = $i==1 ? "class='ks-active'" : "";
-              $shareStr = "";
+              $shareConfig = '{"skinType":"1"}';
+              $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
               echo "<li {$first}><em class='day' style='top:{$top}px; left:{$left}px;'>".$date."</em>".$shareStr."</li>";
                 }
               ?>

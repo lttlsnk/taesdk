@@ -11,5 +11,15 @@
  */
 ?>
 <div class="tb-module tshop-um tshop-um-module1" style="">
+<?php
+/**
+ * 开始设计PHP页面
+ */
+  $a1 = array(1,2,3);
+  $a2[0] = $a1;
+  $a2[1] = array("a","b");
+  echo ($a2[0][2]);
+?>
+
 	Hello,World
 </div>

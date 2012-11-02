@@ -21,7 +21,37 @@
     }//hd END
     //bd BEGIN
     .bd{
-
+        clear: both;
+        //ul BEGIN
+        ul{
+            float: left;
+            margin-right: 10px;
+            width: 230px;
+            &.end{
+                margin-right: 0;
+            }
+            //li BEGIN
+            li{
+                background-color: #FFF;
+                border: 1px solid #DDD;
+                display: inline;
+                float: left;
+                margin-bottom: 10px;
+                padding: 9px;
+                width: 210px;
+                //
+                .pic{
+                    display: block;
+                    width: 210px;
+                    overflow:hidden;
+                    text-align: center;
+                    //
+                    a{
+                        display: block;
+                    }
+                }
+            }//li END
+        }//ul END
     }
     //bd END
 }

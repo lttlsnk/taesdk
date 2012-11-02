@@ -16,14 +16,14 @@
         <group title="基本设置">
             <section folded="false" title="">
                 <param ptype="text" name="title_show" label="是否显示标题" formType="select" description="选择是否显示标题">
-                    <option value="block">显示</option>
+                    <option selected="selected" value="block">显示</option>
                     <option value="none">隐藏</option>
                 </param>
                 <param ptype="text" name="title_name" label="标题名称" formType="text" description="输入标题名称">瀑布布局falls layout</param>
-                <param ptype="text" name="title_more" label="标题右侧更多" formType="text" description="输入标题右侧更多名称">CLICK MORE</param>
+                <param ptype="text" name="title_more" label="标题右侧更多" formType="text" description="输入标题右侧更多名称">MORE</param>
                 <param ptype="text" name="title_morelink" label="标题右侧更多链接" formType="text" description="输入更多链接">#</param>
                 <param ptype="text" name="area_show" label="模块所在区域" formType="select" description="支持750,950">
-                    <option value="950">950</option>
+                    <option selected="selected" value="950">950</option>
                     <option value="750">750</option>
                 </param>
             </section>
@@ -44,7 +44,7 @@
             <section folded="true" title="第四组宝贝">
                 <param ptype="item" name="item4" label="选择第四组宝贝" formType="itemForm" description="选择第四组宝贝"></param>
                 <param ptype="textarea" name="pic4" label="自定义图片" formType="textarea" description="设置图片地址,用竖杆[|]分割">assets/images/3_1.gif|assets/images/3_2.gif|assets/images/3_3.gif</param>
-               </section>
+            </section>
         </group>
     </parameters>
 </module>

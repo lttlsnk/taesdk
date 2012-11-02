@@ -21,6 +21,35 @@
 .tshop-um-waterfall .hd .link_list {
   float: right;
 }
+.tshop-um-waterfall .bd {
+  clear: both;
+}
+.tshop-um-waterfall .bd ul {
+  float: left;
+  margin-right: 10px;
+  width: 230px;
+}
+.tshop-um-waterfall .bd ul.end {
+  margin-right: 0;
+}
+.tshop-um-waterfall .bd ul li {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+  padding: 9px;
+  width: 210px;
+}
+.tshop-um-waterfall .bd ul li .pic {
+  display: block;
+  width: 210px;
+  overflow: hidden;
+  text-align: center;
+}
+.tshop-um-waterfall .bd ul li .pic a {
+  display: block;
+}
 .tshop-um-waterfall .pubu {
   float: left;
   width: 950px;

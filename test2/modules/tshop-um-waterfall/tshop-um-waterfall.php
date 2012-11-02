@@ -31,7 +31,9 @@
   //self value
   $columNum = $tbm_area_show == "950" ? 4 : 5;
   $itemNum = 3; //默认每列取宝贝个数
+  $itemWidth = 220; //图片宽度
   $itemsArr = array();
+  $picsArr = array();
   for($i=1; $i<=$columNum; $i++){
     $ids = ${'b_item'.$i} ? explode(',',${'tbm_item'.$i}) : NULL;
     $items = $itemManager->queryByIds($ids,'');
@@ -39,10 +41,8 @@
       $items = $itemManager ->queryByKeyword(" ","hotsell",$itemNum);
     };
     //自定义图片
-    // $pics = explode("|", ${'tbm_pic'.$i});
-    // $pics = "";
-    // $itemsArr["item".$i] = $items;
-    // $itemsArr['aa'.$i] = array(1,2);
+    $picsArr[$i] = explode("|", ${'tbm_pic'.$i});
+    $itemsArr[$i] = $items;
   }
 ?>
 
@@ -54,28 +54,24 @@
     <?php
       foreach ($itemsArr as $k => $v) {
         $items = $v;
-        $itemsPic = $itemsArr["pp".$k];
-        $endClass = $k == ($columNum-1) ? "end" : "";
+        $itemsPic = $picsArr[$k];;
+        $endClass = $k == $columNum ? "end" : "";
         //render
         echo "<ul class=".$endClass.">";
         //items
         foreach ($items as $k => $v) {
           $item = $v;
-          // $defPic = $itemsPic[$k-1];
-          $pic = $item->getPicUrl(120);
-          echo $pic;
-          // $pic = $item->getPicUrl(220);
-          // $pic = count($defPic)>1 ? $defPic : "00";
-          // $pic = count($defPic)>1 ? $defPic : $item->getPicUrl(160);
+          $defPic = $itemsPic[$k];
+          $pic = $defPic ? $defPic : $item->getPicUrl($itemWidth);
           $price = $item->price;
           $title = $item->title;
-          // $sale =$item->soldCount;
-          // $url = $uriManager->detailURI($item);
-          // echo "<li>".
-          //     "<div class='pic'><a href='{$url}' style='background-image:url({$pic});' target='_blank'></a></div>".
-          //     "<div class='info'>".
-          //     "</div>".
-          //   "</li>";
+          $sale =$item->soldCount;
+          $url = $uriManager->detailURI($item);
+          echo "<li>".
+              "<div class='pic'><a href='{$url}' target='_blank'><img src='{$pic}' /></a></div>".
+              "<div class='info'>".
+              "</div>".
+            "</li>";
         }
         echo "</ul>";
       }

@@ -13,30 +13,38 @@
         </theme>
     </themes>
     <parameters>
-        <param readonly="false" ptype="text" name="xyin" label="是否显示标题" formType="select" description="选择">
-            <option value="block">显示</option>
-            <option selected="selected" value="none">隐藏</option>
-        </param>
-        <param readonly="false" ptype="text" name="bt1" label="标题第一行" formType="textarea" description="输入第一行标题">
-        瀑布布局falls layout
-        </param>
-        <param readonly="false" ptype="text" name="bt2" label="标题第二行" formType="textarea" description="输入第二行标题">
-        CLICK MORE
-        </param>
-        <param readonly="false" ptype="item" name="idem0" label="选择第1组宝贝" formType="itemForm" description="选择第一组宝贝"></param>
-        <param readonly="false" ptype="textarea" name="zdtu0" label="自定义图片" formType="textarea" description="输入自定义图片地址">
-        assets/images/0_1.gif|assets/images/0_2.gif|assets/images/0_3.gif
-        </param>
-        <param readonly="false" ptype="item" name="idem1" label="选择第2组宝贝" formType="itemForm" description="选择第一组宝贝"></param>
-        <param readonly="false" ptype="textarea" name="zdtu1" label="自定义图片" formType="textarea" description="输入自定义图片地址">assets/images/1_1.gif|assets/images/1_2.gif|assets/images/1_3.gif
-        </param>
-        <param readonly="false" ptype="item" name="idem2" label="选择第3组宝贝" formType="itemForm" description="选择第一组宝贝"></param>
-        <param readonly="false" ptype="textarea" name="zdtu2" label="自定义图片" formType="textarea" description="输入自定义图片地址">
-        assets/images/2_3.gif|assets/images/2_2.gif|assets/images/2_1.gif
-        </param>
-        <param readonly="false" ptype="item" name="idem3" label="选择第4组宝贝" formType="itemForm" description="选择第一组宝贝"></param>
-        <param readonly="false" ptype="textarea" name="zdtu3" label="自定义图片" formType="textarea" description="输入自定义图片地址">
-        assets/images/3_1.gif|assets/images/3_2.gif|assets/images/3_3.gif
-        </param>
+        <group title="基本设置">
+            <section folded="false" title="">
+                <param ptype="text" name="title_show" label="是否显示标题" formType="select" description="选择是否显示标题">
+                    <option value="block">显示</option>
+                    <option value="none">隐藏</option>
+                </param>
+                <param ptype="text" name="title_name" label="标题名称" formType="text" description="输入标题名称">瀑布布局falls layout</param>
+                <param ptype="text" name="title_more" label="标题右侧更多" formType="text" description="输入标题右侧更多名称">CLICK MORE</param>
+                <param ptype="text" name="title_morelink" label="标题右侧更多链接" formType="text" description="输入更多链接">#</param>
+                <param ptype="text" name="area_show" label="模块所在区域" formType="select" description="支持750,950">
+                    <option value="950">950</option>
+                    <option value="750">750</option>
+                </param>
+            </section>
+        </group>
+        <group title="宝贝设置">
+            <section folded="false" title="第一组宝贝">
+                <param ptype="item" name="item1" label="选择第一组宝贝" formType="itemForm" description="选择第一组宝贝"></param>
+                <param ptype="textarea" name="pic1" label="自定义图片" formType="textarea" description="设置图片地址,用竖杆[|]分割">assets/images/0_1.gif|assets/images/0_2.gif|assets/images/0_3.gif</param>
+            </section>
+            <section folded="true" title="第二组宝贝">
+                <param ptype="item" name="item2" label="选择第二组宝贝" formType="itemForm" description="选择第二组宝贝"></param>
+                <param ptype="textarea" name="pic2" label="自定义图片" formType="textarea" description="设置图片地址,用竖杆[|]分割">assets/images/1_1.gif|assets/images/1_2.gif|assets/images/1_3.gif</param>
+            </section>
+            <section folded="true" title="第三组宝贝">
+                <param ptype="item" name="item3" label="选择第三组宝贝" formType="itemForm" description="选择第三组宝贝"></param>
+                <param ptype="textarea" name="pic3" label="自定义图片" formType="textarea" description="设置图片地址,用竖杆[|]分割">assets/images/2_3.gif|assets/images/2_2.gif|assets/images/2_1.gif</param>
+            </section>
+            <section folded="true" title="第四组宝贝">
+                <param ptype="item" name="item4" label="选择第四组宝贝" formType="itemForm" description="选择第四组宝贝"></param>
+                <param ptype="textarea" name="pic4" label="自定义图片" formType="textarea" description="设置图片地址,用竖杆[|]分割">assets/images/3_1.gif|assets/images/3_2.gif|assets/images/3_3.gif</param>
+               </section>
+        </group>
     </parameters>
 </module>

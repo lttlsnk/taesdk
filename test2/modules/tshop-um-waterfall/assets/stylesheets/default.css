@@ -7,71 +7,74 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
-
-.tshop-um-waterfall .warp {
-    overflow: hidden;
-    position: relative;
-    width: 950px;
-  background:#fff;
-  margin-bottom:5px;
-  
+.tshop-um-waterfall {
+  overflow: hidden;
+  position: relative;
+  width: 950px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+.tshop-um-waterfall .hd h3 {
+  font-weight: normal;
+  float: left;
+}
+.tshop-um-waterfall .hd .link_list {
+  float: right;
 }
 .tshop-um-waterfall .pubu {
-    float: left;
-    width: 950px;
+  float: left;
+  width: 950px;
 }
 .tshop-um-waterfall .pubu ul {
-    float: left;
-    margin-right: 10px;
-    width: 230px;
+  float: left;
+  margin-right: 10px;
+  width: 230px;
 }
 .tshop-um-waterfall .pubu ul.end {
-    margin-right: 0;
+  margin-right: 0;
 }
 .tshop-um-waterfall .pubu ul li {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #DDDDDD;
-    display: inline;
-    float: left;
-    margin-bottom: 10px;
-    padding: 9px;
-    width: 210px;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #DDDDDD;
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+  padding: 9px;
+  width: 210px;
 }
 .tshop-um-waterfall .pubu ul li h4 {
-    float: left;
-    overflow: hidden;
-    width: 210px;
+  float: left;
+  overflow: hidden;
+  width: 210px;
 }
 .tshop-um-waterfall .pubu ul li h4 a {
-    display: block;
-    overflow: hidden;
-    width: 210px;
+  display: block;
+  overflow: hidden;
+  width: 210px;
 }
 .tshop-um-waterfall .pubu ul li h4 img {
-    width: 210px;
+  width: 210px;
 }
 .tshop-um-waterfall .pubu ul li h3 {
-    color: #666666;
-    float: left;
-    font-weight: normal;
-    height: 18px;
-    line-height: 18px;
-    padding-top: 9px;
-    width: 210px;
+  color: #666666;
+  float: left;
+  font-weight: normal;
+  height: 18px;
+  line-height: 18px;
+  padding-top: 9px;
+  width: 210px;
 }
 .tshop-um-waterfall .pubu ul li h3 strong {
-    color: #000000;
-    padding-right: 15px;
+  color: #000000;
+  padding-right: 15px;
 }
 .tshop-um-waterfall .pubu ul li h3 span {
-    float: right;
+  float: right;
 }
 .tshop-um-waterfall .pubu ul li h3 span a {
-    display: block;
-    float: left;
-    height: 18px;
-    padding-left: 1px;
-    width: 38px;
+  display: block;
+  float: left;
+  height: 18px;
+  padding-left: 1px;
+  width: 38px;
 }
-
- 

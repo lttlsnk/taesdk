@@ -16,27 +16,73 @@
 /**
  * 开始设计PHP页面
  */
+  //test data
+  // $arr = array(
+  // "http://img04.taobaocdn.com/bao/uploaded/i4/T1HC_oXcJkXXX0Bi70_035639.jpg_310x310.jpg",
+  // "http://img03.taobaocdn.com/bao/uploaded/i3/T1QYnoXedsXXcokjc1_041606.jpg_220x220.jpg"
+  // );
+
+
+  //
+  extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
+  //main
+  $pageLinks =$shopManager->getShopPageLinks();
+  $shopUrl = $pageLinks[0]->href;
+  //self value
+  $columNum = $tbm_area_show == "950" ? 4 : 5;
+  $itemNum = 3; //默认每列取宝贝个数
+  $itemsArr = array();
+  for($i=1; $i<=$columNum; $i++){
+    $ids = ${'b_item'.$i} ? explode(',',${'tbm_item'.$i}) : NULL;
+    $items = $itemManager->queryByIds($ids,'');
+    if(!$items){//默认取热销宝贝前3个
+      $items = $itemManager ->queryByKeyword(" ","hotsell",$itemNum);
+    };
+    //自定义图片
+    // $pics = explode("|", ${'tbm_pic'.$i});
+    // $pics = "";
+    // $itemsArr["item".$i] = $items;
+    // $itemsArr['aa'.$i] = array(1,2);
+  }
 ?>
-  
-<? 
-  $arr = array(
-  "http://img04.taobaocdn.com/bao/uploaded/i4/T1HC_oXcJkXXX0Bi70_035639.jpg_310x310.jpg",
-  "http://img03.taobaocdn.com/bao/uploaded/i3/T1QYnoXedsXXcokjc1_041606.jpg_220x220.jpg"
-  );
 
-?>
-
-<div class="warp">
-
-
-
-<div style="height:40px; display:<?=$_MODULE['xyin']?>" class="titel">
-  <div class="titel_name"><span><?=$_MODULE['bt1']   ?> </span></div>
-  <div class="titel_more"><a href="http://www.taobao.com/">+ <?=$_MODULE['bt2']?></a></div>
+<div class="hd">
+  <h3><?=$tbm_title_name?></h3>
+  <p class="link_list"><a href="<?=$tbm_title_morelink?>" target="_blank"><?=$tbm_title_more?></a></p>
+</div>
+<div class="bd">
+    <?php
+      foreach ($itemsArr as $k => $v) {
+        $items = $v;
+        $itemsPic = $itemsArr["pp".$k];
+        $endClass = $k == ($columNum-1) ? "end" : "";
+        //render
+        echo "<ul class=".$endClass.">";
+        //items
+        foreach ($items as $k => $v) {
+          $item = $v;
+          // $defPic = $itemsPic[$k-1];
+          $pic = $item->getPicUrl(120);
+          echo $pic;
+          // $pic = $item->getPicUrl(220);
+          // $pic = count($defPic)>1 ? $defPic : "00";
+          // $pic = count($defPic)>1 ? $defPic : $item->getPicUrl(160);
+          $price = $item->price;
+          $title = $item->title;
+          // $sale =$item->soldCount;
+          // $url = $uriManager->detailURI($item);
+          // echo "<li>".
+          //     "<div class='pic'><a href='{$url}' style='background-image:url({$pic});' target='_blank'></a></div>".
+          //     "<div class='info'>".
+          //     "</div>".
+          //   "</li>";
+        }
+        echo "</ul>";
+      }
+    ?>
 </div>
 
-
-<div class="pubu">
+<!-- <div class="pubu">
 
 
 <?for ($i=0;$i<4;$i++){
@@ -50,7 +96,7 @@
 ?> 
 
 
-  <ul class="<?if($i == 3) echo 'end'  ?> ">
+  <ul class="<?if($i == 3) echo 'end'  ?> " style="display:none;">
   
     <?for ($c=0;$c<count($idem);$c++){ ?>
   
@@ -95,7 +141,7 @@
 
   
 <?}?> 
-  
+   -->
   
   
   

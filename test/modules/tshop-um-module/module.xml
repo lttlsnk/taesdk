@@ -12,5 +12,8 @@
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
         </theme>
+        <theme name="ÌìÀ¶">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
     </themes>
 </module>

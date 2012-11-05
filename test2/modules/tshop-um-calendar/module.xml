@@ -11,6 +11,9 @@
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
         </theme>
+        <theme name="天蓝">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
     </themes>
     <parameters>
         <group title="活动日历">

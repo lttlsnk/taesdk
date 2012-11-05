@@ -8,21 +8,19 @@
   }, {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ {
-        "moduleID" : "tshop-um-waterfall"
-      } ]
-    }
-  }, {
-    "type" : "grid-m0",
-    "modules" : {
-      "main" : [ {
-        "moduleID" : "tshop-um-module1"
-      } ]
+      "main" : [ ]
     }
   }, {
     "type" : "grid-m0",
     "modules" : {
       "main" : [ ]
+    }
+  }, {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ {
+        "moduleID" : "tshop-um-foot"
+      } ]
     }
   } ]
 }

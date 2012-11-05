@@ -9,4 +9,8 @@
 /**
  * 开始书写模块共享函数
  */
+  //main vars
+  $pageLinks =$shopManager->getShopPageLinks();
+  $shopUrl = $pageLinks[0]->href;
+  //main fun
 ?>

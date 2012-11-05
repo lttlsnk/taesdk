@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="GBK"?>
 <module>
-    <id>tshop-um-module1</id>
-    <name>书籍模块</name>
-    <file>module.php</file>
-    <thumbnail>assets/images/logo.png</thumbnail>
-    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">哦哦哦哦哦哦哦噢噢噢噢</description>
+    <id>tshop-um-foot</id>
+    <name>底部</name>
+    <file>tshop-um-foot.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></description>
     <requiredCache>true</requiredCache>
-    <supportedWidth>190,550,750,950</supportedWidth>
+    <supportedWidth>950</supportedWidth>
     <themes default="default">
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
-        </theme>
-        <theme name="天蓝">
-            <css>assets/stylesheets/sky.css</css>
         </theme>
     </themes>
     <parameters>
@@ -23,14 +20,14 @@
                     <option value="1">长生不老型</option>
                     <option selected="selected" value="2">快速致富型</option>
                     <option value="3">成功励志型</option>
-		</param>
+        </param>
                 <param ptype="text" name="label" label="书籍级别" formType="range" description="请选择书籍级别">
                     <option selected="selected" value="normal">主流</option>
                     <option value="porn">黄色</option>
                     <option value="violent">暴力</option>
                     <option value="reactionary">反动</option>
-			</param>
-                <param ptype="text" name="desc" label="描述内容" formType="textarea" description="书籍描述信息">adasda</param>
+            </param>
+                <param ptype="text" name="desc" label="描述内容" formType="textarea" description="书籍描述信息">是的士大夫是的</param>
             </section>
         </group>
         <group title="选择器组">

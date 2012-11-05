@@ -6,10 +6,13 @@
     <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
     <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">鼠标经过时，显示宝贝对应的大图。最多可选择显示5排的宝贝。</description>
     <requiredCache>true</requiredCache>
-    <supportedWidth>190,550,750,950</supportedWidth>
+    <supportedWidth>750,950</supportedWidth>
     <themes default="default">
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="天蓝">
+            <css>assets/stylesheets/sky.css</css>
         </theme>
     </themes>
     <parameters>

@@ -8,18 +8,81 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-// main vars
-@base-color: #999;
-
-//main css
 .tshop-um-foot {
-
-	.process{
-		height: 300px;
-		background-color: #CCC;
-		border: 1px solid #999;
-	}
-	
+    width: 950px;
+    margin: 0 auto; 
+    background-color: white;
+    //ft-nav BEGIN
+    .ft-nav{
+      border:1px solid @base-color;
+      //
+      .ft-nav-con{
+        text-align: center; 
+        border:1px solid #FFF; 
+        height: 41px; 
+        line-height: 41px;
+        background-color: @base-color;
+      }
+      ul{
+        margin: auto; 
+        display: inline-block; 
+        *display:inline; 
+        *zoom:1;
+        //
+        li{
+          float: left; 
+          margin-left: 8px; 
+          color:#FFF;
+          //
+          a{
+            margin-right: 4px;
+            color: #FFF;
+          }
+        }
+      }
+    }//ft-nav END
+    //ft-info BEGIN
+    .ft-info{ 
+      padding-top: 20px; 
+      border: solid #E5E3E4; 
+      border-width: 0 1px 1px; 
+      background-color: #FFF;
+      //
+      .title{font-weight: bold;}
+      .ft-info-detail{
+        float: left; 
+        width: 800px; 
+        padding-bottom: 10px;
+        //
+        li{
+          width:169px; 
+          height: 100px; 
+          float: left; 
+          padding: 0 15px; 
+          border-right: 1px dotted #ECECEC; 
+          color: #6D6D6D; 
+          overflow: hidden;
+        }
+        li .title{
+          display: block; 
+          text-align: center; 
+          margin-bottom: 5px;
+        }
+        li .content{line-height: 18px;}
+      }
+    }//ft-info END
+    //ft-info-share BEGIN
+    .ft-info-share{
+      float:left; 
+      padding-left: 15px; 
+      _display:inline;
+      //
+      .title{
+        margin-top: 20px;
+      }
+    }
+    //ft-info-share END
 }
 
- 
+
+@base-color

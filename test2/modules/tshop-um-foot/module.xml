@@ -11,34 +11,42 @@
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
         </theme>
+        <theme name="天蓝">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
     </themes>
     <parameters>
-        <group title="书架">
-            <section folded="true" title="社科类">
-                <param ptype="text" name="name" label="书籍" formType="text" description="提示：请输入书籍名称"></param>
-                <param ptype="text" name="type" label="书籍类型" formType="select" description="请选择书籍类型">
-                    <option value="1">长生不老型</option>
-                    <option selected="selected" value="2">快速致富型</option>
-                    <option value="3">成功励志型</option>
-        </param>
-                <param ptype="text" name="label" label="书籍级别" formType="range" description="请选择书籍级别">
-                    <option selected="selected" value="normal">主流</option>
-                    <option value="porn">黄色</option>
-                    <option value="violent">暴力</option>
-                    <option value="reactionary">反动</option>
-            </param>
-                <param ptype="text" name="desc" label="描述内容" formType="textarea" description="书籍描述信息">是的士大夫是的</param>
+        <group title="基本设置">
+            <section folded="false" title="标题1">
+                <param ptype="text" name="abouthead1" label="标题" formType="text" description="请注意控制字数">买前须知</param>
+                <param ptype="textarea" name="aboutcontent1" label="内容" formType="textarea" description="文字限四行(请注意控制字数)">购买后如发现质量问题，请不要随意给予中差评，烦请第一时间跟客服沟通，我们会耐心给您解决的，谢谢！</param>
+            </section>
+            <section folded="true" title="标题2">
+                <param ptype="text" name="abouthead2" label="标题" formType="text" description="请注意控制字数">关于色差</param>
+                <param ptype="textarea" name="aboutcontent2" label="内容" formType="textarea" description="文字限四行(请注意控制字数)">本店所有宝贝均为实物拍摄，各个显示器的显示不同，对色彩要求比较高的卖家请慎拍！</param>
+            </section>
+            <section folded="true" title="标题3">
+                <param ptype="text" name="abouthead3" label="标题" formType="text" description="请注意控制字数">关于快递</param>
+                <param ptype="textarea" name="aboutcontent3" label="内容" formType="textarea" description="文字限四行(请注意控制字数)">本店默认顺丰快递，如法其他快递，请联系我们在线客服！偏远地址默认发EMS。</param>
+            </section>
+            <section folded="true" title="标题4">
+                <param ptype="text" name="abouthead4" label="标题" formType="text" description="请注意控制字数">关于色差</param>
+                <param ptype="textarea" name="aboutcontent4" label="内容" formType="textarea" description="文字限四行(请注意控制字数)">本店所有宝贝均为实物拍摄，各个显示器的显示不同，对色彩要求比较高的卖家请慎拍！</param>
             </section>
         </group>
-        <group title="选择器组">
-            <section folded="false" title="选择器部分">
-                <param ptype="item" name="item_1" label="宝贝选择器" formType="itemForm" description="描述信息就是要太长！">6,3,2</param>
-                <param ptype="category" name="cate_1" label="分类选择器" formType="categoryForm" description="描述信息就是要太长！"></param>
+        <group title="客服">
+            <section folded="false" title="售前客服">
+                <param ptype="text" name="servicehead1" label="标题" formType="text" description="售前客服">售前导购</param>
+                <param ptype="textarea" name="servicenick1" label="昵称" formType="textarea" description=" 设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称1|昵称2|昵称3|昵称4|昵称5|昵称6</param>
+                <param ptype="textarea" name="serviceid1" label="旺ID" formType="textarea" description=" 阿里旺旺登录帐号,方法同上">客服|客服|客服|客服|客服|客服</param>
             </section>
-        </group>
-        <group title="无Section组">
-            <section folded="false" title="">
-                <param ptype="text" name="desc_2" label="内容" formType="textarea" description="描述信息2">Hello,World</param>
+            <section folded="false" title="售后客服">
+                <param ptype="text" name="servicehead2" label="标题" formType="text" description="售后客服">售后服务</param>
+                <param ptype="textarea" name="servicenick2" label="昵称" formType="textarea" description="设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称|昵称|昵称|昵称</param>
+                <param ptype="textarea" name="serviceid2" label="旺ID" formType="textarea" description="阿里旺旺登录帐号,方法同上">客服|客服|客服|客服</param>
+            </section>
+            <section folded="true" title="工作时间">
+                <param ptype="text" name="worktime" label="说明" formType="text" description="工作时间说明">工作时间：09:00-24:00</param>
             </section>
         </group>
     </parameters>

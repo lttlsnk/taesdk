@@ -7,8 +7,72 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
-.tshop-um-foot .process {
-  height: 300px;
-  background-color: #CCC;
-  border: 1px solid #999;
+.tshop-um-foot {
+  width: 950px;
+  margin: 0 auto;
+  background-color: white;
+}
+.tshop-um-foot .ft-nav {
+  border: 1px solid #5c3001;
+}
+.tshop-um-foot .ft-nav .ft-nav-con {
+  text-align: center;
+  border: 1px solid #FFF;
+  height: 41px;
+  line-height: 41px;
+  background-color: #5c3001;
+}
+.tshop-um-foot .ft-nav ul {
+  margin: auto;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.tshop-um-foot .ft-nav ul li {
+  float: left;
+  margin-left: 8px;
+  color: #FFF;
+}
+.tshop-um-foot .ft-nav ul li a {
+  margin-right: 4px;
+  color: #FFF;
+}
+.tshop-um-foot .ft-info {
+  padding-top: 20px;
+  border: solid #E5E3E4;
+  border-width: 0 1px 1px;
+  background-color: #FFF;
+}
+.tshop-um-foot .ft-info .title {
+  font-weight: bold;
+}
+.tshop-um-foot .ft-info .ft-info-detail {
+  float: left;
+  width: 800px;
+  padding-bottom: 10px;
+}
+.tshop-um-foot .ft-info .ft-info-detail li {
+  width: 169px;
+  height: 100px;
+  float: left;
+  padding: 0 15px;
+  border-right: 1px dotted #ECECEC;
+  color: #6D6D6D;
+  overflow: hidden;
+}
+.tshop-um-foot .ft-info .ft-info-detail li .title {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.tshop-um-foot .ft-info .ft-info-detail li .content {
+  line-height: 18px;
+}
+.tshop-um-foot .ft-info-share {
+  float: left;
+  padding-left: 15px;
+  _display: inline;
+}
+.tshop-um-foot .ft-info-share .title {
+  margin-top: 20px;
 }

@@ -16,13 +16,25 @@
 /**
  * 开始设计PHP页面
  */
-  //main-vars
-  extract($_MODULE,EXTR_PREFIX_ALL,"tbm");
-  //other
 ?>
-	<div class="process">
-    <?php 
-      echo $tbm_desc;
-    ?>
+<!-- <div class="skin-box">
+  <div class="skin-box-hd">
+    <h3><span>士大夫士大夫</span></h3>
+    <p class="title">这是测试标题</p>
   </div>
+</div> -->
+<div class="ft-nav">
+  <div class="ft-nav-con">
+    <ul>
+      <li><a href="<?php echo $shopUrl ?>">返回首页</a> | </li>
+      <li><a href="<?php echo $uriManager->searchURI(); ?>">所有宝贝</a> | </li>
+      <li><a href="<?php echo $uriManager->rateURI(); ?>">信用评价</a> | </li>
+      <li><a href="<?php echo $uriManager->shopIntrURI(); ?>">关于我们</a> | </li>
+      <li><a href="<?php echo $uriManager->favoriteLink(); ?>">收藏本店</a> | </li>
+      <li><a href="#top">返回顶部</a></li>
+    </ul>
+  </div>
+</div>
+
+
 </div>

@@ -2,15 +2,15 @@
   "layouts" : [ {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-um-accordion"
+      } ],
       "main" : [ ]
     }
   }, {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ {
-        "moduleID" : "tshop-um-zoom"
-      } ]
+      "main" : [ ]
     }
   }, {
     "type" : "grid-m0",

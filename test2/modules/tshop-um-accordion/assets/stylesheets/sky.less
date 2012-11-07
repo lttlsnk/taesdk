@@ -1,0 +1,107 @@
+/**
+ * 模块：tshop-um-accordion 
+ * 皮肤（主题）: sky
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-accordion"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+//color set
+@switch: skyColor;
+
+.tshop-um-accordion {
+  .accordion_hd{
+    .mainbox190_hd;
+    .mixinBgColor(@switch);
+  }
+  //accordion_bd BEGIN
+  .accordion_bd{
+    .mainbox190_bd;
+    //ks-switchable-trigger BEGIN
+    .ks-switchable-trigger{
+      clear: both; 
+      border-bottom: 1px dotted #ECECEC;
+      padding: 8px 0 4px;
+      //
+      &.ks-active{display: none;}
+      &.last{border:none;}
+      i{
+        .mixinBgColor(@switch);
+        background-image: none; 
+        padding: 0 2px; 
+        width: auto;
+        height: 14px; 
+        line-height: 14px; 
+        text-align: center; 
+        color: #FFF; 
+        font-style: normal; 
+        display: inline-block; 
+        *display:inline; 
+        float: left; 
+        margin-right: 4px;
+      }
+      h3{
+        width: 145px; 
+        height: 20px;
+        font-weight: normal;
+        margin-left: 5px; 
+        overflow-y: hidden;
+        position: relative; 
+        top: -3px;
+      }
+      & h3 a, .accordion_bd .ks-switchable-panel .detail .title a{color: #6D6D6D}
+    }//ks-switchable-trigger END
+  }//accordion_bd END
+  //ks-switchable-panel BEGIN
+  .ks-switchable-panel{
+    border-bottom: 1px dotted #ECECEC;
+    padding: 10px 0;
+    //
+    &.last{
+      border:none;
+    }
+    .pic{
+      .itempic;
+      width: 82px;
+      float: left;
+      a{
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .detail{
+      width: 80px; 
+      height: 84px; 
+      float: left; 
+      margin-left: 8px;
+      //
+      .title{
+        .itemtitle;
+        width: 80px; 
+        height: 37px; 
+        overflow: hidden;
+      }
+      .price{
+        font-weight: bold;
+        margin-top: 3px;
+        .mixinColor(@switch);
+      }
+      .buy{
+        width: 34px; 
+        height: 18px; 
+        line-height: 16px; 
+        display: inline-block; 
+        text-align: center; 
+        margin-top: 3px;
+      }
+      .buy a{
+        color: #FFF; 
+        text-decoration: none;
+      }
+    }
+  }//ks-switchable-panel END
+}
+
+ 

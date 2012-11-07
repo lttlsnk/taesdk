@@ -1,0 +1,119 @@
+/**
+ * 模块：tshop-um-accordion 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-accordion"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-accordion .accordion_hd {
+  height: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 0 10px;
+  background-color: #5c3001;
+}
+.tshop-um-accordion .accordion_bd {
+  border: 1px solid #E3E3E1;
+  padding: 8px;
+}
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger {
+  clear: both;
+  border-bottom: 1px dotted #ECECEC;
+  padding: 8px 0 4px;
+}
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger.ks-active {
+  display: none;
+}
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger.last {
+  border: none;
+}
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger i {
+  background-color: #5c3001;
+  background-image: none;
+  padding: 0 2px;
+  width: auto;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFF;
+  font-style: normal;
+  display: inline-block;
+  *display: inline;
+  float: left;
+  margin-right: 4px;
+}
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger h3 {
+  width: 145px;
+  height: 20px;
+  font-weight: normal;
+  margin-left: 5px;
+  overflow-y: hidden;
+  position: relative;
+  top: -3px;
+}
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger h3 a,
+.tshop-um-accordion .accordion_bd .ks-switchable-trigger .accordion_bd .ks-switchable-panel .detail .title a {
+  color: #6d6d6d;
+}
+.tshop-um-accordion .ks-switchable-panel {
+  border-bottom: 1px dotted #ECECEC;
+  padding: 10px 0;
+}
+.tshop-um-accordion .ks-switchable-panel.last {
+  border: none;
+}
+.tshop-um-accordion .ks-switchable-panel .pic {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+  width: 82px;
+  float: left;
+}
+.tshop-um-accordion .ks-switchable-panel .pic a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-accordion .ks-switchable-panel .pic a {
+  width: 80px;
+  height: 80px;
+}
+.tshop-um-accordion .ks-switchable-panel .detail {
+  width: 80px;
+  height: 84px;
+  float: left;
+  margin-left: 8px;
+}
+.tshop-um-accordion .ks-switchable-panel .detail .title {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 3px;
+  width: 80px;
+  height: 37px;
+  overflow: hidden;
+}
+.tshop-um-accordion .ks-switchable-panel .detail .title a {
+  color: #6D6D6D;
+}
+.tshop-um-accordion .ks-switchable-panel .detail .price {
+  font-weight: bold;
+  margin-top: 3px;
+  color: #5c3001;
+}
+.tshop-um-accordion .ks-switchable-panel .detail .buy {
+  width: 34px;
+  height: 18px;
+  line-height: 16px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3px;
+}
+.tshop-um-accordion .ks-switchable-panel .detail .buy a {
+  color: #FFF;
+  text-decoration: none;
+}

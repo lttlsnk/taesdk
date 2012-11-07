@@ -1,0 +1,111 @@
+/**
+ * 模块：tshop-um-categories 
+ * 皮肤（主题）: sky
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-categories"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-categories .categories_hd {
+  height: 35px;
+  position: relative;
+  line-height: 35px;
+  padding: 0 15px;
+  color: #FFF;
+  background-color: #247cbe;
+}
+.tshop-um-categories .categories_hd h3 {
+  font-size: 14px;
+}
+.tshop-um-categories .categories_hd a {
+  color: #FFF;
+}
+.tshop-um-categories .categories_hd .link_list {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 14px;
+  height: 14px;
+}
+.tshop-um-categories .categories_hd .link_list a {
+  margin-left: 8px;
+  padding-left: 8px;
+  display: inline-block;
+  border-left: 1px solid #FFF;
+}
+.tshop-um-categories .categories_hd .link_list .first {
+  border: none;
+}
+.tshop-um-categories .categories_hd .link_list a {
+  border: none;
+}
+.tshop-um-categories .categories_bd {
+  border: 1px solid #E4E6E5;
+  padding: 10px 10px 5px;
+}
+.tshop-um-categories .categories_bd:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.tshop-um-categories .categories_bd dt,
+.tshop-um-categories .categories_bd dd {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+.tshop-um-categories .categories_bd dt {
+  width: 105px;
+  border: 1px solid #E4E6E5;
+  clear: both;
+  font-weight: bold;
+}
+.tshop-um-categories .categories_bd dt a {
+  display: block;
+  width: 95px;
+  text-decoration: none;
+  padding-left: 10px;
+  background-color: #F3F3F3;
+  color: #247cbe;
+}
+.tshop-um-categories .categories_bd dt a:hover {
+  color: #FFF;
+  background-color: #247cbe;
+  border-color: #247cbe;
+}
+.tshop-um-categories .categories_bd dd {
+  width: 800px;
+  margin-left: 15px;
+  border-bottom: 1px dotted #E6E6E6;
+  overflow-x: hidden;
+}
+.tshop-um-categories .categories_bd dd a {
+  margin: 0 6px;
+  color: #6D6D6D;
+  text-decoration: none;
+}
+.tshop-um-categories .categories_bd dd a:hover {
+  color: #247cbe;
+}
+.tshop-um-categories .categories_bd dd a.hot_1,
+.tshop-um-categories .categories_bd dd a.hot_2,
+.tshop-um-categories .categories_bd dd a.hot_3 {
+  padding-right: 21px;
+  padding-top: 8px;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.tshop-um-categories .categories_bd dd a.hot_1 {
+  background-image: url(../../assets/images/global/hot.gif);
+}
+.tshop-um-categories .categories_bd dd a.hot_2 {
+  background-image: url(../../assets/images/global/new.gif);
+}
+.tshop-um-categories .categories_bd dd a.hot_3 {
+  background-image: url(../../assets/images/global/sale.gif);
+}

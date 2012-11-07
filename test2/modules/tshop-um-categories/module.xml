@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-categories</id>
+    <name>店铺分类</name>
+    <file>tshop-um-categories.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">店铺的全部分类。</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="模块">
+            <section folded="false" title="基本设置">
+                <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">全部分类</param>
+            </section>
+            <section folded="false" title="数据">
+                <param ptype="text" name="catedata" label="数据来源" formType="select" description="设置数据来源">
+                    <option selected="selected" value="1">手动填写</option>
+                    <option value="2">自动获取</option>
+                    <option value="3">手动选择</option>
+                </param>
+                <param ptype="category" name="cateselect" label="手动选择" formType="categoryForm" description="选择需要显示类目"></param>
+            </section>
+        </group>
+        <group title="填写数据">
+            <section folded="false" title="大类一">
+                <param ptype="text" name="cate1_title" label="大类" formType="text" description="大类名称(留空则不显示此类目)">新品上市</param>
+                <param ptype="text" name="cate1_link" label="链接" formType="text" description="链接地址">#</param>
+                <param ptype="textarea" name="cate1_sub" label="小类" formType="textarea" description=" 每个名称之间用|号分隔">特大长寿果|开心果罐装(低糖)|山核桃仁|独立小包装山核桃仁|夏威夷果|巴坦木750克|肉类海鲜|话梅干果</param>
+                <param ptype="textarea" name="cate1_sublink" label="链接" formType="textarea" description="链接之间用|号分隔，数量和上面一致">#|#|#|#|#|#|#|#</param>
+                <param ptype="text" name="cate1_subhot" label="热点" formType="text" description=" 热点小图标,位置与上面对应,0=无、1=HOT、2=NEW、3=SALE">0|0|1|0|0|0|2|3</param>
+            </section>
+            <section folded="true" title="大类二">
+                <param ptype="text" name="cate2_title" label="大类" formType="text" description="大类名称(留空则不显示此类目)">世界美食</param>
+                <param ptype="text" name="cate2_link" label="链接" formType="text" description="链接地址">#</param>
+                <param ptype="textarea" name="cate2_sub" label="小类" formType="textarea" description=" 每个名称之间用|号分隔">越南排糖|7D芒果干|五香花生|笋丝蒜香豆|紫薯条|泰国炒米|咖啡玉米|五香青豆|山楂条|香辣笋丝花生</param>
+                <param ptype="textarea" name="cate2_sublink" label="链接" formType="textarea" description="链接之间用|号分隔，数量和上面一致">#|#|#|#|#|#|#|#|#|#</param>
+                <param ptype="text" name="cate2_subhot" label="热点" formType="text" description=" 热点小图标,位置与上面对应,0=无、1=HOT、2=NEW、3=SALE">0|0|1|0|0|3|0|0|0|0</param>
+            </section>
+            <section folded="true" title="大类三">
+                <param ptype="text" name="cate3_title" label="大类" formType="text" description="大类名称(留空则不显示此类目)">按功效分</param>
+                <param ptype="text" name="cate3_link" label="链接" formType="text" description="链接地址">#</param>
+                <param ptype="textarea" name="cate3_sub" label="小类" formType="textarea" description=" 每个名称之间用|号分隔">清热祛火|美容养颜|有机防辐射|健脑益智|纤体瘦身|养身保健</param>
+                <param ptype="textarea" name="cate3_sublink" label="链接" formType="textarea" description="链接之间用|号分隔，数量和上面一致">#|#|#|#|#|#</param>
+                <param ptype="text" name="cate3_subhot" label="热点" formType="text" description=" 热点小图标,位置与上面对应,0=无、1=HOT、2=NEW、3=SALE">0|0|1|0|0|3</param>
+            </section>
+            <section folded="true" title="大类四">
+                <param ptype="text" name="cate4_title" label="大类" formType="text" description="大类名称(留空则不显示此类目)">肉类海鲜</param>
+                <param ptype="text" name="cate4_link" label="链接" formType="text" description="链接地址">#</param>
+                <param ptype="textarea" name="cate4_sub" label="小类" formType="textarea" description=" 每个名称之间用|号分隔">鱿鱼足片|鳕鱼片|马面鱼|鳗鱼丝|牛肉干|牛肉粒|友友凤爪|猪肉脯</param>
+                <param ptype="textarea" name="cate4_sublink" label="链接" formType="textarea" description="链接之间用|号分隔，数量和上面一致">#|#|#|#|#|#|#|#</param>
+                <param ptype="text" name="cate4_subhot" label="热点" formType="text" description=" 热点小图标,位置与上面对应,0=无、1=HOT、2=NEW、3=SALE">0|2|0|0|0|0|0|0</param>
+            </section>
+            <section folded="true" title="大类五">
+                <param ptype="text" name="cate5_title" label="大类" formType="text" description="大类名称(留空则不显示此类目)">坚果美食</param>
+                <param ptype="text" name="cate5_link" label="链接" formType="text" description="链接地址">#</param>
+                <param ptype="textarea" name="cate5_sub" label="小类" formType="textarea" description=" 每个名称之间用|号分隔">腰果|美国大杏仁|松子仁|生核桃仁|瓜子仁|长寿果|开口松子|吊瓜子|土南瓜子</param>
+                <param ptype="textarea" name="cate5_sublink" label="链接" formType="textarea" description="链接之间用|号分隔，数量和上面一致">#|#|#|#|#|#|#|#|#</param>
+                <param ptype="text" name="cate5_subhot" label="热点" formType="text" description=" 热点小图标,位置与上面对应,0=无、1=HOT、2=NEW、3=SALE">0|3|0|0|1|0|0|0|0</param>
+            </section>
+            <section folded="true" title="大类六">
+                <param ptype="text" name="cate6_title" label="大类" formType="text" description="大类名称(留空则不显示此类目)">按价格分</param>
+                <param ptype="text" name="cate6_link" label="链接" formType="text" description="链接地址">#</param>
+                <param ptype="textarea" name="cate6_sub" label="小类" formType="textarea" description=" 每个名称之间用|号分隔">0-10元|11-20元|21-30元|31-40元|41-50元|51-70元|71-100元|100元以上</param>
+                <param ptype="textarea" name="cate6_sublink" label="链接" formType="textarea" description="链接之间用|号分隔，数量和上面一致">#|#|#|#|#|#|#|#</param>
+                <param ptype="text" name="cate6_subhot" label="热点" formType="text" description=" 热点小图标,位置与上面对应,0=无、1=HOT、2=NEW、3=SALE">0|0|0|0|0|0|0|0</param>
+            </section>
+        </group>
+    </parameters>
+</module>

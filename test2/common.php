@@ -11,6 +11,29 @@
  */
   //main vars
   $pageLinks =$shopManager->getShopPageLinks();
-  $shopUrl = $pageLinks[0]->href;
+  //shop
+  $shopUrl = $pageLinks[0]->href;   //µêÆÌÁ¬½Ó
+  $shopId = $_shop->id;   //µêÆÌID
+  $shopTitle = $_shop->title;   //µêÆÌ±êÌâ
+  $shopIntr = $uriManager->shopIntrURI();   //µêÆÌ½éÉÜ
+  $shopFavorite = $uriManager->favoriteLink();  //µêÆÌÊÕ²Ø
+  $shopRate = $uriManager->rateURI();   //µêÆÌÆÀ¼Û
+  //item
+  $allProduct = $uriManager->searchURI();   //ËùÓÐ±¦±´
+  //user
+  $userNick=$_user->nick;   //µêÖ÷êÇ³Æ
+  
+
   //main fun
+  //share btn config::return str
+  function getShareConfig($type,$key,$title){
+    $shareConfig = '{'.
+      '"type":"'.$type.'",'.
+      '"key":"'.$key.'",'.
+      // '"title":"'.$title.'",'.
+      '"skinType":"1",'.
+      '"client_id":"68"'.
+    '}';
+    return $shareConfig;
+  }
 ?>

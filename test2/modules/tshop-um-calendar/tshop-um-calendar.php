@@ -23,22 +23,24 @@
   //self value
   for($i=1;$i<=5;$i++){
     $date = ${'tbm_date'.$i};
+    $title = ${'tbm_title'.$i};
     $pic = ${'tbm_pic'.$i};
     $link = ${'tbm_link'.$i};
     if($date){
       $dataArr['date'.$i] = $date;
+      $dataArr['title'.$i] = $title;
       $dataArr['pic'.$i] = $pic ? $pic : "assets/images/calendar.jpg";
       $dataArr['link'.$i] = $link ? $link : "#";
     }
   }
   if(!$dataArr){
     $dataArr = array(
-      "date1"=>2, "pic1"=>"assets/images/calendar.jpg", "link1"=>"#",
-      "date2"=>8, "pic2"=>"assets/images/calendar.jpg", "link2"=>"#",
-      "date3"=>16, "pic3"=>"assets/images/calendar.jpg", "link3"=>"#"
+      "date1"=>2, "pic1"=>"assets/images/calendar.jpg", "title1"=>"活动标题1", "link1"=>"#",
+      "date2"=>8, "pic2"=>"assets/images/calendar.jpg", "title2"=>"活动标题2", "link2"=>"#",
+      "date3"=>16, "pic3"=>"assets/images/calendar.jpg", "title3"=>"活动标题3", "link3"=>"#"
     );
   }
-  $dataLen = count($dataArr)/3;
+  $dataLen = count($dataArr)/4;
   //date
   $nowdate = date("Y-m-d");
   $arrdate = explode("-",$nowdate); 
@@ -59,7 +61,7 @@
                 <?php
                   //day title
                   foreach ($weekarray as $k => $v) {
-                    echo "<li class='weekday day'>".$v."</li>";
+                    echo "<li class='weekday day'>{$v}</li>";
                   }
                   //day
                   for($i=0; $i<42; $i++){
@@ -76,7 +78,7 @@
                         $day = "";
                       }
                     }
-                    echo "<li class='day'>".$day."</li>";
+                    echo "<li class='day'>{$day}</li>";
                   }
             ?>
           </ul>
@@ -84,7 +86,7 @@
       </div>
       <div class="calendar_slide J_TWidget" data-widget-type="Carousel" data-widget-config="{
             'effect': 'scrollx',
-        'easing': 'easeOutStrong', 
+            'easing': 'easeOutStrong', 
             'steps':1, 
             'viewSize': [655], 
             'circular': false
@@ -104,19 +106,20 @@
               <?php
                 for ($i=1; $i <= $dataLen; $i++) {
                   $date = $dataArr['date'.$i];
+                  $title = $dataArr['title'.$i];
                   $url = $dataArr['link'.$i];
                   //nav 32-33 37-28
                   if($date+$nullday-30>0){
                     $left=($date+$nullday-1)%7*37;
-                $top=(ceil(($date+$nullday)/7)-1)*28+1;
-              }else{
-                $left=($date+$nullday-1)%7*37;
-                $top=(ceil(($date+$nullday)/7)-1)*28+1;
-              }
-              $first = $i==1 ? "class='ks-active'" : "";
-              $shareConfig = '{"skinType":"1"}';
-              $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
-              echo "<li {$first}><em class='day' style='top:{$top}px; left:{$left}px;'>".$date."</em>".$shareStr."</li>";
+                     $top=(ceil(($date+$nullday)/7)-1)*28+1;
+                  }else{
+                    $left=($date+$nullday-1)%7*37;
+                    $top=(ceil(($date+$nullday)/7)-1)*28+1;
+                  }
+                  $first = $i==1 ? "class='ks-active'" : "";
+                  $shareConfig = getShareConfig("webpage",$url,$title);
+                  $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
+                  echo "<li {$first}><em class='day' style='top:{$top}px; left:{$left}px;'>{$date}</em>".$shareStr."</li>";
                 }
               ?>
             </ul>

@@ -8,6 +8,130 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-um-calendar {}
+//color set
+ @switch: skyColor;
+ @switch_ligth: skyLightColor;
 
- 
+.tshop-um-calendar {
+  //
+  .calendar_con{
+    padding: 10px; 
+    position: relative; 
+    border: 1px solid #E5E3E4;
+  }
+  //calendar_date BEGIN
+  .calendar_date{
+    width: 258px; 
+    height: 304px; 
+    border: 1px solid #E5E3E4; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+    //now BEGIN
+    .now{
+      text-align: center;
+      position: relative;
+      padding-top: 29px;
+      //
+      .title{
+        font-size: 14px; 
+        font-weight: bold; 
+        .mixinColor(@switch);
+        background-position: 0 -55px;
+        width: 272px;
+        height: 29px;
+        position: absolute;
+        top: 5px;
+        right: -7px; 
+      }
+      .today{
+        color: #6C6C6C;
+        padding: 8px 0;
+      }
+    }//now END
+    //list BEGIN
+    .list{
+      width: 259px;
+      overflow: hidden; 
+      margin-right: -1px;
+      //
+      ul li{
+        float: left; 
+        width: 36px; 
+        text-align: center;
+        //
+        &.weekday{
+          height: 30px; 
+          line-height: 30px; 
+          background-color: #F3F3F3; 
+          border-right: 1px solid #E5E3E4;
+        }
+        &.day{
+          color: #747275; 
+          height: 27px; 
+          line-height: 27px; 
+          border: solid #E5E3E4; 
+          border-width: 0 1px 1px 0;
+        }
+      }
+    }//list END
+  }//calendar_date END
+  //calendar_slide BEGIN
+  .calendar_slide{
+    height: 305px; 
+    position: relative;
+    //
+    .calendar_content{
+      width: 655px; 
+      height: 305px; 
+      overflow: hidden;
+      //
+      a{
+        display: block; 
+        width: 655px; 
+        height: 305px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+    //ks-switchable-nav BEGIN
+    .ks-switchable-nav{
+      position: absolute; 
+      top: 91px;
+      _top:90px; 
+      right: 1px; 
+       _right:0;
+       width: 258px; 
+      height: 216px;
+      //
+      li{
+        height: 0px;
+        //
+        .day{
+          width: 36px; 
+          height: 27px; 
+          cursor: pointer; 
+          line-height: 28px; 
+          text-align: center; 
+          position: absolute;
+          .mixinBgColor(@switch_ligth);
+          color: #747275;
+        }
+        .share{
+          position: absolute; 
+          bottom: 10px; 
+          right: 34px; 
+          display: none;
+          //
+          em{float: left; margin-top: 3px;}
+          .sns-widget{
+            float:right;
+          }
+        }
+        &.ks-active .day{color: #FFF; .mixinBgColor(@switch);}
+        &.ks-active .share{display: block;}
+      }
+    }//ks-switchable-nav END
+  }
+  //calendar_slide END
+}

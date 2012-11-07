@@ -7,6 +7,8 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
+//color set
+@switch: skyColor;
 
 .tshop-um-zoom{
   //w750
@@ -34,7 +36,7 @@
 //w950 default
 .tshop-um-zoom .zoom_hd{
   .mainbox_hd;
-  background-color: @sky-color;
+  .mixinBgColor(@switch);
   //
   h3{
     float: left;

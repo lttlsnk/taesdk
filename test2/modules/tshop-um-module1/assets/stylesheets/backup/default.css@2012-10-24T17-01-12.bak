@@ -1,6 +1,0 @@
-.tshop-um-module1 {
-  color: #ff0000;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-}

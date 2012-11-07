@@ -118,7 +118,9 @@
                   }
                   $first = $i==1 ? "class='ks-active'" : "";
                   $shareConfig = getShareConfig("webpage",$url,$title);
-                  $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
+                  $shareStr = "<div class='share'><em>·ÖÏí¸øºÃÓÑ£º</em>".
+                    "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>".
+                    "</div>";
                   echo "<li {$first}><em class='day' style='top:{$top}px; left:{$left}px;'>{$date}</em>".$shareStr."</li>";
                 }
               ?>

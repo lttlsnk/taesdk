@@ -11,7 +11,7 @@
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
         </theme>
-        <theme name="天蓝">
+        <theme name="sky">
             <css>assets/stylesheets/sky.css</css>
         </theme>
     </themes>
@@ -35,12 +35,18 @@
             </section>
         </group>
         <group title="客服">
-            <section folded="false" title="售前客服">
+            <section folded="false" title="客服设置">
+                <param ptype="text" name="wangwangskin" label="旺旺样式" formType="select" description="请选择旺旺点灯的图片样式">
+                    <option value="1">样式1</option>
+                    <option selected="selected" value="2">样式2</option>
+                </param>
+            </section>
+            <section folded="true" title="售前客服">
                 <param ptype="text" name="servicehead1" label="标题" formType="text" description="售前客服">售前导购</param>
                 <param ptype="textarea" name="servicenick1" label="昵称" formType="textarea" description=" 设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称1|昵称2|昵称3|昵称4|昵称5|昵称6</param>
                 <param ptype="textarea" name="serviceid1" label="旺ID" formType="textarea" description=" 阿里旺旺登录帐号,方法同上">客服|客服|客服|客服|客服|客服</param>
             </section>
-            <section folded="false" title="售后客服">
+            <section folded="true" title="售后客服">
                 <param ptype="text" name="servicehead2" label="标题" formType="text" description="售后客服">售后服务</param>
                 <param ptype="textarea" name="servicenick2" label="昵称" formType="textarea" description="设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称|昵称|昵称|昵称</param>
                 <param ptype="textarea" name="serviceid2" label="旺ID" formType="textarea" description="阿里旺旺登录帐号,方法同上">客服|客服|客服|客服</param>

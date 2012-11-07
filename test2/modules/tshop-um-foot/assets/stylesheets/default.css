@@ -1,3 +1,39 @@
+.info-wangwang {
+  clear: both;
+  height: 40px;
+  margin: 0 2px;
+  border-top: 1px solid #ECECEC;
+  color: #1C1C1C;
+  position: relative;
+  *margin-top: -20px;
+}
+.info-wangwang li {
+  float: left;
+  margin: 8px 0 0 20px;
+  _margin-left: 10px;
+}
+.info-wangwang li span {
+  margin-right: 13px;
+}
+.info-wangwang li span a {
+  position: relative;
+  top: 2px;
+}
+.info-wangwang li span em {
+  cursor: pointer;
+}
+.info-wangwang .title {
+  font-weight: normal;
+  color: #1C1C1C;
+  margin: 0;
+  font-weight: bold;
+}
+.info-wangwang .worktime {
+  float: right;
+  position: relative;
+  top: 2px;
+  right: 20px;
+}
 /**
  * Ä£¿é£ºtshop-um-foot 
  * Æ¤·ô£¨Ö÷Ìâ£©: default
@@ -45,6 +81,7 @@
 }
 .tshop-um-foot .ft-info .title {
   font-weight: bold;
+  color: #5c3001;
 }
 .tshop-um-foot .ft-info .ft-info-detail {
   float: left;
@@ -68,11 +105,50 @@
 .tshop-um-foot .ft-info .ft-info-detail li .content {
   line-height: 18px;
 }
-.tshop-um-foot .ft-info-share {
+.tshop-um-foot .ft-info .ft-info-share {
   float: left;
   padding-left: 15px;
   _display: inline;
 }
-.tshop-um-foot .ft-info-share .title {
+.tshop-um-foot .ft-info .ft-info-share .title {
   margin-top: 20px;
+}
+.tshop-um-foot .ft-info .ft-info-share .sns-widget {
+  margin-top: 6px;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang {
+  clear: both;
+  height: 40px;
+  margin: 0 2px;
+  border-top: 1px solid #ECECEC;
+  color: #1C1C1C;
+  position: relative;
+  *margin-top: -20px;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang li {
+  float: left;
+  margin: 8px 0 0 20px;
+  _margin-left: 10px;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang li span {
+  margin-right: 13px;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang li span a {
+  position: relative;
+  top: 2px;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang li span em {
+  cursor: pointer;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang .title {
+  font-weight: normal;
+  color: #1C1C1C;
+  margin: 0;
+  font-weight: bold;
+}
+.tshop-um-foot .ft-info .ft-info-wangwang .worktime {
+  float: right;
+  position: relative;
+  top: 2px;
+  right: 20px;
 }

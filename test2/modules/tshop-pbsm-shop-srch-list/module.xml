@@ -8,7 +8,7 @@
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
         </theme>
-        <theme name="ÌìÀ¶">
+        <theme name="sky">
             <css>assets/stylesheets/sky.css</css>
         </theme>
     </themes>

@@ -8,6 +8,86 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-um-zoom {}
+.tshop-um-zoom{
+  //w750
+  .w750{
+    width: 750px;
+    //
+    .zoom_bd .zoom_list{
+      width: 780px;
+      //
+      li{
+        margin-right: 31px;
+      }
+    }
+  } 
+  //w950 default
+  .zoom_bd{
+    .zoom_list{
+      width: 950px;
+      overflow-x: hidden;
+      margin-top: 10px;
+    }
+  }
+}
 
- 
+//w950 default
+.tshop-um-zoom .zoom_hd{
+  .mainbox_hd;
+  background-color: @sky-color;
+  //
+  h3{
+    float: left;
+  }
+  .link_list{
+    float: right;
+  }
+}
+.tshop-um-zoom .zoom_bd{
+  //
+  .zoom_list{
+    width: 950px; 
+    overflow-x: hidden; 
+    margin-top: 10px;
+    //
+    ul{width: 980px;}
+    li{
+      float: left; 
+      width: 162px; 
+      margin: 0 34px 22px 0;
+      //
+      a{
+        width: 160px;
+        height: 160px;
+        display: block;
+      }
+    }
+  }
+  //
+  .zoom_popup .hidden{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .popup_item{
+    width: 310px; 
+    border:1px solid #E5E4E2; 
+    background-color: #FFF; 
+    padding: 4px;
+    //
+    .pic a{width: 310px; height: 310px; display: block;}
+    .detail{
+      background-color: #F4F4F4; 
+      padding: 10px 0; 
+      text-align: center; 
+      margin-top: 4px; 
+      color: #6C6C6C; 
+      zoom:1; 
+      width: 310px;
+      //
+      .title a{color: #6D6D6D; line-height: 20px;}
+      .share{margin-left: 62px;}
+      .share em{float: left;}
+    }
+  }
+}

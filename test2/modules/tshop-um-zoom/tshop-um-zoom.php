@@ -18,33 +18,33 @@
  */
   extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
   //self value
-    $catesLink = 'http://shop'. $_shop->id .'.taobao.com/?search=y';
-    $popRandom = rand(10000,20000);
-    //宝贝
-    $itemRow = $tbm_itemgroup;
-    $itemColumn = $tbm_modulewidth == "w750" ? 4 : 5;
-    $itemNum = $itemRow*$itemColumn;
-    if($tbm_resources == 1){//按类目自动获取
-      if($tbm_cate){
-        $ids=json_decode($cates);
-        $rid=$ids[0]->{rid};
-        $items=$itemManager-> queryByCategory ($rid,$tbm_orders,$itemNum);
-      }
-    }elseif ($tbm_resources == 2) {//手动选择
-      $ids = $tbm_item ? explode(',',$tbm_item) : NULL;
-      if($ids){
-        foreach($ids as $k=>$v){
-          $items[$k]=$itemManager->queryById($v);
-        }
-      }
-    }elseif ($tbm_resources == 3) {//按关键字获取
-      $ids = $tbm_keyword;
-      $items = $itemManager->queryByKeyword($ids,$tbm_orders,$itemNum);
+  $catesLink = 'http://shop'. $_shop->id .'.taobao.com/?search=y';
+  $popRandom = rand(10000,20000);
+  //宝贝
+  $itemRow = $tbm_itemgroup;
+  $itemColumn = $tbm_modulewidth == "w750" ? 4 : 5;
+  $itemNum = $itemRow*$itemColumn;
+  if($tbm_resources == 1){//按类目自动获取
+    if($tbm_cate){
+      $ids=json_decode($cates);
+      $rid=$ids[0]->{rid};
+      $items=$itemManager-> queryByCategory ($rid,$tbm_orders,$itemNum);
     }
-    //默认取热销宝贝
-    if(!$items){
-      $items = $itemManager->queryByKeyword(" ","hotsell",$itemNum);
+  }elseif ($tbm_resources == 2) {//手动选择
+    $ids = $tbm_item ? explode(',',$tbm_item) : NULL;
+    if($ids){
+      foreach($ids as $k=>$v){
+        $items[$k]=$itemManager->queryById($v);
+      }
     }
+  }elseif ($tbm_resources == 3) {//按关键字获取
+    $ids = $tbm_keyword;
+    $items = $itemManager->queryByKeyword($ids,$tbm_orders,$itemNum);
+  }
+  //默认取热销宝贝
+  if(!$items){
+    $items = $itemManager->queryByKeyword(" ","hotsell",$itemNum);
+  }
 ?>
 
   <div class="zoom <?php echo $tbm_modulewidth;?>">
@@ -69,6 +69,7 @@
         <?php
           foreach ($items as $k => $v) {
             $item = $v;
+            $id = $item->id;
             $pic = $item->getPicUrl(310);
             $price = $item->price;
             $title = $item->title;
@@ -102,7 +103,7 @@
               }
             }';
             //share
-            $shareConfig = '{"skinType":"1"}';
+            $shareConfig = getShareConfig("item",$id,$title);
             $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
             $shareStr = $tbm_itemshare == 2 ? "" : $shareStr;
             //render

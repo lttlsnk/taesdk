@@ -11,7 +11,7 @@
         <theme name="default">
             <css>assets/stylesheets/default.css</css>
         </theme>
-        <theme name="ÃÏ¿∂">
+        <theme name="sky">
             <css>assets/stylesheets/sky.css</css>
         </theme>
     </themes>
@@ -32,8 +32,8 @@
         <group title="±¶±¥">
             <section folded="false" title="’˚ÃÂ…Ë÷√">
                 <param ptype="text" name="itemgroup" label="±¶±¥≈≈ ˝" formType="select" description="—°‘Ò±¶±¥≈≈ ˝£¨√ø≈≈5∏ˆ±¶±¥">
-                    <option selected="selected" value="1">1≈≈±¶±¥</option>
-                    <option value="2">2≈≈±¶±¥</option>
+                    <option value="1">1≈≈±¶±¥</option>
+                    <option selected="selected" value="2">2≈≈±¶±¥</option>
                     <option value="3">3≈≈±¶±¥</option>
                     <option value="4">4≈≈±¶±¥</option>
                     <option value="5">5≈≈±¶±¥</option>

@@ -1,7 +1,11 @@
 //global vars
+@skin-url: "../../assets/images/skin";
+//default-默认
 @default-color: #5C3001; @default-color-light: #EBD7B6;
+@default-collect-bg: "@{skin-url}/default_collectbg.jpg";
 //blue-清爽蓝
 @sky-color: #247CBE; @sky-color-light: #CDE4F5;
+@sky-collect-bg: "@{skin-url}/blue_collectbg.jpg";
 
 
 //global class
@@ -31,7 +35,7 @@
   background-color: @default-color;
 }
 .mixinBgColor (defaultLightColor){
- background-color: @default-color-light; 
+ background-color: @default-color-light;
 }
 .mixinBgColor (skyColor) {
   background-color: @sky-color;
@@ -45,6 +49,13 @@
 }
 .mixinBorderColor (skyColor) {
   border-color: @sky-color;
+}
+//collectbg
+.mixinCollectBg (defaultCollectBg) {
+  background-image: url(@default-collect-bg);
+}
+.mixinCollectBg (skyCollectBg) {
+  border-color: url(@sky-collect-bg);
 }
 
 

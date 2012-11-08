@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-collect</id>
+    <name>收藏我们</name>
+    <file>tshop-um-collect.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">收藏本店，可替换图片样式。宽度190，高度自定义。</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>190</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="">
+                <param ptype="text" name="pic" label="输入图片地址" formType="text" description="输入图片地址">http://img04.taobaocdn.com/imgextra/i4/203603644/T2Bt93XX4XXXXXXXXX_!!203603644.jpg</param>
+                <param ptype="text" name="height" label="输入此模块高度" formType="text" description="输入此模块高度，例如：150">300</param>
+            </section>
+        </group>
+    </parameters>
+</module>

@@ -9,15 +9,13 @@
     "type" : "grid-m0",
     "modules" : {
       "main" : [ {
-        "moduleID" : "tshop-um-calendar"
+        "moduleID" : "tshop-um-hotsell"
       } ]
     }
   }, {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ {
-        "moduleID" : "tshop-um-collect"
-      } ]
+      "main" : [ ]
     }
   }, {
     "type" : "grid-m0",

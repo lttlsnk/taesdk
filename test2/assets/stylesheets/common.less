@@ -1,5 +1,7 @@
 //global vars
-@skin-url: "../../assets/images/skin";
+@global-url: "../../assets/images";
+@global-sprite: "@{global-url}/global/global.png";
+@skin-url: "@{global-url}/skin";
 //default-默认
 @default-color: #5C3001; @default-color-light: #EBD7B6;
 @default-collect-bg: "@{skin-url}/default_collectbg.jpg";
@@ -23,6 +25,10 @@
   height: 0;
 }
 
+//sprite
+.globalSprite (){
+  background: url(@global-sprite) no-repeat;
+}
 //color
 .mixinColor (defaultColor) {
   color: @default-color;

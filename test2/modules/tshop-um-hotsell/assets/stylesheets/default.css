@@ -80,6 +80,10 @@
   margin-left: 20px;
   color: #727272;
 }
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail a {
+  color: #727272;
+  text-decoration: none;
+}
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip {
   background: url("../../assets/images/global/global.png") no-repeat;
   width: 341px;
@@ -87,9 +91,6 @@
   background-position: 0 -90px;
   position: relative;
   margin-top: 4px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip a {
-  color: #727272;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip em {
   width: 60px;

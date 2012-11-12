@@ -1,0 +1,261 @@
+/**
+ * 模块：tshop-um-hotsell 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-hotsell"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-hotsell .hotsell_hd {
+  height: 35px;
+  position: relative;
+  line-height: 35px;
+  padding: 0 15px;
+  color: #FFF;
+  background-color: #5c3001;
+}
+.tshop-um-hotsell .hotsell_hd h3 {
+  font-size: 14px;
+}
+.tshop-um-hotsell .hotsell_hd a {
+  color: #FFF;
+}
+.tshop-um-hotsell .hotsell_hd .link_list {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 14px;
+  height: 14px;
+}
+.tshop-um-hotsell .hotsell_hd .link_list a {
+  margin-left: 8px;
+  padding-left: 8px;
+  display: inline-block;
+  border-left: 1px solid #FFF;
+}
+.tshop-um-hotsell .hotsell_hd .link_list .first {
+  border: none;
+}
+.tshop-um-hotsell .hotsell_bd {
+  border: solid #E5E3E4;
+  border-width: 0 1px 1px 1px;
+  margin-bottom: 20px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-slide {
+  position: relative;
+  padding-bottom: 20px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content {
+  width: 950px;
+  height: 355px;
+  overflow: hidden;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li {
+  width: 910px;
+  float: left;
+  padding: 20px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .pic {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+  width: 312px;
+  float: left;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .pic a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .pic a {
+  width: 310px;
+  height: 310px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail {
+  width: 570px;
+  float: left;
+  margin-left: 20px;
+  color: #727272;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip {
+  background: url("../../assets/images/global/global.png") no-repeat;
+  width: 341px;
+  height: 75px;
+  background-position: 0 -90px;
+  position: relative;
+  margin-top: 4px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip a {
+  color: #727272;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip em {
+  width: 60px;
+  height: 38px;
+  overflow: hidden;
+  display: block;
+  font-size: 28px;
+  color: #FFF;
+  position: absolute;
+  left: 4px;
+  top: 20px;
+  text-align: center;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail h3 {
+  font-size: 22px;
+  font-weight: bold;
+  height: 62px;
+  overflow-y: hidden;
+  margin-top: 5px;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .price {
+  font-size: 24px;
+  color: #CB0A0F;
+  margin-top: 35px;
+  font-family: \5FAE\8F6F\96C5\9ED1;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .price i {
+  background: url("../../assets/images/global/global.png") no-repeat;
+  display: inline-block;
+  width: 76px;
+  height: 22px;
+  background-position: -135px 0;
+  margin: 10px 5px 0 0;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum {
+  margin-top: 12px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum i {
+  background: url("../../assets/images/global/global.png") no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 3px 3px 0 0;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum em {
+  font-weight: bold;
+  margin: 0 2px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum .colect {
+  margin-left: 15px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum .count i {
+  background-position: -100px -20px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum .colect i {
+  width: 16px;
+  height: 13px;
+  background-position: -100px -40px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info {
+  margin-top: 8px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .itemurl {
+  width: 300px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  border: 1px solid #E5E3E4;
+  padding-left: 5px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info a {
+  display: inline-block;
+  width: 58px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFF;
+  margin-left: 10px;
+  position: relative;
+  top: -3px;
+  text-decoration: none;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .ratebtn {
+  background-color: #5c3001;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .detailbtn {
+  background-color: #FF8A07;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .share {
+  margin-top: 10px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .share em {
+  float: left;
+}
+.tshop-um-hotsell .hotsell_bd .hotsell-prev,
+.tshop-um-hotsell .hotsell_bd .hotsell-next {
+  background-color: #5c3001;
+  display: inline-block;
+  width: 17px;
+  height: 89px;
+  position: absolute;
+  bottom: 23px;
+  _bottom: 77px;
+  z-index: 10;
+  cursor: pointer;
+}
+.tshop-um-hotsell .hotsell_bd .hotsell-prev i,
+.tshop-um-hotsell .hotsell_bd .hotsell-next i {
+  background: url("../../assets/images/global/global.png") no-repeat;
+  display: inline-block;
+  width: 9px;
+  height: 13px;
+  position: relative;
+  top: 37px;
+}
+.tshop-um-hotsell .hotsell_bd .hotsell-prev {
+  left: 0;
+}
+.tshop-um-hotsell .hotsell_bd .hotsell-prev i {
+  background-position: -100px 0;
+  left: 3px;
+}
+.tshop-um-hotsell .hotsell_bd .hotsell-next {
+  right: 0;
+  color: blue;
+}
+.tshop-um-hotsell .hotsell_bd .hotsell-next i {
+  background-position: -115px 0;
+  right: -3px;
+}
+.tshop-um-hotsell .hotsell_bd .ks-switchable-nav {
+  clear: both;
+  position: relative;
+  top: 0;
+  left: 20px;
+}
+.tshop-um-hotsell .hotsell_bd .ks-switchable-nav:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.tshop-um-hotsell .hotsell_bd .ks-switchable-nav li {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+  float: left;
+  margin: 0 4px 0 3px;
+  color: red;
+  width: 92px;
+}
+.tshop-um-hotsell .hotsell_bd .ks-switchable-nav li a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-hotsell .hotsell_bd .ks-switchable-nav li.ks-active {
+  border-color: #5c3001;
+}
+.tshop-um-hotsell .hotsell_bd .ks-switchable-nav li a {
+  width: 90px;
+  height: 90px;
+}

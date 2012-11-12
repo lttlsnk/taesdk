@@ -18,8 +18,8 @@
     <parameters>
         <group title="基本设置">
             <section folded="false" title="">
-                <param ptype="text" name="pic" label="输入图片地址" formType="text" description="输入图片地址">http://img04.taobaocdn.com/imgextra/i4/203603644/T2Bt93XX4XXXXXXXXX_!!203603644.jpg</param>
-                <param ptype="text" name="height" label="输入此模块高度" formType="text" description="输入此模块高度，例如：150">300</param>
+                <param ptype="text" name="pic" label="输入图片地址" formType="text" description="输入图片地址"></param>
+                <param ptype="text" name="height" label="输入此模块高度" formType="text" description="输入此模块高度，例如：150">120</param>
             </section>
         </group>
     </parameters>

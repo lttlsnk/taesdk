@@ -4,9 +4,11 @@
 @skin-url: "@{global-url}/skin";
 //default-默认
 @default-color: #5C3001; @default-color-light: #EBD7B6;
+@default-skin-bg: "@{skin-url}/default.png";
 @default-collect-bg: "@{skin-url}/default_collectbg.jpg";
 //blue-清爽蓝
 @sky-color: #247CBE; @sky-color-light: #CDE4F5;
+@sky-skin-bg: "@{skin-url}/blue.png";
 @sky-collect-bg: "@{skin-url}/blue_collectbg.jpg";
 
 
@@ -40,13 +42,13 @@
 .mixinBgColor (defaultColor) {
   background-color: @default-color;
 }
-.mixinBgColor (defaultLightColor){
+.mixinBgLightColor (defaultColor){
  background-color: @default-color-light;
 }
 .mixinBgColor (skyColor) {
   background-color: @sky-color;
 }
-.mixinBgColor (skyLightColor) {
+.mixinBgLightColor (skyColor) {
   background-color: @sky-color-light;
 }
 //borderColor
@@ -56,11 +58,18 @@
 .mixinBorderColor (skyColor) {
   border-color: @sky-color;
 }
+//skinBg
+.mixinSkinBg (defaultColor) {
+  background-image: url(@default-skin-bg);
+}
+.mixinSkinBg (skyColor) {
+  border-color: url(@sky-skin-bg);
+}
 //collectbg
-.mixinCollectBg (defaultCollectBg) {
+.mixinCollectBg (defaultColor) {
   background-image: url(@default-collect-bg);
 }
-.mixinCollectBg (skyCollectBg) {
+.mixinCollectBg (skyColor) {
   border-color: url(@sky-collect-bg);
 }
 

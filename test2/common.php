@@ -10,6 +10,7 @@
  * 开始书写模块共享函数
  */
   //main vars
+  $globalUrl = "../../assets/images";
   $pageLinks =$shopManager->getShopPageLinks();
   //shop
   $shopUrl = $pageLinks[0]->href;   //店铺连接

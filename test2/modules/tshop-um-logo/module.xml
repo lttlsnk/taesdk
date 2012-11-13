@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-logo</id>
+    <name>店招</name>
+    <file>tshop-um-logo.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="店招">
+                <param ptype="text" name="logobg" label="背景图片" formType="text" description="提示：店招的高度是120px"></param>
+                <param ptype="text" name="bgrepeat" label="平铺方式" formType="select" description="选择头部背景效果">
+                    <option value="repeat-x">横向平铺</option>
+                    <option value="repeat-y">纵向平铺</option>
+                    <option value="no-repeat">不平铺</option>
+                    <option value="repeat">平铺</option>
+                </param>
+                <param ptype="text" name="bgposition" label="对齐方式" formType="select" description="选择背景位置">
+                    <option value="left">左对齐</option>
+                    <option value="right">右对齐</option>
+                    <option value="center">居中</option>
+                </param>
+                <param ptype="text" name="logopic" label="图片地址" formType="text" description="请输入图片地址，大小（950px*80px）"></param>
+            </section>
+            <section folded="true" title="店招右侧链接">
+                <param ptype="text" name="linkshow" label="是否显示" formType="select" readonly="false" description="设置是否显示右侧链接">
+                    <option value="1">显示</option>
+                    <option value="2">不显示</option>
+                </param>
+            </section>
+        </group>
+        <group title="公告设置">
+            <section folded="false" title="公告">
+                <param ptype="text" name="noteshow" label="是否显示" formType="select" description="设置是否显示公告">
+                    <option value="1">显示</option>
+                    <option value="2">不显示</option>
+                </param>
+                <param ptype="text" name="noteicon" label="图标样式" formType="text" description="根据你的店招样式，替换合适的小图标(11*11)样式"></param>
+                <param ptype="text" name="notecolor" label="文字颜色" formType="text" description="输入公告的文字颜色"></param>
+                <param ptype="textarea" name="notes" label="公告内容" formType="textarea" description="输入公告内容，多条以|号隔开，滚动播放">公告1：请在这里输入你的公告1的内容|公告2：请在这里输入你的公告2的内容|公告3：请在这里输入你的公告3的内容</param>
+                <param ptype="textarea" name="noteslink" label="公告链接" formType="textarea" description="输入公告链接，方法↑">#|#|#</param>
+                <param ptype="text" name="notespeed" label="公告速度" formType="select" description="设置公告速度">
+                    <option value="1">快</option>
+                    <option value="2">中</option>
+                    <option value="3">慢</option>
+                </param>
+            </section>
+        </group>
+    </parameters>
+</module>

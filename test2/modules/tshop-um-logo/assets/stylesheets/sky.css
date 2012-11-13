@@ -1,0 +1,106 @@
+/**
+ * 模块：tshop-um-logo 
+ * 皮肤（主题）: sky
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-logo"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-logo {
+  position: relative;
+}
+.tshop-um-logo .logobox {
+  width: 950px;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+.tshop-um-logo .topnote {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  height: 18px;
+  overflow-y: hidden;
+}
+.tshop-um-logo .topnote .content {
+  width: 300px;
+  height: 18px;
+  overflow: hidden;
+}
+.tshop-um-logo .topnote .content li {
+  display: block;
+  clear: both;
+}
+.tshop-um-logo .topnote .content a {
+  color: #247cbe;
+}
+.tshop-um-logo .topnote .content i {
+  width: 10px;
+  height: 10px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 6px 2px 0 0;
+  *margin-top: 5px;
+  float: left;
+}
+.tshop-um-logo .link-rb {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.tshop-um-logo .link-rb li {
+  color: #247cbe;
+  float: right;
+  display: block;
+  clear: both;
+}
+.tshop-um-logo .link-rb li a:hover {
+  color: #247cbe;
+}
+.tshop-um-logo .link-rb .share-info .title {
+  float: left;
+  margin-top: 3px;
+}
+.tshop-um-logo .link-rb .share-info .sns-widget {
+  float: left;
+}
+.tshop-um-logo .link-rb .link-list {
+  margin-top: 5px;
+}
+.tshop-um-logo .link-rb .link-list a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #5E5A59;
+}
+.tshop-um-logo .link-rb .link-list i {
+  border-color: url("../../assets/images/skin/blue.png");
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 3px -2px 0;
+  *margin-bottom: 2px;
+}
+.tshop-um-logo .link-rb .link-list .mycart:hover i {
+  background-position: -20px -20px;
+}
+.tshop-um-logo .link-rb .link-list .mycart i {
+  width: 13px;
+  height: 14px;
+  background-position: -20px 0;
+  margin-bottom: -2px;
+  *margin-bottom: 1px;
+}
+.tshop-um-logo .link-rb .link-list .myorder:hover i {
+  background-position: -40px -20px;
+}
+.tshop-um-logo .link-rb .link-list .myorder i {
+  background-position: -40px 0;
+}
+.tshop-um-logo .link-rb .link-list .favor i {
+  background-position: -60px 0;
+}
+.tshop-um-logo .link-rb .link-list .favor:hover i {
+  background-position: -60px -20px;
+}

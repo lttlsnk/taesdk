@@ -28,8 +28,8 @@
         <group title="宝贝">
             <section folded="false" title="整体设置">
                 <param ptype="text" name="tabgroup" label="显示排数" formType="select" description="每排2个包邮专区">
-                    <option selected="selected" value="1">1</option>
-                    <option value="2">2</option>
+                    <option value="1">1</option>
+                    <option selected="selected" value="2">2</option>
                     <option value="3">3</option>
                 </param>
             </section>

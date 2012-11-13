@@ -1,0 +1,182 @@
+/**
+ * 模块：tshop-um-postarea 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-postarea"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-postarea .postarea_hd {
+  height: 35px;
+  position: relative;
+  line-height: 35px;
+  padding: 0 15px;
+  color: #FFF;
+  background-color: #5c3001;
+}
+.tshop-um-postarea .postarea_hd h3 {
+  font-size: 14px;
+}
+.tshop-um-postarea .postarea_hd a {
+  color: #FFF;
+}
+.tshop-um-postarea .postarea_hd .link_list {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 14px;
+  height: 14px;
+}
+.tshop-um-postarea .postarea_hd .link_list a {
+  margin-left: 8px;
+  padding-left: 8px;
+  display: inline-block;
+  border-left: 1px solid #FFF;
+}
+.tshop-um-postarea .postarea_hd .link_list .first {
+  border: none;
+}
+.tshop-um-postarea .postarea_bd {
+  width: 970px;
+}
+.tshop-um-postarea .postarea_bd:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.tshop-um-postarea .postarea_bd .items {
+  width: 474px;
+  height: 350px;
+  float: left;
+  margin-top: 15px;
+  color: #6C6C6C;
+  margin-right: 10px;
+  border-right: 1px dotted #CCC;
+}
+.tshop-um-postarea .postarea_bd .items a {
+  color: #6C6C6C;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content {
+  width: 465px;
+  height: 202px;
+  overflow: hidden;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li {
+  width: 465px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .pic {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+  width: 202px;
+  float: left;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .pic a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .pic a {
+  width: 200px;
+  height: 200px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail {
+  width: 250px;
+  float: left;
+  margin-left: 10px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .title {
+  padding: 6px 0;
+  line-height: 20px;
+  border: dotted #CCC;
+  border-width: 1px 0;
+  margin-top: 15px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .price {
+  margin-top: 25px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .price span {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  float: left;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .price .hd {
+  width: 60px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 14px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .price .bd {
+  width: 160px;
+  height: 30px;
+  border: 1px solid;
+  padding-left: 10px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .price .bd em {
+  font-size: 14px;
+  color: #CE1415;
+  position: relative;
+  top: 1px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .price .bd i {
+  display: inline-block;
+  width: 38px;
+  height: 18px;
+  text-align: center;
+  padding-right: 3px;
+  line-height: 17px;
+  color: #FFF;
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  background-position: -135px -25px;
+  font-style: normal;
+  font-weight: normal;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .count {
+  clear: both;
+  margin-top: 26px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .count em {
+  font-weight: bold;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .share {
+  margin-top: 10px;
+}
+.tshop-um-postarea .postarea_bd .items .mall-content li .detail .share em {
+  float: left;
+}
+.tshop-um-postarea .postarea_bd .items .mall-slide .ks-switchable-nav {
+  width: 465px;
+  overflow-x: hidden;
+}
+.tshop-um-postarea .postarea_bd .items .mall-slide .ks-switchable-nav li {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+  float: left;
+  width: 122px;
+  margin: 20px 30px 0 0;
+}
+.tshop-um-postarea .postarea_bd .items .mall-slide .ks-switchable-nav li a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-postarea .postarea_bd .items .mall-slide .ks-switchable-nav li a {
+  width: 120px;
+  height: 120px;
+}

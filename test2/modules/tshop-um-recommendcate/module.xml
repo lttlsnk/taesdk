@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-recommendcate</id>
+    <name>类目推荐</name>
+    <file>tshop-um-recommendcate.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>750,950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="标题">
+                <param ptype="text" name="moduletitle" label="标题" formType="text" description="请注意控制字数">类目推荐</param>
+            </section>
+        </group>
+         <group title="数据">
+            <section folded="false" title="类目1">
+                <param ptype="text" name="pic1" label="类目图片" formType="text" description="设置类目图片，尺寸(180*240）"></param>
+                <param ptype="category" name="cates1" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"/>
+                <param ptype="item" name="item1" label="宝贝选择器(限3个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限3个"/>
+                <param ptype="text" name="area1" label="专区标题" formType="text" description="进入专区标题">进入美食专区</param>
+                <param ptype="text" name="arealink1" label="专区链接" formType="text" description="进入专区的链接">#</param>
+                <param ptype="text" name="tag1" label="文字标签" formType="text" description="类目相关文字标签，用竖杆[|]分割">费列罗|川宁|冠利</param>
+            </section>
+            <section folded="true" title="类目2">
+                <param ptype="text" name="pic2" label="类目图片" formType="text" description="设置类目图片，尺寸(180*240）"></param>
+                <param ptype="category" name="cates2" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"/>
+                <param ptype="item" name="item2" label="宝贝选择器(限3个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限3个"/>
+                <param ptype="text" name="area2" label="专区标题" formType="text" description="进入专区标题">台湾馆小美食</param>
+                <param ptype="text" name="arealink2" label="专区链接" formType="text" description="进入专区的链接">#</param>
+                <param ptype="text" name="tag2" label="文字标签" formType="text" description="类目相关文字标签，用竖杆[|]分割">张君雅|盛香珍|和风</param>
+            </section>
+            <section folded="true" title="类目3">
+                <param ptype="text" name="pic3" label="类目图片" formType="text" description="设置类目图片，尺寸(180*240）"></param>
+                <param ptype="category" name="cates3" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"/>
+                <param ptype="item" name="item3" label="宝贝选择器(限3个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限3个"/>
+                <param ptype="text" name="area3" label="专区标题" formType="text" description="进入专区标题">泰国馆美食</param>
+                <param ptype="text" name="arealink3" label="专区链接" formType="text" description="进入专区的链接">#</param>
+                <param ptype="text" name="tag3" label="文字标签" formType="text" description="类目相关文字标签，用竖杆[|]分割">HANAMI|YUMYUM|SUMACO</param>
+            </section>
+            <section folded="true" title="类目4">
+                <param ptype="text" name="pic4" label="类目图片" formType="text" description="设置类目图片，尺寸(180*240）"></param>
+                <param ptype="category" name="cates4" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"/>
+                <param ptype="item" name="item4" label="宝贝选择器(限3个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限3个"/>
+                <param ptype="text" name="area4" label="专区标题" formType="text" description="进入专区标题">韩国馆小零食</param>
+                <param ptype="text" name="arealink4" label="专区链接" formType="text" description="进入专区的链接">#</param>
+                <param ptype="text" name="tag4" label="文字标签" formType="text" description="类目相关文字标签，用竖杆[|]分割">海太|农心|可来运</param>
+            </section>
+        </group>
+    </parameters>
+</module>

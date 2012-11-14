@@ -1,0 +1,129 @@
+/**
+ * 模块：tshop-um-recommendcate 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-recommendcate"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+//color set
+@switch: defaultColor;
+
+.tshop-um-recommendcate {
+  .recommendcate_hd{
+    .mainbox_hd;
+    .mixinBgColor(@switch);
+  }
+  //recommendcate_bd BEGIN
+  .recommendcate_bd{
+    &:after{.clearfix;}
+    padding: 10px 0; 
+    position: relative;
+    //
+    .whiterect{
+      width: 24px; 
+      height: 14px; 
+      display: block; 
+      position: absolute; 
+      left: 463px; 
+      top: 263px; 
+      background-color: #FFF;
+    }
+    //item BEGIN
+    .item{
+      width: 474px; 
+      height: 260px; 
+      float: left; 
+      border-bottom: 1px dotted #FFF;
+      //
+      &.lt, &.rb{
+        border-color: #CCC;
+        border-style: dotted;
+      }
+      &.lb, &.rb{
+        padding-top: 10px;
+      }
+      &.lt{
+        border-width: 0 1px 1px 0;
+      }
+      &.rb{
+        border-width: 1px 0 0 1px; 
+        margin-top: -1px;
+      }
+      .pic{
+        .itempic;
+        width: 182px; 
+        float: left;
+        //
+        a{
+          width: 180px; 
+          height: 240px;
+        }
+      }
+      &.rt .pic, &.rb .pic{
+        margin-left: 10px;
+      }
+      //details BEGIN
+      .details{
+        width: 260px; 
+        float: left; 
+        padding-left: 10px;
+        //
+        .title{
+          font-weight: bold; 
+          margin-top: 25px;
+          //
+          a{
+            color: #6D6D6D;
+          }
+        }
+        .area{
+          margin-top: 50px; 
+          margin-bottom: 3px;
+          //
+          a{
+            color: #CF1614;
+          }
+          i{
+            .globalSprite;
+            display: inline-block; 
+            width: 11px; 
+            height: 10px; 
+            background-position: -65px -15px; 
+            margin: 4px 3px 0 0;
+          }
+        }
+        .tag {
+          //
+          a{
+            margin-right: 6px; 
+            color: #6D6D6D;
+          }
+          i{
+            display: inline-block; 
+            width: 29px; 
+            height: 11px; 
+            background-position: -65px -30px; 
+            margin: 6px 3px 0 0;
+          }
+        }
+        .itemlist{
+          margin-top: 30px;
+          //
+          a{
+            display: inline-block; 
+            width: 80px; 
+            height: 80px; 
+            border: 1px solid #DCDCDA; 
+            margin-right: 2px;
+            //
+            &:hover{
+              .mixinBorderColor(@switch);
+            }
+          }
+        }
+      }//details END
+    }//item END
+  }//recommendcate_bd END
+}

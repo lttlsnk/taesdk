@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="GBK"?>
 <module>
     <id>tshop-um-postarea</id>
-    <name>postarea</name>
+    <name>包邮专区</name>
     <file>tshop-um-postarea.php</file>
     <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
     <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">最多可添加三排包邮区域，每个区域三个宝贝。</description>

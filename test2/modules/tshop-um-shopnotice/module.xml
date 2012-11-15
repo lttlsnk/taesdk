@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-shopnotice</id>
+    <name>店铺公告</name>
+    <file>tshop-um-shopnotice.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">950店铺公告，包含旺旺。</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="标题">
+                <param ptype="text" name="moduletitle" label="中文标题" formType="text" description="请注意控制字数">店铺公告</param>
+                <param ptype="text" name="mouduletitleen" label="英文标题" formType="text" description="留空则不显示">NOTICE</param>
+                <param ptype="textarea" name="noticecontent" label="具体内容" formType="textarea" description="公告内容">亲！欢迎您光临壳果屋，本店商品全部实物拍摄，产品质量不打折，无忧购物，所有产品均为最低价销售，提供7天无理由退货，您要hold住鼠标哦！</param>
+                <param ptype="text" name="noticecolorhelp" label="颜 色 表" formType="text" description="温馨提醒，颜色表，供颜色选择">www.zhaozi.cn/color.htm</param>
+                <param ptype="text" name="noticecolor" label="文字颜色" formType="text" description="请输入文字色值,如#FFFFFF,空白显示默认"></param>
+            </section>
+            <section folded="false" title="微博">
+                <param ptype="text" name="weibo" label="微博链接" formType="text" description="填写“微博”的链接">#</param>
+            </section>
+        </group>
+        <group title="掌柜说">
+            <section folded="false" title="掌柜说">
+                <param ptype="text" name="shuo" label="链接" formType="text" description="填写“掌柜说”的链接">#</param>
+                <param ptype="text" name="shuotxt" label="描述" formType="text" description="填写“掌柜说”的链接">更多店铺咨询请关注！</param>
+            </section>
+            <section folded="true" title="入帮派">
+                <param ptype="text" name="bangpai" label="链接" formType="text" description="填写“加入帮派”的链接">#</param>
+                <param ptype="text" name="bangpaitxt" label="描述" formType="text" description="填写“掌柜说”的链接">想获取第一手资讯吗？</param>
+            </section>
+        </group>
+        <group title="客服">
+            <section folded="false" title="售前客服">
+                <param ptype="text" name="servicehead1" label="标题1" formType="text" description="客服">售前导购</param>
+                <param ptype="textarea" name="servicenick1" label="昵称1" formType="textarea" description=" 设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称1|昵称2|昵称3|昵称4|昵称5|昵称6</param>
+                <param ptype="textarea" name="serviceid1" label="旺ID1" formType="textarea" description=" 阿里旺旺登录帐号,方法↑">客服|客服|客服|客服|客服|客服</param>
+            </section>
+            <section folded="true" title="售后客服">
+                <param ptype="text" name="servicehead2" label="标题2" formType="text" description="客服">售后服务</param>
+                <param ptype="textarea" name="servicenick2" label="昵称2" formType="textarea" description="设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称|昵称|昵称|昵称</param>
+                <param ptype="textarea" name="serviceid2" label="旺ID2" formType="textarea" description="阿里旺旺登录帐号,方法↑">客服|客服|客服|客服</param>
+            </section>
+            <section folded="true" title="工作时间">
+                <param ptype="text" name="worktime" label="标题" formType="text" description="工作时间说明">工作时间：09:00-24:00</param>
+            </section>
+        </group>
+    </parameters>
+</module>

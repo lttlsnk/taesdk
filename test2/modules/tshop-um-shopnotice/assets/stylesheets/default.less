@@ -1,0 +1,99 @@
+/**
+ * 模块：tshop-um-shopnotice 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-shopnotice"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+//color set
+@switch: defaultColor;
+
+.tshop-um-shopnotice {
+  //shopnotice_hd BEGIN
+  .shopnotice_hd{
+    color:#6D6D6D;
+    //
+    h3{
+      .mixinBgColor(@switch);
+      text-align: center; 
+      color: #FFF; 
+      width: 88px; 
+      height: 46px; 
+      padding: 10px 0; 
+      font-size: 14px; 
+      float: left;
+      //
+      span{
+        display: block; 
+        line-height: 23px;
+      }
+    }
+    .notice_content{
+      width: 602px; 
+      height: 44px; 
+      line-height: 20px; 
+      float: left; 
+      border-top:1px solid #D5D5D5; 
+      padding: 10px;
+    }
+    .notice_tab{
+      border: 1px solid #D5D5D5; 
+      border-bottom: none; 
+      width: 238px; 
+      float: right;
+    }
+    &, a{
+      color:#6D6D6D;
+    }
+    .ks-switchable-nav li{
+      float: left; 
+      width: 78px; 
+      height: 24px; 
+      border:solid #D5D5D5; 
+      border-width: 0 1px 1px 0; 
+      text-align: center; 
+      cursor: pointer;
+      //
+      &.last{
+        border-right: none;
+      }
+      &.ks-active{
+        border-bottom-color: #FFF;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+    .ks-switchable-content{
+      clear: both; 
+      height: 38px; 
+      padding:2px 8px 0; 
+      line-height: 16px;
+      //
+      .add_btn{
+        padding: 1px 5px;
+         display: inline-block; 
+         float: right;
+         //
+         a{
+          color: #FFF; 
+          text-decoration: none;
+        }
+        a em{
+          margin-right: 3px;
+        }
+      }
+    }
+  }//shopnotice_hd END
+  .shopnotice_bd{
+    .info-wangwang;
+    border:1px solid #D5D5D5; 
+    margin:0;
+    //
+    .title, li, li span em{
+      color:#6D6D6D;
+    }
+  }
+}

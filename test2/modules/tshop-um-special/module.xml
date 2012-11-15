@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-special</id>
+    <name>特价专区</name>
+    <file>tshop-um-special.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="标题">
+                <param ptype="text" name="moduletitle" label="中文标题" formType="text" description="请注意控制字数">特价专区</param>
+                <param ptype="textarea" name="textlink" label="自定义文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"></param>
+            </section>
+            <section folded="false" title="宝贝">
+                <param ptype="item" name="itemselecter" label="宝贝选择器(限6个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝">2,3</param>
+            </section>
+        </group>
+        <group title="角标">
+            <section folded="false" title="角标">
+                <param ptype="text" name="tipshow" label="显示" formType="select" description="角标是否显示">
+                    <option selected="selected" value="1">显示</option>
+                    <option value="2">不显示</option>
+            </param>
+                <param ptype="text" name="tipposition" label="位置" formType="select" description="角标的位置">
+                    <option value="lt">左上</option>
+                    <option selected="selected" value="rt">右上</option>
+                    <option value="lb">左下</option>
+                    <option value="rb">右下</option>
+            </param>
+                <param ptype="text" name="tiptxt" label="内容" formType="text" description="限2个字，请注意控制字数"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

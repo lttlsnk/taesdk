@@ -1,0 +1,141 @@
+/**
+ * 模块：tshop-um-special 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-special"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+//color set
+@switch: defaultColor;
+
+.tshop-um-special {
+  height: 480px; 
+  color: #FFF;
+  //
+  a{
+    color: #FFF;
+  }
+  .special_hd{
+    .mainbox_hd;
+    .mixinBgColor(@switch);
+  }
+  //mall-slide BEGIN
+  .mall-slide{
+    margin-top: 5px; 
+    position: relative;
+    //
+    .mall-content{
+      .mixinBgColor(@switch);
+      width: 354px; 
+      height: 437px; 
+      overflow: hidden; 
+      float: left; 
+      position: relative;
+    }
+    li{
+      float: left; 
+      width: 354px;
+      //
+      .pic{
+        border:1px solid #E5E3E4;
+        width: 352px; 
+        background-color: #FFF;
+        //
+        a{
+          width: 350px; 
+          height: 350px; 
+          display: block; 
+          border:1px solid #FFF; 
+          background-repeat: no-repeat; 
+          background-position: center center;
+        }
+      }
+      .detail{
+        height: 77px;
+        margin-top: 6px; 
+        padding:0 10px;
+        //
+        h3{
+          font-weight: normal; 
+          padding-top: 5px; 
+          width: 334px; 
+          height: 20px; 
+          overflow: hidden; 
+          line-height: 20px;
+        }
+        .price{
+          font-size: 18px; 
+          display: block; 
+          margin-top: 3px;
+        }
+        .count{
+          display: block; 
+          text-align: right;
+          //
+          em{
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+    .tip{
+      width: 65px; 
+      height: 50px; 
+      position: absolute; 
+      font-size: 30px; 
+      font-family: \5FAE\8F6F\96C5\9ED1; 
+      display: block; 
+      background-color: #CC0003; 
+      text-align: center;
+      //
+      &.lt{
+        left: 0; 
+        top: 0;
+      }
+      &.rt{
+        right: 0; 
+        top: 0;
+      }
+      &.lb{
+        left: 0; 
+        bottom: 83px;
+      }
+      &.rb{
+        right: 0; 
+        bottom: 83px;
+      }
+    }
+  }//mall-slide END
+  .ks-switchable-nav{
+    color:#C72427; 
+    float: right; 
+    width: 585px;
+    //
+    li{
+      float: left; 
+      width: 184px; 
+      margin: 0 0 10px 11px; 
+      _margin-left:8px;
+    }
+    .thumb{
+      border:1px solid #E5E3E4;
+      //
+      a{
+        width: 180px; 
+        height: 180px; 
+        display: block;
+        border:1px solid #FFF; 
+        background-repeat: no-repeat; 
+        background-position: center center;
+      }
+    }
+    .price{
+      font-size: 14px; 
+      margin: 5px 0 0 5px; 
+      display: block; 
+      font-family: \5FAE\8F6F\96C5\9ED1;
+    }
+  }
+}

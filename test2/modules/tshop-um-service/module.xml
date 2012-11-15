@@ -22,12 +22,12 @@
             </section>
             <section folded="true" title="手机二维码">
                 <param ptype="text" name="codeshow" label="显示设置" formType="select" description="是否显示手机二维码">
-                    <option value="1">显示</option>
+                    <option selected="selected" value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
-                <param label="图片" formType="text" description="手机二维码图片" ptype="text" name="codepic"></param>
-                <param label="说明" formType="text" description="手机二维码旁边附的说明文字" ptype="text" name="codetxt"></param>
-                <param label="链接" formType="text" description="手机二维码说明文字链接" ptype="text" name="codelink">#</param>
+                <param ptype="text" name="codepic" label="图片" formType="text" description="手机二维码图片"></param>
+                <param ptype="text" name="codetxt" label="说明" formType="text" description="手机二维码旁边附的说明文字"></param>
+                <param ptype="text" name="codelink" label="链接" formType="text" description="手机二维码说明文字链接">#</param>
             </section>
         </group>
         <group title="客服">
@@ -43,7 +43,7 @@
             </section>
             <section folded="true" title="旺旺群">
                 <param ptype="text" name="kefugroupshow" label="显示" formType="select" description="是否显示旺旺群">
-                    <option value="1">显示</option>
+                    <option selected="selected" value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
                 <param ptype="text" name="kefugroupid" label="旺群ID" formType="text" description="旺旺群ID">123456</param>

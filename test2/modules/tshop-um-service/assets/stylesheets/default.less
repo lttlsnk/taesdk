@@ -8,6 +8,74 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-um-service {}
+//color set
+@switch: defaultColor;
 
- 
+.tshop-um-service {
+  //
+  .service_hd{
+    .mainbox190_hd;
+    .mixinBgColor(@switch);
+  }
+  //service_bd BEGIN
+  .service_bd{
+    .mainbox190_bd;
+    //
+    li{
+      margin-bottom:10px; 
+      width: 172px; 
+      overflow: hidden;
+      //
+      h4{
+        border-bottom: 1px dotted #ECECEC; 
+        color: #484848; 
+        padding: 0  0 3px 3px;
+      }
+      &.kefu .item_bd{
+        width: 190px;
+        //
+        span{
+          display: inline-block; 
+          margin: 7px 16px 0 0;
+        }
+      }
+      &.kefugroup span{
+        position: relative; 
+        left: 3px; 
+        top: -5px;
+      }
+      &.worktime{
+        line-height: 23px;
+        //
+        h4{
+          margin-bottom: 6px;
+        }
+      }
+      &.code{
+        width: 166px; 
+        height: 83px; 
+        background-color: #949494; 
+        padding: 3px; 
+        margin-bottom: 0;
+        //
+        .code_pic{
+          float: left;
+          //
+          img{
+            border: 4px solid #FFF;
+          }
+        }
+        p{
+          width: 78px; 
+          height: 83px; 
+          float: left; 
+          padding-left: 5px;
+        }
+        a{
+          color: #FFF;
+        }
+      }
+    }
+  }
+  //service_bd END
+}

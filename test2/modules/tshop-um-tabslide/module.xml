@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-tabslide</id>
+    <name>标签页</name>
+    <file>tshop-um-tabslide.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">最多可添加五组轮播区域，每个区域四个宝贝。</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>750,950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+     <parameters>
+        <group title="模块">
+            <section folded="false" title="基本设置">
+                <param label="【轮播】╒ 显示组数" formType="select" readonly="false" description="设置显示几组轮播" ptype="text" name="tabnum">&lt;![CDATA[]]&gt;
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option selected="selected" value="4">4</option>
+                    <option value="5">5</option>
+                </param>
+                <param label="╘ 显示分享" formType="select" readonly="false" description="设置是否显示宝贝分享" ptype="text" name="itemshare">&lt;![CDATA[]]&gt;
+                    <option value="1">显示</option>
+                    <option value="2">不显示</option>
+                </param>
+            </section>
+            <section folded="false" title="标题右侧">
+                <param ptype="textarea" name="textlink" label="文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"></param>
+            </section>
+        </group>
+    </parameters>
+</module>

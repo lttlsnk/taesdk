@@ -1,0 +1,160 @@
+/**
+ * 模块：tshop-um-systempie 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-systempie"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-systempie .systempie_hd {
+  height: 35px;
+  position: relative;
+  line-height: 35px;
+  padding: 0 15px;
+  color: #FFF;
+  background-color: #5c3001;
+}
+.tshop-um-systempie .systempie_hd h3 {
+  font-size: 14px;
+}
+.tshop-um-systempie .systempie_hd a {
+  color: #FFF;
+}
+.tshop-um-systempie .systempie_hd .link_list {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 14px;
+  height: 14px;
+}
+.tshop-um-systempie .systempie_hd .link_list a {
+  margin-left: 8px;
+  padding-left: 8px;
+  display: inline-block;
+  border-left: 1px solid #FFF;
+}
+.tshop-um-systempie .systempie_hd .link_list .first {
+  border: none;
+}
+.tshop-um-systempie .systempie_bd {
+  width: 972px;
+  padding-bottom: 10px;
+}
+.tshop-um-systempie .systempie_bd:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.tshop-um-systempie .systempie_bd .items {
+  width: 972px;
+  color: #6D6D6D;
+}
+.tshop-um-systempie .systempie_bd .item {
+  float: left;
+  width: 224px;
+  margin: 15px 19px 0 0;
+  _margin-right: 18px;
+  text-align: center;
+}
+.tshop-um-systempie .systempie_bd .item .pic {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+}
+.tshop-um-systempie .systempie_bd .item .pic a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-systempie .systempie_bd .item .title {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 3px;
+}
+.tshop-um-systempie .systempie_bd .item .title a {
+  color: #6D6D6D;
+}
+.tshop-um-systempie .systempie_bd .item .price,
+.tshop-um-systempie .systempie_bd .item .itemprice {
+  height: 22px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 10px auto;
+  padding-right: 5px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.tshop-um-systempie .systempie_bd .item .price span,
+.tshop-um-systempie .systempie_bd .item .itemprice span {
+  height: 22px;
+  display: inline-block;
+  padding: 0 10px;
+}
+.tshop-um-systempie .systempie_bd .item .price i,
+.tshop-um-systempie .systempie_bd .item .itemprice i {
+  display: inline-block;
+  width: 13px;
+  height: 11px;
+  background-position: -65px 0;
+  margin: 4px 0 0 5px;
+}
+.tshop-um-systempie .systempie_bd .item .sale {
+  text-align: center;
+}
+.tshop-um-systempie .systempie_bd .item .sale em {
+  font-weight: bold;
+  margin: 0 3px;
+}
+.tshop-um-systempie .systempie_bd .item .share {
+  width: 190px;
+  margin: 10px auto 0;
+}
+.tshop-um-systempie .systempie_bd .item .share em {
+  float: left;
+  margin-right: 3px;
+}
+.tshop-um-systempie .systempie_bd .item {
+  width: 310px;
+  margin-right: 10px;
+  _margin-right: 9px;
+}
+.tshop-um-systempie .systempie_bd .item .pic {
+  background-color: #ebd7b6;
+  width: 308px;
+}
+.tshop-um-systempie .systempie_bd .item .pic a {
+  width: 306px;
+  height: 306px;
+}
+.tshop-um-systempie .systempie_bd .item .price span {
+  background-color: #5c3001;
+}
+.tshop-um-systempie .systempie_bd .item .sale em {
+  color: #5c3001;
+}
+.tshop-um-systempie .w950 {
+  overflow-x: hidden;
+}
+.tshop-um-systempie .w750 .systempie_bd {
+  width: 800px;
+}
+.tshop-um-systempie .w750 .systempie_bd .item {
+  width: 224px;
+  margin-right: 40px;
+  _margin-right: 35px;
+}
+.tshop-um-systempie .w750 .systempie_bd .item .pic {
+  width: 222px;
+}
+.tshop-um-systempie .w750 .systempie_bd .item .pic a {
+  width: 220px;
+  height: 220px;
+}

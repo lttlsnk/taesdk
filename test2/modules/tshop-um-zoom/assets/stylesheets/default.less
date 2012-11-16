@@ -18,6 +18,9 @@
     .zoom_bd .zoom_list{
       width: 780px;
       //
+      ul{
+        width: auto;
+      }
       li{
         margin-right: 31px;
       }
@@ -26,6 +29,7 @@
   //w950 default
   .zoom_bd{
     .zoom_list{
+      &:after{.clearfix;}
       width: 950px;
       overflow-x: hidden;
       margin-top: 10px;

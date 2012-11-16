@@ -18,11 +18,12 @@
  */
   extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
   //self value
+  $moduleWidth = "w".$regionWidth;
   $catesLink = 'http://shop'. $_shop->id .'.taobao.com/?search=y';
   $popRandom = rand(10000,20000);
   //宝贝
   $itemRow = $tbm_itemgroup;
-  $itemColumn = $tbm_modulewidth == "w750" ? 4 : 5;
+  $itemColumn = $regionWidth == "750" ? 4 : 5;
   $itemNum = $itemRow*$itemColumn;
   if($tbm_resources == 1){//按类目自动获取
     if($tbm_cate){
@@ -47,7 +48,7 @@
   }
 ?>
 
-  <div class="zoom <?php echo $tbm_modulewidth;?>">
+  <div class="zoom <?php echo $moduleWidth;?>">
     <div class="mainbox_hd zoom_hd">
       <h3><?php echo $tbm_moduletitle; ?></h3>
       <p class="link_list"><a class="first" href="<?php echo $tbm_moduletxtlink; ?>" target="_blank"><?php echo $tbm_moduletxt;?></a></p>

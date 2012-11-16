@@ -13,6 +13,9 @@
 .tshop-um-zoom .w750 .zoom_bd .zoom_list {
   width: 780px;
 }
+.tshop-um-zoom .w750 .zoom_bd .zoom_list ul {
+  width: auto;
+}
 .tshop-um-zoom .w750 .zoom_bd .zoom_list li {
   margin-right: 31px;
 }
@@ -20,6 +23,14 @@
   width: 950px;
   overflow-x: hidden;
   margin-top: 10px;
+}
+.tshop-um-zoom .zoom_bd .zoom_list:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
 .tshop-um-zoom .zoom_hd {
   height: 35px;

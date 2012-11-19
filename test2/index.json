@@ -8,7 +8,9 @@
   }, {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ ]
+      "main" : [ {
+        "moduleID" : "tshop-um-topnav"
+      } ]
     }
   }, {
     "type" : "grid-m0",

@@ -1,0 +1,70 @@
+/**
+ * 模块：tshop-um-bannerArea 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-bannerArea"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+ //color set
+@switch: defaultColor;
+
+.tshop-um-bannerArea {
+  width: 950px; 
+  overflow-x: hidden;
+  //
+  ul{
+    &:after{.clearfix;}
+    width: 960px; 
+    height: 112px;
+    //
+    li{
+      float: left; 
+      width: 310px; 
+      margin-right:9px; 
+      _margin-right:4px;
+      //
+      a{
+        display: block; 
+        width: 310px; 
+        height: 110px; 
+        background-repeat: 
+        no-repeat; 
+        background-position: center center; 
+        position: relative; 
+        text-decoration: none; 
+        border:1px solid #FFF;
+        //
+        span{
+          display: block; 
+          width: 310px; 
+          height: 25px; 
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          text-align: center; 
+          overflow: hidden; 
+          line-height: 25px; 
+          font-weight: bold; 
+          cursor: pointer;
+        }
+        em{
+          .mixinColor(@switch);
+          z-index: 9; 
+          position: relative;
+        }
+        .alphabg{
+          .mixAlphabg;
+          display: block; 
+          width: 310px; 
+          height: 25px; 
+          position: absolute; 
+          bottom: 0px; 
+          _bottom:-1px; left: 0; 
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

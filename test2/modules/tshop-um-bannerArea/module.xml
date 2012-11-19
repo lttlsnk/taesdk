@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-bannerArea</id>
+    <name>小招牌</name>
+    <file>tshop-um-bannerArea.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">是的随碟附送的</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>190,550,750,950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+</module>

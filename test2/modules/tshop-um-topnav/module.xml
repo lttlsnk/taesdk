@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-topnav</id>
+    <name>顶部导航</name>
+    <file>tshop-um-topnav.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+        <theme name="sky">
+            <css>assets/stylesheets/sky.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="基本">
+                <param ptype="text" name="catesshow" label="是否显示全部分类" formType="select" description="设置选择是否显示标头">
+                    <option value="1">显示</option>
+                    <option value="2">不显示</option>
+                </param>
+                <param ptype="text" name="rateshow" label="是否信用评价" formType="select" description="设置选择是否显示标头">
+                    <option value="1">显示</option>
+                    <option value="2">不显示</option>
+                </param>
+            </section>
+            <section folded="true" title="背景">
+                <param ptype="text" name="bgcolor" label="背景颜色设置" formType="text" description="输入颜色色值，如：#000"></param>
+                <param ptype="text" name="bgpic" label="背景图片设置" formType="text" description="输入背景图片地址"></param>
+                <param ptype="text" name="fontcolor" label="字体颜色设置" formType="text" description="输入颜色色值，如：#000">#FFF</param>
+                <param ptype="text" name="bgcolorhover" label="激活背景颜色" formType="text" description="输入颜色色值，如：#000">#FFF</param>
+                <param ptype="text" name="bgpichover" label="激活背景图片" formType="text" description="输入背景图片地址"></param>
+                <param ptype="text" name="fontcolorhover" label="激活字体颜色" formType="text" description="输入颜色色值，如：#000"></param>
+            </section>
+        </group>
+        <group title="导航设置">
+            <section folded="false" title="导航">
+                <param ptype="text" name="navmode" label="导航模式" formType="select" description="设置选择是否显示标头">
+                    <option value="1">自动分类导航</option>
+                    <option value="2" selected="selected">选择分类导航</option>
+                    <option value="3">系统导航</option>
+                </param>
+                <param ptype="category" name="selectcates" label="选择分类（大类）" formType="categoryForm" description="选择分类，即一级类目"/>
+            </section>
+            <section folded="true" title="系统导航">
+                <param ptype="textarea" name="systemnavtitle" label="自定义链接名称" formType="textarea" description="系统导航下显示，导航上显示的文字,名称之间用|隔开">店铺交流|关于我们</param>
+                <param ptype="textarea" name="systemnavlink" label="自定义链接地址" formType="textarea" description="系统导航下显示，链接地址，地址之间用|隔开">#|#</param>
+            </section>
+        </group>
+    </parameters>
+</module>

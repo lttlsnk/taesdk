@@ -1,0 +1,147 @@
+/**
+ * 模块：tshop-um-topnav 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-topnav"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+ //color set
+@switch: defaultColor;
+
+.tshop-um-topnav {
+  .mixinBgColor(@switch);
+  background-repeat: repeat-x;
+  //
+  &, .topnav_con{
+    height: 30px;
+  }
+  //topnav_con BEGIN
+  .topnav_con{
+    width:950px; 
+    line-height: 30px;
+    //
+    .menu{
+      height: 30px; 
+      // overflow-y: hidden;
+      //
+      li{
+        height: 30px; 
+        float: left;
+        //
+        a{
+          color: #FFF;
+        }
+      }
+    }
+    .menu li a, .cates_popup .hd a, .cate_sub .hd a{
+      height: 30px; 
+      display: inline-block; 
+      padding:0 15px; 
+      margin:0 10px; 
+      text-decoration: none; 
+      cursor: pointer;
+    }
+    .cates_popup .hd a, .cate_sub .hd a{
+      .mixinColor(@switch);
+    }
+    .menu li a:hover, .cates_popup .hd a{
+      background-repeat: repeat-x;
+    }
+    .menu .all_cates, .cates_popup .hd{
+      span{
+        float: left;  
+      }
+      i{
+        .mixinSkinBg(@switch);
+        width: 9px; 
+        height: 5px; 
+        overflow: hidden; 
+        display: inline-block; 
+        background-position: 0 -10px; 
+        float: left; 
+        margin: 13px 0 0 3px;  
+      }
+      a:hover i, a i{
+        background-position: 0 -20px;  
+      }
+    }
+    .cates_popup, .cate_sub{
+      background: #FFF; z-index: 9999;
+      //
+      .hd{
+        height: 30px; 
+        overflow: hidden; 
+        position: absolute; 
+        top:-30px;
+        //
+        a{
+          width: 60px; 
+          margin:0;
+        }    
+      }
+    }
+    .cates_popup .bd, .cate_sub .bd{
+      width:864px; 
+      position: relative; 
+      padding:15px;
+    }
+    .cates_popup .bd{
+      //
+      dt{
+        font-weight: bold; 
+        height: 20px; 
+        line-height: 20px;
+        //
+        a{
+          .mixinColor(@switch);
+        }
+      }
+      dd{
+        margin: 0 0 5px -3px;
+        line-height: 23px;
+        //
+        span{
+          margin: 0 3px;
+        }
+      }
+    }
+    .cate_sub{
+      .hd a{
+        width: auto;
+      }
+      .bd{
+        width:150px; 
+        padding: 10px 0;
+        //
+        a{
+          width: 130px; 
+          line-height: 23px; 
+          margin: 0; 
+          display: block; 
+          padding:0 10px;
+        }
+      }
+    }
+    .cates_popup .bd, .cate_sub .bd{
+      dd, dd a{
+        color:#726F6A;
+      }
+      dd a:hover{
+        .mixinBgColor(@switch);
+        color:#FFF;
+      }
+      a{
+        text-decoration: none; 
+        padding:1px 3px 2px; 
+        *padding: 2px 3px 1px; 
+        _padding-top:1px;
+        word-break: break-all; 
+        white-space: nowrap;
+      }
+
+    }
+  }
+  //topnav_con END
+}

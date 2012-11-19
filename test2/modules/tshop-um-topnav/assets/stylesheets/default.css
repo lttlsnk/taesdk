@@ -1,0 +1,142 @@
+/**
+ * 模块：tshop-um-topnav 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-topnav"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-topnav {
+  background-color: #5c3001;
+  background-repeat: repeat-x;
+}
+.tshop-um-topnav,
+.tshop-um-topnav .topnav_con {
+  height: 30px;
+}
+.tshop-um-topnav .topnav_con {
+  width: 950px;
+  line-height: 30px;
+}
+.tshop-um-topnav .topnav_con .menu {
+  height: 30px;
+}
+.tshop-um-topnav .topnav_con .menu li {
+  height: 30px;
+  float: left;
+}
+.tshop-um-topnav .topnav_con .menu li a {
+  color: #FFF;
+}
+.tshop-um-topnav .topnav_con .menu li a,
+.tshop-um-topnav .topnav_con .cates_popup .hd a,
+.tshop-um-topnav .topnav_con .cate_sub .hd a {
+  height: 30px;
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tshop-um-topnav .topnav_con .cates_popup .hd a,
+.tshop-um-topnav .topnav_con .cate_sub .hd a {
+  color: #5c3001;
+}
+.tshop-um-topnav .topnav_con .menu li a:hover,
+.tshop-um-topnav .topnav_con .cates_popup .hd a {
+  background-repeat: repeat-x;
+}
+.tshop-um-topnav .topnav_con .menu .all_cates span,
+.tshop-um-topnav .topnav_con .cates_popup .hd span {
+  float: left;
+}
+.tshop-um-topnav .topnav_con .menu .all_cates i,
+.tshop-um-topnav .topnav_con .cates_popup .hd i {
+  background-image: url("../../assets/images/skin/default.png");
+  width: 9px;
+  height: 5px;
+  overflow: hidden;
+  display: inline-block;
+  background-position: 0 -10px;
+  float: left;
+  margin: 13px 0 0 3px;
+}
+.tshop-um-topnav .topnav_con .menu .all_cates a:hover i,
+.tshop-um-topnav .topnav_con .cates_popup .hd a:hover i,
+.tshop-um-topnav .topnav_con .menu .all_cates a i,
+.tshop-um-topnav .topnav_con .cates_popup .hd a i {
+  background-position: 0 -20px;
+}
+.tshop-um-topnav .topnav_con .cates_popup,
+.tshop-um-topnav .topnav_con .cate_sub {
+  background: #FFF;
+  z-index: 9999;
+}
+.tshop-um-topnav .topnav_con .cates_popup .hd,
+.tshop-um-topnav .topnav_con .cate_sub .hd {
+  height: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: -30px;
+}
+.tshop-um-topnav .topnav_con .cates_popup .hd a,
+.tshop-um-topnav .topnav_con .cate_sub .hd a {
+  width: 60px;
+  margin: 0;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd,
+.tshop-um-topnav .topnav_con .cate_sub .bd {
+  width: 864px;
+  position: relative;
+  padding: 15px;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd dt {
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd dt a {
+  color: #5c3001;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd dd {
+  margin: 0 0 5px -3px;
+  line-height: 23px;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd dd span {
+  margin: 0 3px;
+}
+.tshop-um-topnav .topnav_con .cate_sub .hd a {
+  width: auto;
+}
+.tshop-um-topnav .topnav_con .cate_sub .bd {
+  width: 150px;
+  padding: 10px 0;
+}
+.tshop-um-topnav .topnav_con .cate_sub .bd a {
+  width: 130px;
+  line-height: 23px;
+  margin: 0;
+  display: block;
+  padding: 0 10px;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd dd,
+.tshop-um-topnav .topnav_con .cate_sub .bd dd,
+.tshop-um-topnav .topnav_con .cates_popup .bd dd a,
+.tshop-um-topnav .topnav_con .cate_sub .bd dd a {
+  color: #726F6A;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd dd a:hover,
+.tshop-um-topnav .topnav_con .cate_sub .bd dd a:hover {
+  background-color: #5c3001;
+  color: #FFF;
+}
+.tshop-um-topnav .topnav_con .cates_popup .bd a,
+.tshop-um-topnav .topnav_con .cate_sub .bd a {
+  text-decoration: none;
+  padding: 1px 3px 2px;
+  *padding: 2px 3px 1px;
+  _padding-top: 1px;
+  word-break: break-all;
+  white-space: nowrap;
+}

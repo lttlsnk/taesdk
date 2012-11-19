@@ -1,0 +1,133 @@
+/**
+ * 模块：tshop-um-topbanner 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-topbanner"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-topbanner {
+  height: 500px;
+  position: relative;
+}
+.tshop-um-topbanner .banner_slide {
+  width: 950px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.tshop-um-topbanner .banner_content {
+  width: 950px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.tshop-um-topbanner .banner_content a {
+  width: 950px;
+  height: 500px;
+  display: block;
+  background-position: center top;
+}
+.tshop-um-topbanner .ks-switchable-content li {
+  float: left;
+}
+.tshop-um-topbanner .btns {
+  width: 950px;
+  height: 1px;
+  position: relative;
+}
+.tshop-um-topbanner .pre,
+.tshop-um-topbanner .next {
+  width: 45px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: -40px;
+}
+.tshop-um-topbanner .pre i,
+.tshop-um-topbanner .next i {
+  display: block;
+  width: 26px;
+  height: 52px;
+  margin: 14px auto;
+}
+.tshop-um-topbanner .pre {
+  left: -100px;
+}
+.tshop-um-topbanner .next {
+  right: -100px;
+}
+.tshop-um-topbanner .next i {
+  background-position: -35px 0;
+}
+.tshop-um-topbanner .banner_nav {
+  width: 1920px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  z-index: 10;
+}
+.tshop-um-topbanner .banner_nav ul {
+  margin: 0 auto;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.tshop-um-topbanner .banner_nav ul li {
+  float: left;
+  cursor: pointer;
+}
+.tshop-um-topbanner .stylebar {
+  height: 22px;
+}
+.tshop-um-topbanner .stylebar .alphabg {
+  background-color: #FFF;
+  opacity: 0.8;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=80);
+  position: absolute;
+  height: 22px;
+  width: 1920px;
+  left: 0;
+}
+.tshop-um-topbanner .stylebar ul {
+  position: relative;
+  z-index: 99;
+}
+.tshop-um-topbanner .stylebar ul li {
+  padding: 0 10px;
+  line-height: 22px;
+  height: 22px;
+}
+.tshop-um-topbanner .stylebar ul li.ks-active {
+  color: #FFF;
+}
+.tshop-um-topbanner .stylenum {
+  height: 30px;
+}
+.tshop-um-topbanner .stylenum ul li {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FFF;
+  margin: 0 10px;
+  color: #FFF;
+  line-height: 16px;
+  opacity: 0.8;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+}
+.tshop-um-topbanner .stylenum ul li.ks-active {
+  opacity: 1;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=100);
+}
+.tshop-um-topbanner .stylethumb {
+  height: 73px;
+}
+.tshop-um-topbanner .stylethumb ul li {
+  background-position: center center;
+  border: 1px solid #FFF;
+  margin: 0 6px;
+  width: 118px;
+  height: 53px;
+  background-repeat: no-repeat;
+}

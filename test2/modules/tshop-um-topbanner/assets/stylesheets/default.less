@@ -1,0 +1,146 @@
+/**
+ * 模块：tshop-um-topbanner 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-topbanner"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+//color set
+@switch: defaultColor;
+
+.tshop-um-topbanner {
+  height: 500px; 
+  position: relative;
+  //
+  .banner_slide{
+    width: 950px; 
+    height: 500px; 
+    overflow: hidden; 
+    position: relative;
+  }
+  .banner_content{
+    width: 950px; 
+    height: 500px; 
+    overflow: hidden; 
+    margin:0 auto;
+    //
+    a{
+      width: 950px; 
+      height: 500px; 
+      display: block; 
+      background-position: center top;
+    }
+  }
+  .ks-switchable-content li{
+    float: left;
+  }
+  .btns{
+    width: 950px; 
+    height: 1px; 
+    position: relative;
+  }
+  .pre, .next{
+    width:45px; 
+    height: 80px; 
+    display: block; 
+    position: absolute; 
+    cursor: pointer; 
+    top: -40px;
+    //
+    i{
+      display: block; 
+      width: 26px; 
+      height: 52px;
+      margin:14px auto;
+    }
+  }
+  .pre{
+    left: -100px;
+  }
+  .next{
+    right: -100px;
+    //
+    i{
+      background-position: -35px 0;
+    }
+  }
+  //banner_nav BEGIN
+  .banner_nav{
+    width: 1920px; 
+    position: absolute; 
+    bottom: 0; 
+    text-align: center; 
+    z-index: 10;
+    //
+    ul{
+      margin:0 auto; 
+      display: inline-block; 
+      *display: inline; 
+      *zoom: 1;
+      //
+      li{
+        float: left; 
+        cursor: pointer;
+      }
+    }
+  }
+  //banner_nav END
+  .stylebar{
+    height: 22px;
+    //
+    .alphabg{
+      .mixAlphabg;
+      position: absolute; 
+      height: 22px; 
+      width: 1920px; 
+      left: 0;
+    }
+    ul{
+      position: relative; 
+      z-index: 99;
+      //
+      li{
+        padding:0 10px; 
+        line-height: 22px; 
+        height: 22px;
+        //
+        &.ks-active{
+          color:#FFF;
+        }
+      }
+    }
+  }
+  .stylenum{
+    height: 30px;
+    //
+    ul li{
+      width: 16px; 
+      height: 16px; 
+      border:1px solid #FFF; 
+      margin:0 10px; 
+      color: #FFF; 
+      line-height: 16px; 
+      opacity: 0.8; 
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+      //
+      &.ks-active{
+        opacity: 1; 
+        filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+      }
+    }
+  }
+  .stylethumb{
+    height: 73px;
+    //
+    ul li{
+      background-position: center center; 
+      border:1px solid #FFF; 
+      margin:0 6px; width: 118px; 
+      height: 53px; 
+      background-repeat: no-repeat;
+    }
+  }
+}

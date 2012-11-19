@@ -7,7 +7,121 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
-
-.tshop-um-tabslide {}
-
- 
+.tshop-um-tabslide {
+  margin-top: 20px;
+  width: 950px;
+  overflow-x: hidden;
+}
+.tshop-um-tabslide .ks-switchable-nav {
+  width: 955px;
+}
+.tshop-um-tabslide .ks-switchable-nav li {
+  color: #5c3001;
+  float: left;
+  text-align: center;
+  width: 235px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 1px;
+  background-color: #F3F3F3;
+  cursor: pointer;
+}
+.tshop-um-tabslide .ks-switchable-nav li.ks-active {
+  background-color: #5c3001;
+  color: #FFF;
+}
+.tshop-um-tabslide .content_con {
+  clear: both;
+  height: 350px;
+  width: 970px;
+  overflow: hidden;
+  position: relative;
+}
+.tshop-um-tabslide .ks-switchable-content {
+  width: 972px;
+  padding-bottom: 10px;
+  width: 970px;
+}
+.tshop-um-tabslide .ks-switchable-content:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.tshop-um-tabslide .ks-switchable-content .items {
+  width: 972px;
+  color: #6D6D6D;
+}
+.tshop-um-tabslide .ks-switchable-content .item {
+  float: left;
+  width: 224px;
+  margin: 15px 19px 0 0;
+  _margin-right: 18px;
+  text-align: center;
+}
+.tshop-um-tabslide .ks-switchable-content .item .pic {
+  border: 1px solid #E5E5E5;
+  width: 222px;
+  background-color: #ebd7b6;
+}
+.tshop-um-tabslide .ks-switchable-content .item .pic a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #FFF;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.tshop-um-tabslide .ks-switchable-content .item .title {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 3px;
+}
+.tshop-um-tabslide .ks-switchable-content .item .title a {
+  color: #6D6D6D;
+}
+.tshop-um-tabslide .ks-switchable-content .item .price {
+  background-color: #ebd7b6;
+  height: 22px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 10px auto;
+  padding-right: 5px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.tshop-um-tabslide .ks-switchable-content .item .price span {
+  background-color: #5c3001;
+  height: 22px;
+  display: inline-block;
+  padding: 0 10px;
+}
+.tshop-um-tabslide .ks-switchable-content .item .price i {
+  background: url("../../assets/images/global/global.png") no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 11px;
+  background-position: -65px 0;
+  margin: 4px 0 0 5px;
+}
+.tshop-um-tabslide .ks-switchable-content .item .sale {
+  text-align: center;
+}
+.tshop-um-tabslide .ks-switchable-content .item .sale em {
+  color: #5c3001;
+  font-weight: bold;
+  margin: 0 3px;
+}
+.tshop-um-tabslide .ks-switchable-content .item .share {
+  width: 190px;
+  margin: 10px auto 0;
+}
+.tshop-um-tabslide .ks-switchable-content .item .share em {
+  float: left;
+  margin-right: 3px;
+}

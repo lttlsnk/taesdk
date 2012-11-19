@@ -15,23 +15,137 @@
             <css>assets/stylesheets/sky.css</css>
         </theme>
     </themes>
-     <parameters>
-        <group title="模块">
-            <section folded="false" title="基本设置">
-                <param label="【轮播】╒ 显示组数" formType="select" readonly="false" description="设置显示几组轮播" ptype="text" name="tabnum">&lt;![CDATA[]]&gt;
+    <parameters>
+        <group title="基本设置">
+            <section folded="true" title="">
+                <param ptype="text" name="tabnum" label="显示组数" formType="select" description="设置显示几组轮播">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option selected="selected" value="4">4</option>
                     <option value="5">5</option>
                 </param>
-                <param label="╘ 显示分享" formType="select" readonly="false" description="设置是否显示宝贝分享" ptype="text" name="itemshare">&lt;![CDATA[]]&gt;
-                    <option value="1">显示</option>
+                <param ptype="text" name="itemshare" label="显示分享" formType="select" description="设置是否显示宝贝分享">
+                    <option selected="selected" value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
             </section>
-            <section folded="false" title="标题右侧">
-                <param ptype="textarea" name="textlink" label="文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"></param>
+        </group>
+        <group title="轮播">
+            <section folded="false" title="轮播1">
+                <param ptype="text" name="biaoti1" label="标题文字" formType="text" description="添加第一个标题文字">坚果干货专区</param>
+                <param ptype="text" name="resources1" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected" value="1">按所选类目自动获取宝贝</option>
+                    <option value="2">按宝贝选择器手动选择宝贝</option>
+                    <option value="3">按关键字自动获取宝贝</option>
+                </param>
+                <param ptype="category" name="cates1" label="类目选择器" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
+                <param ptype="item" name="item1" label="宝贝选择器" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限8个"></param>
+                <param ptype="text" name="keyword1" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="text" name="order1" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected" value="price">按宝贝价格的升序排列</option>
+                    <option value="_price">按宝贝价格的降序排列</option>
+                    <option value="ceofp">人气宝贝升序排序</option>
+                    <option value="_ceofp">人气宝贝降序排序</option>
+                    <option value="hotsell">热销宝贝升序排序</option>
+                    <option value="_hotsell">热销宝贝降序排序</option>
+                    <option value="newOn">以最新上架宝贝升序排序</option>
+                    <option value="_newOn">以最新上架宝贝降序排序</option>
+                    <option value="HotKeep">以热门搜藏升序排序</option>
+                    <option value="_HotKeep">以热门搜藏降序排序</option>
+                </param>
+            </section>
+            <section folded="true" title="轮播2">
+                <param ptype="text" name="biaoti2" label="标题文字" formType="text" description="添加第一个标题文字">各国进口美食</param>
+                <param ptype="text" name="resources2" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected" value="1">按所选类目自动获取宝贝</option>
+                    <option value="2">按宝贝选择器手动选择宝贝</option>
+                    <option value="3">按关键字自动获取宝贝</option>
+                </param>
+                <param ptype="category" name="cates2" label="类目选择器" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
+                <param ptype="item" name="item2" label="宝贝选择器" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限8个"></param>
+                <param ptype="text" name="keyword2" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="text" name="order2" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected" value="price">按宝贝价格的升序排列</option>
+                    <option value="_price">按宝贝价格的降序排列</option>
+                    <option value="ceofp">人气宝贝升序排序</option>
+                    <option value="_ceofp">人气宝贝降序排序</option>
+                    <option value="hotsell">热销宝贝升序排序</option>
+                    <option value="_hotsell">热销宝贝降序排序</option>
+                    <option value="newOn">以最新上架宝贝升序排序</option>
+                    <option value="_newOn">以最新上架宝贝降序排序</option>
+                    <option value="HotKeep">以热门搜藏升序排序</option>
+                    <option value="_HotKeep">以热门搜藏降序排序</option>
+                </param>
+            </section>
+            <section folded="true" title="轮播3">
+                <param ptype="text" name="biaoti3" label="标题文字" formType="text" description="添加第一个标题文字">精品送礼礼盒</param>
+                <param ptype="text" name="resources3" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected" value="1">按所选类目自动获取宝贝</option>
+                    <option value="2">按宝贝选择器手动选择宝贝</option>
+                    <option value="3">按关键字自动获取宝贝</option>
+                </param>
+                <param ptype="category" name="cates3" label="类目选择器" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
+                <param ptype="item" name="item3" label="宝贝选择器" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限8个"></param>
+                <param ptype="text" name="keyword3" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="text" name="order3" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected" value="price">按宝贝价格的升序排列</option>
+                    <option value="_price">按宝贝价格的降序排列</option>
+                    <option value="ceofp">人气宝贝升序排序</option>
+                    <option value="_ceofp">人气宝贝降序排序</option>
+                    <option value="hotsell">热销宝贝升序排序</option>
+                    <option value="_hotsell">热销宝贝降序排序</option>
+                    <option value="newOn">以最新上架宝贝升序排序</option>
+                    <option value="_newOn">以最新上架宝贝降序排序</option>
+                    <option value="HotKeep">以热门搜藏升序排序</option>
+                    <option value="_HotKeep">以热门搜藏降序排序</option>
+                </param>
+            </section>
+            <section folded="true" title="轮播4">
+                <param ptype="text" name="biaoti4" label="标题文字" formType="text" description="添加第一个标题文字">各国进口美食4</param>
+                <param ptype="text" name="resources4" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected" value="1">按所选类目自动获取宝贝</option>
+                    <option value="2">按宝贝选择器手动选择宝贝</option>
+                    <option value="3">按关键字自动获取宝贝</option>
+                </param>
+                <param ptype="category" name="cates4" label="类目选择器" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
+                <param ptype="item" name="item4" label="宝贝选择器" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限8个"></param>
+                <param ptype="text" name="keyword4" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="text" name="order4" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected" value="price">按宝贝价格的升序排列</option>
+                    <option value="_price">按宝贝价格的降序排列</option>
+                    <option value="ceofp">人气宝贝升序排序</option>
+                    <option value="_ceofp">人气宝贝降序排序</option>
+                    <option value="hotsell">热销宝贝升序排序</option>
+                    <option value="_hotsell">热销宝贝降序排序</option>
+                    <option value="newOn">以最新上架宝贝升序排序</option>
+                    <option value="_newOn">以最新上架宝贝降序排序</option>
+                    <option value="HotKeep">以热门搜藏升序排序</option>
+                    <option value="_HotKeep">以热门搜藏降序排序</option>
+                </param>
+            </section>
+            <section folded="true" title="轮播5">
+                <param ptype="text" name="biaoti5" label="标题文字" formType="text" description="添加第一个标题文字">各国进口美食</param>
+                <param ptype="text" name="resources5" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected" value="1">按所选类目自动获取宝贝</option>
+                    <option value="2">按宝贝选择器手动选择宝贝</option>
+                    <option value="3">按关键字自动获取宝贝</option>
+                </param>
+                <param ptype="category" name="cates5" label="类目选择器" formType="categoryForm" description="通过类目选择器自动获取宝贝"></param>
+                <param ptype="item" name="item5" label="宝贝选择器" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限8个"></param>
+                <param ptype="text" name="keyword5" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）"></param>
+                <param ptype="text" name="order5" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected" value="price">按宝贝价格的升序排列</option>
+                    <option value="_price">按宝贝价格的降序排列</option>
+                    <option value="ceofp">人气宝贝升序排序</option>
+                    <option value="_ceofp">人气宝贝降序排序</option>
+                    <option value="hotsell">热销宝贝升序排序</option>
+                    <option value="_hotsell">热销宝贝降序排序</option>
+                    <option value="newOn">以最新上架宝贝升序排序</option>
+                    <option value="_newOn">以最新上架宝贝降序排序</option>
+                    <option value="HotKeep">以热门搜藏升序排序</option>
+                    <option value="_HotKeep">以热门搜藏降序排序</option>
+                </param>
             </section>
         </group>
     </parameters>

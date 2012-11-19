@@ -7,7 +7,44 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
+ //color set
+@switch: defaultColor;
 
-.tshop-um-tabslide {}
-
- 
+.tshop-um-tabslide {
+  margin-top: 20px; 
+  width: 950px; 
+  overflow-x: hidden;
+  //
+  .ks-switchable-nav{
+    width: 955px;
+    //
+    li{
+      .mixinColor(@switch);
+      float: left; 
+      text-align: center; 
+      width: 235px; 
+      height: 30px; 
+      line-height: 30px; 
+      font-weight: bold; 
+      margin-right: 1px; 
+      background-color: #F3F3F3; 
+      cursor: pointer;
+      //
+      &.ks-active{
+        .mixinBgColor(@switch);
+        color: #FFF;
+      }
+    }
+  }
+  .content_con{
+    clear: both; 
+    height: 350px; 
+    width: 970px; 
+    overflow: hidden; 
+    position: relative;
+  }
+  .ks-switchable-content{
+    .mainbox(@switch);
+    width: 970px;
+  }
+}

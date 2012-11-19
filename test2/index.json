@@ -8,9 +8,7 @@
   }, {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ {
-        "moduleID" : "tshop-um-tabslide"
-      } ]
+      "main" : [ ]
     }
   }, {
     "type" : "grid-m0",

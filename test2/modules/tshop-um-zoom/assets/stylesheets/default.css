@@ -33,12 +33,12 @@
   height: 0;
 }
 .tshop-um-zoom .zoom_hd {
+  background-color: #5c3001;
   height: 35px;
   position: relative;
   line-height: 35px;
   padding: 0 15px;
   color: #FFF;
-  background-color: #5c3001;
 }
 .tshop-um-zoom .zoom_hd h3 {
   font-size: 14px;

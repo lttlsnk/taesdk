@@ -8,12 +8,12 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 .tshop-um-systempie .systempie_hd {
+  background-color: #5c3001;
   height: 35px;
   position: relative;
   line-height: 35px;
   padding: 0 15px;
   color: #FFF;
-  background-color: #5c3001;
 }
 .tshop-um-systempie .systempie_hd h3 {
   font-size: 14px;
@@ -63,6 +63,7 @@
 .tshop-um-systempie .systempie_bd .item .pic {
   border: 1px solid #E5E5E5;
   width: 222px;
+  background-color: #ebd7b6;
 }
 .tshop-um-systempie .systempie_bd .item .pic a {
   width: 220px;
@@ -80,8 +81,8 @@
 .tshop-um-systempie .systempie_bd .item .title a {
   color: #6D6D6D;
 }
-.tshop-um-systempie .systempie_bd .item .price,
-.tshop-um-systempie .systempie_bd .item .itemprice {
+.tshop-um-systempie .systempie_bd .item .price {
+  background-color: #ebd7b6;
   height: 22px;
   line-height: 20px;
   font-weight: bold;
@@ -92,14 +93,14 @@
   *display: inline;
   *zoom: 1;
 }
-.tshop-um-systempie .systempie_bd .item .price span,
-.tshop-um-systempie .systempie_bd .item .itemprice span {
+.tshop-um-systempie .systempie_bd .item .price span {
+  background-color: #5c3001;
   height: 22px;
   display: inline-block;
   padding: 0 10px;
 }
-.tshop-um-systempie .systempie_bd .item .price i,
-.tshop-um-systempie .systempie_bd .item .itemprice i {
+.tshop-um-systempie .systempie_bd .item .price i {
+  background: url("../../assets/images/global/global.png") no-repeat;
   display: inline-block;
   width: 13px;
   height: 11px;
@@ -110,6 +111,7 @@
   text-align: center;
 }
 .tshop-um-systempie .systempie_bd .item .sale em {
+  color: #5c3001;
   font-weight: bold;
   margin: 0 3px;
 }
@@ -127,18 +129,11 @@
   _margin-right: 9px;
 }
 .tshop-um-systempie .systempie_bd .item .pic {
-  background-color: #ebd7b6;
   width: 308px;
 }
 .tshop-um-systempie .systempie_bd .item .pic a {
   width: 306px;
   height: 306px;
-}
-.tshop-um-systempie .systempie_bd .item .price span {
-  background-color: #5c3001;
-}
-.tshop-um-systempie .systempie_bd .item .sale em {
-  color: #5c3001;
 }
 .tshop-um-systempie .w950 {
   overflow-x: hidden;

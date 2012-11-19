@@ -22,12 +22,12 @@
   margin-top: 10px;
 }
 .tshop-um-zoom .zoom_hd {
+  background-color: #247cbe;
   height: 35px;
   position: relative;
   line-height: 35px;
   padding: 0 15px;
   color: #FFF;
-  background-color: #247cbe;
 }
 .tshop-um-zoom .zoom_hd h3 {
   font-size: 14px;

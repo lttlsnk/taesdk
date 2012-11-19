@@ -76,11 +76,12 @@
 
 //mainbox
 // mainbox hd
-.mainbox_hd (){
+.mainbox_hd (@skinColor){
+  .mixinBgColor(@skinColor);
   height: 35px; 
   position: relative; 
   line-height: 35px; 
-  padding:0 15px; 
+  padding:0 15px;
   color: #FFF;
   //
   h3{font-size: 14px;}
@@ -102,7 +103,7 @@
   }
 }
 // mainbox item
-.mainbox (){
+.mainbox (@skinColor){
   &:after{.clearfix;}
   width: 972px; 
   padding-bottom: 10px;
@@ -117,36 +118,17 @@
     //
     .pic{
       .itempic;
+      .mixinBgLightColor(@skinColor);
     }    
     .title{
       .itemtitle
     }
-    & .price, & .itemprice{
-      height: 22px; 
-      line-height: 20px; 
-      font-weight: bold; 
-      color: #FFF; 
-      margin:10px auto; 
-      padding-right: 5px; 
-      display: inline-block; 
-      *display: inline; 
-      *zoom:1;
-    }
-    & .price span, & .itemprice span{
-      height: 22px; 
-      display: inline-block; 
-      padding: 0 10px;
-    }
-    & .price i, & .itemprice i{
-      display: inline-block;
-       width: 13px; 
-       height: 11px; 
-       background-position: -65px 0; 
-       margin: 4px 0 0 5px;
+    .price{
+      .itemprice(@skinColor);
     }
     .sale{
       text-align: center;
-      em{font-weight: bold; margin:0 3px;}
+      em{.mixinColor(@switch); font-weight: bold; margin:0 3px;}
     }
     .share{
       width: 190px; 
@@ -176,7 +158,8 @@
     background-repeat: no-repeat;
   }
 }
-.itemprice (){
+.itemprice (@skinColor){
+  .mixinBgLightColor(@skinColor);
   height: 22px; 
   line-height: 20px; 
   font-weight: bold; 
@@ -188,11 +171,13 @@
   *zoom:1;
   //
   span{
-     height: 22px; 
+    .mixinBgColor(@skinColor);
+    height: 22px; 
     display: inline-block; 
     padding: 0 10px;
   }
   i{
+    .globalSprite;
     display: inline-block;
     width: 13px; 
     height: 11px; 
@@ -201,9 +186,9 @@
   }
 }
 
-
 // mainbox190
-.mainbox190_hd (){
+.mainbox190_hd (@skinColor){
+  .mixinBgColor(@skinColor);
   height: 26px; 
   line-height: 26px; 
   font-weight: bold; 

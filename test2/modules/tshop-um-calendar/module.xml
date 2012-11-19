@@ -20,13 +20,13 @@
             <section folded="false" title="活动1">
                 <param ptype="text" name="date1" label="活动日期" formType="text" description="输入一个数字，此项填写后，对应的活动图片才有效(比如：本月的20号)">12</param>
                 <param ptype="text" name="title1" label="活动标题" formType="text" description="填写活动标题">活动标题1</param>
-                <param ptype="text" name="pic1" label="活动图片" formType="text" description="图片大小（620*362）">http://img02.taobaocdn.com/imgextra/i2/594992150/T2tEawXi0bXXXXXXXX_!!594992150.jpg</param>
+                <param ptype="text" name="pic1" label="活动图片" formType="text" description="图片大小（620*362）"></param>
                 <param ptype="text" name="link1" label="活动链接" formType="text" description="图片链接">#</param>
             </section>
             <section folded="true" title="活动2">
                 <param ptype="text" name="date2" label="活动日期" formType="text" description="输入一个数字，此项填写后，对应的活动图片才有效(比如：本月的20号)">18</param>
                 <param ptype="text" name="title2" label="活动标题" formType="text" description="填写活动标题">活动标题2</param>
-                <param ptype="text" name="pic2" label="活动图片" formType="text" description="图片大小（620*362）">http://img02.taobaocdn.com/imgextra/i2/594992150/T2.vmFXfFbXXXXXXXX_!!594992150.jpg</param>
+                <param ptype="text" name="pic2" label="活动图片" formType="text" description="图片大小（620*362）"></param>
                 <param ptype="text" name="link2" label="活动链接" formType="text" description="图片链接">#</param>
             </section>
             <section folded="true" title="活动3">

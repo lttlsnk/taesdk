@@ -8,12 +8,12 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 .tshop-um-accordion .accordion_hd {
+  background-color: #5c3001;
   height: 26px;
   line-height: 26px;
   font-weight: bold;
   color: #FFF;
   padding: 0 10px;
-  background-color: #5c3001;
 }
 .tshop-um-accordion .accordion_bd {
   border: 1px solid #E3E3E1;

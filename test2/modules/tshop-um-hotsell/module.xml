@@ -18,7 +18,7 @@
     <parameters>
         <group title="模块">
             <section folded="false" title="基本设置">
-                <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">放大镜模块</param>
+                <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">促销专区</param>
                 <param label="右侧文字" formType="text" description="头部右侧的说明文字" ptype="text" name="moduleintro">说明：收藏有礼哦，收藏本店凭截图可获店铺优惠券一张哦！</param>
             </section>
         </group>

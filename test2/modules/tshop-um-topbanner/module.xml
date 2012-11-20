@@ -24,27 +24,27 @@
         <group title="轮播设置">
             <section folded="false" title="轮播效果">
                 <param ptype="text" name="type" label="展示风格" formType="select" description="轮播的展示风格">
-                    <option value="stylebar" selected="selected">标题风格</option>
+                    <option value="stylebar">标题风格</option>
                     <option value="stylenum">数字风格</option>
-                    <option value="stylethumb">小图风格</option>
+                    <option selected="selected" value="stylethumb">小图风格</option>
                     <option value="none">不显示</option>
                 </param>
                 <param ptype="text" name="num" label="图片张数" formType="select" description="图片张数">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                    <option value="4" selected="selected">4</option>
+                    <option selected="selected" value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
                     <option value="8">8</option>
                 </param>
                 <param ptype="text" name="arrow" label="轮播箭头" formType="select" description="轮播箭头">
-                    <option value="1">显示</option>
+                    <option selected="selected" value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
                 <param ptype="text" name="autoplay" label="自动播放" formType="select" description="是否自动播放设置">
-                    <option value="true">是(默认)</option>
+                    <option selected="selected" value="true">是(默认)</option>
                     <option value="false">否</option>
                 </param>
                 <param ptype="text" name="easing" label="动画效果" formType="select" description="滚动的动画方方式">
@@ -52,17 +52,17 @@
                     <option value="easeIn">由慢到快</option>
                     <option value="easeOut">由快到慢</option>
                     <option value="easeInStrong">由慢到快-强</option>
-                    <option value="easeOutStrong">由快到慢-强</option>
+                    <option selected="selected" value="easeOutStrong">由快到慢-强</option>
                     <option value="elasticOut">来回震动</option>
-                    <option value="bounceOut" selected="selected">动感弹跳</option>
+                    <option value="bounceOut">动感弹跳</option>
                     <option value="easeBothStrong">动感弹性</option>
                     <option value="bounceBoth">动感抖动</option>
                     <option value="elasticIn">变换抖动</option>
                 </param>
                 <param ptype="text" name="effect" label="滚动方式" formType="select" description="切换时的动画效果">
                     <option value="none">显示/隐藏效果</option>
-                    <option value="fade" selected="selected">淡隐淡现</option>
-                    <option value="scrollx">水平滚动(默认)</option>
+                    <option value="fade">淡隐淡现</option>
+                    <option selected="selected" value="scrollx">水平滚动(默认)</option>
                     <option value="scrolly">垂直滚动</option>
                 </param>
                 <param ptype="text" name="duration" label="动画时间" formType="text" description="动画时间(秒)">1</param>

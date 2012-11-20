@@ -63,7 +63,7 @@
   background-position: -35px 0;
 }
 .tshop-um-topbanner .banner_nav {
-  width: 1920px;
+  width: 950px;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -96,25 +96,28 @@
   z-index: 99;
 }
 .tshop-um-topbanner .stylebar ul li {
+  color: #5c3001;
   padding: 0 10px;
   line-height: 22px;
   height: 22px;
 }
 .tshop-um-topbanner .stylebar ul li.ks-active {
+  background-color: #5c3001;
   color: #FFF;
 }
 .tshop-um-topbanner .stylenum {
   height: 30px;
 }
 .tshop-um-topbanner .stylenum ul li {
+  background-color: #5c3001;
   width: 16px;
   height: 16px;
   border: 1px solid #FFF;
   margin: 0 10px;
   color: #FFF;
   line-height: 16px;
-  opacity: 0.8;
-  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+  opacity: 0.6;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=60);
 }
 .tshop-um-topbanner .stylenum ul li.ks-active {
   opacity: 1;
@@ -130,4 +133,7 @@
   width: 118px;
   height: 53px;
   background-repeat: no-repeat;
+}
+.tshop-um-topbanner .stylethumb ul li.ks-active {
+  border-color: #5c3001;
 }

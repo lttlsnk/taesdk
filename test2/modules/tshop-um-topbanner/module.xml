@@ -4,7 +4,7 @@
     <name>海报</name>
     <file>tshop-um-topbanner.php</file>
     <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
-    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">首页宽屏海报，宽度限制950，轮播或单张海报效果。</description>
+    <description>首页宽屏海报，宽度限制950，轮播或单张海报效果。</description>
     <requiredCache>true</requiredCache>
     <supportedWidth>950</supportedWidth>
     <themes default="default">
@@ -18,16 +18,16 @@
     <parameters>
         <group title="基本设置">
             <section folded="false" title="尺寸设置">
-                <param ptype="text" name="mainheight" label="高度设置" formType="text" description=" 海报高度设置，默认500">500</param>
+                <param ptype="text" name="mainheight" label="高度设置" formType="text" description=" 海报高度设置，默认500">400</param>
             </section>
         </group>
         <group title="轮播设置">
             <section folded="false" title="轮播效果">
                 <param ptype="text" name="type" label="展示风格" formType="select" description="轮播的展示风格">
-                    <option value="stylebar">标题风格</option>
+                    <option selected="selected" value="stylebar">标题风格</option>
                     <option value="stylenum">数字风格</option>
-                    <option selected="selected" value="stylethumb">小图风格</option>
-                    <option value="none">不显示</option>
+                    <option value="stylethumb">小图风格</option>
+                    <option value="hidden">不显示</option>
                 </param>
                 <param ptype="text" name="num" label="图片张数" formType="select" description="图片张数">
                     <option value="1">1</option>
@@ -40,8 +40,8 @@
                     <option value="8">8</option>
                 </param>
                 <param ptype="text" name="arrow" label="轮播箭头" formType="select" description="轮播箭头">
-                    <option selected="selected" value="1">显示</option>
-                    <option value="2">不显示</option>
+                    <option selected="selected" value="show">显示</option>
+                    <option value="hidden">不显示</option>
                 </param>
                 <param ptype="text" name="autoplay" label="自动播放" formType="select" description="是否自动播放设置">
                     <option selected="selected" value="true">是(默认)</option>
@@ -72,31 +72,26 @@
         <group title="轮播图片">
             <section folded="false" title="图片1">
                 <param ptype="text" name="pic1_url" label="图片地址" formType="text" description="图片地址，尺寸：宽度限制950，高度可自定义"></param>
-                <param ptype="text" name="pic1_thumb" label="缩 略 图" formType="text" description="缩略图地址，尺寸：120*55"></param>
                 <param ptype="text" name="pic1_link" label="链接地址" formType="text" description="图片链接"></param>
                 <param ptype="text" name="pic1_title" label="图片标题" formType="text" description="图片标题"></param>
             </section>
             <section folded="true" title="图片2">
                 <param ptype="text" name="pic2_url" label="图片地址" formType="text" description="图片地址，尺寸：宽度限制950，高度可自定义"></param>
-                <param ptype="text" name="pic2_thumb" label="缩 略 图" formType="text" description="缩略图地址，尺寸：120*55"></param>
                 <param ptype="text" name="pic2_link" label="链接地址" formType="text" description="图片链接"></param>
                 <param ptype="text" name="pic2_title" label="图片标题" formType="text" description="图片标题"></param>
             </section>
             <section folded="true" title="图片3">
                 <param ptype="text" name="pic3_url" label="图片地址" formType="text" description="图片地址，尺寸：宽度限制950，高度可自定义"></param>
-                <param ptype="text" name="pic3_thumb" label="缩 略 图" formType="text" description="缩略图地址，尺寸：120*55"></param>
                 <param ptype="text" name="pic3_link" label="链接地址" formType="text" description="图片链接"></param>
                 <param ptype="text" name="pic3_title" label="图片标题" formType="text" description="图片标题"></param>
             </section>
             <section folded="true" title="图片4">
                 <param ptype="text" name="pic4_url" label="图片地址" formType="text" description="图片地址，尺寸：宽度限制950，高度可自定义"></param>
-                <param ptype="text" name="pic4_thumb" label="缩 略 图" formType="text" description="缩略图地址，尺寸：120*55"></param>
                 <param ptype="text" name="pic4_link" label="链接地址" formType="text" description="图片链接"></param>
                 <param ptype="text" name="pic4_title" label="图片标题" formType="text" description="图片标题"></param>
             </section>
             <section folded="true" title="图片5">
                 <param ptype="text" name="pic5_url" label="图片地址" formType="text" description="图片地址，尺寸：宽度限制950，高度可自定义"></param>
-                <param ptype="text" name="pic5_thumb" label="缩 略 图" formType="text" description="缩略图地址，尺寸：120*55"></param>
                 <param ptype="text" name="pic5_link" label="链接地址" formType="text" description="图片链接"></param>
                 <param ptype="text" name="pic5_title" label="图片标题" formType="text" description="图片标题"></param>
             </section>

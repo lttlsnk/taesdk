@@ -26,9 +26,10 @@
   padding-top: 29px;
 }
 .tshop-um-calendar .calendar_date .now .title {
+  background: url("../../assets/images/global/global.png") no-repeat;
   font-size: 14px;
   font-weight: bold;
-  color: #5c3001;
+  color: #FFF;
   background-position: 0 -55px;
   width: 272px;
   height: 29px;

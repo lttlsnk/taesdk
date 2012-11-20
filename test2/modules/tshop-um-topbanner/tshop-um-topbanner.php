@@ -26,16 +26,14 @@
   for($i=1; $i<=$tbm_num; $i++){
     $url = ${'tbm_pic'.$i.'_url'};
     ${'tbm_pic'.$i.'_url'} = $url ? $url : $globalUrl.'/default/topbanner.jpg';
-    $thumb = ${'tbm_pic'.$i.'_thumb'};
-    ${'tbm_pic'.$i.'_thumb'} = $thumb ? $thumb : ${'tbm_pic'.$i.'_url'};
     $title = ${'tbm_pic'.$i.'_title'};
     ${'tbm_pic'.$i.'_title'} = $title ? $title : '第'.$numArr[$i-1].'张轮播文字';
     $link = ${'tbm_pic'.$i.'_link'};
-    ${'tbm_pic'.$i.'_link'} = $link ? $link : $shopUrl;
+    ${'tbm_pic'.$i.'_link'} = $link ? $link : "#";
   }
 ?>
   
-  <div class="banner_slide J_TWidget" data-widget-type="Carousel" data-widget-config="{
+  <div class="banner_slide J_TWidget" data-widget-type="Carousel" style="height:<?php echo $tbm_mainheight.'px' ?>;" data-widget-config="{
         'navCls':'banner_nav_con',
         'effect': '<?php echo $tbm_effect ?>',
         'easing': '<?php echo $tbm_easing ?>', 
@@ -49,7 +47,7 @@
         'nextBtnCls': 'next',
         'disableBtnCls': 'disable'
         }">
-    <div  class="banner_content clearfix" >
+    <div  class="banner_content clearfix" style="height:<?php echo $tbm_mainheight.'px' ?>;">
       <ul class="ks-switchable-content">
         <?php
           for($i=1; $i<=4; $i++){
@@ -60,7 +58,7 @@
         ?>
       </ul>
     </div>
-    <div  class="J_TWidget hidden btns" data-widget-type="Popup" data-widget-config="{
+    <div  class="J_TWidget btns <?php echo $tbm_arrow; ?>" data-widget-type="Popup" data-widget-config="{
       'trigger':'.banner_content',
       'align':{
         'node':'.banner_content',
@@ -78,29 +76,28 @@
           if($tbm_type == "stylebar"){//标题
             for($i=1; $i<=$tbm_num; $i++){
               $title = ${'tbm_pic'.$i.'_title'};
+              $activClass = '';
               if($i==1){
-                echo '<li class="ks-active">'.$title.'</li>';
-              }else{
-                echo '<li>'.$title.'</li>';
+                $activClass = "ks-active";
               }
+              echo "<li class='{$activClass}'>".$title."</li>";
             }
-
           }else if($tbm_type == "stylethumb"){//缩略图
             for($i=1; $i<=$tbm_num; $i++){
-              $thumb = ${'tbm_pic'.$i.'_thumb'};
+              $thumb = ${'tbm_pic'.$i.'_url'};
+              $activClass = '';
               if($i==1){
-                echo "<li class='ks-active' style='background-image:url({$thumb});'></li>";
-              }else{
-                echo "<li style='background-image:url({$thumb});'></li>";
+                $activClass = 'class = "ks-active"';
               }
+              echo "<li {$activClass}><img src='{$thumb}' /></li>";
             }
           }else{//数字
-            for($i=1; $i<=$tbm_num; $i++){//数字
+            for($i=1; $i<=$tbm_num; $i++){
+              $activClass = '';
               if($i==1){
-                echo '<li class="ks-active">'.$i.'</li>';
-              }else{
-                echo '<li>'.$i.'</li>';
+                $activClass = 'class = "ks-active"';
               }
+              echo "<li {$activClass}>".$i."</li>";
             }
           }
         ?>

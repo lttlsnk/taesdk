@@ -8,7 +8,6 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 .tshop-um-topbanner {
-  height: 500px;
   position: relative;
 }
 .tshop-um-topbanner .banner_slide {
@@ -37,29 +36,35 @@
   height: 1px;
   position: relative;
 }
-.tshop-um-topbanner .pre,
-.tshop-um-topbanner .next {
+.tshop-um-topbanner .btns.hidden .pre,
+.tshop-um-topbanner .btns.hidden .next {
+  display: none;
+}
+.tshop-um-topbanner .btns .pre,
+.tshop-um-topbanner .btns .next {
+  background-color: #5c3001;
   width: 45px;
   height: 80px;
   display: block;
   position: absolute;
   cursor: pointer;
-  top: -40px;
+  top: 0px;
 }
-.tshop-um-topbanner .pre i,
-.tshop-um-topbanner .next i {
+.tshop-um-topbanner .btns .pre i,
+.tshop-um-topbanner .btns .next i {
+  background: url("../../assets/images/global/global.png") no-repeat;
   display: block;
   width: 26px;
   height: 52px;
   margin: 14px auto;
 }
-.tshop-um-topbanner .pre {
-  left: -100px;
+.tshop-um-topbanner .btns .pre {
+  left: 10px;
 }
-.tshop-um-topbanner .next {
-  right: -100px;
+.tshop-um-topbanner .btns .next {
+  right: 10px;
 }
-.tshop-um-topbanner .next i {
+.tshop-um-topbanner .btns .next i {
   background-position: -35px 0;
 }
 .tshop-um-topbanner .banner_nav {
@@ -68,6 +73,9 @@
   bottom: 0;
   text-align: center;
   z-index: 10;
+}
+.tshop-um-topbanner .banner_nav.hidden {
+  display: none;
 }
 .tshop-um-topbanner .banner_nav ul {
   margin: 0 auto;
@@ -132,8 +140,12 @@
   margin: 0 6px;
   width: 118px;
   height: 53px;
+  overflow: hidden;
   background-repeat: no-repeat;
 }
 .tshop-um-topbanner .stylethumb ul li.ks-active {
   border-color: #5c3001;
+}
+.tshop-um-topbanner .stylethumb ul li img {
+  width: 118px;
 }

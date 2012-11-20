@@ -12,7 +12,6 @@
 @switch: defaultColor;
 
 .tshop-um-topbanner {
-  height: 500px; 
   position: relative;
   //
   .banner_slide{
@@ -41,30 +40,36 @@
     width: 950px; 
     height: 1px; 
     position: relative;
-  }
-  .pre, .next{
-    width:45px; 
-    height: 80px; 
-    display: block; 
-    position: absolute; 
-    cursor: pointer; 
-    top: -40px;
     //
-    i{
-      display: block; 
-      width: 26px; 
-      height: 52px;
-      margin:14px auto;
+    &.hidden .pre, &.hidden .next{
+      display: none;
     }
-  }
-  .pre{
-    left: -100px;
-  }
-  .next{
-    right: -100px;
-    //
-    i{
-      background-position: -35px 0;
+    .pre, .next{
+      .mixinBgColor(@switch);
+      width:45px; 
+      height: 80px; 
+      display: block; 
+      position: absolute; 
+      cursor: pointer; 
+      top: 0px;
+      //
+      i{
+        .globalSprite;
+        display: block; 
+        width: 26px; 
+        height: 52px;
+        margin:14px auto;
+      }
+    }
+    .pre{
+      left: 10px;
+    }
+    .next{
+      right: 10px;
+      //
+      i{
+        background-position: -35px 0;
+      }
     }
   }
   //banner_nav BEGIN
@@ -75,6 +80,9 @@
     text-align: center; 
     z-index: 10;
     //
+    &.hidden{
+      display: none;
+    }
     ul{
       margin:0 auto; 
       display: inline-block; 
@@ -92,7 +100,7 @@
     height: 22px;
     //
     .alphabg{
-      .mixAlphabg;
+      .mixinAlphabg;
       position: absolute; 
       height: 22px; 
       width: 1920px; 
@@ -141,12 +149,17 @@
     ul li{
       background-position: center center; 
       border:1px solid #FFF; 
-      margin:0 6px; width: 118px; 
+      margin:0 6px; 
+      width: 118px; 
       height: 53px; 
+      overflow: hidden;
       background-repeat: no-repeat;
       //
       &.ks-active{
         .mixinBorderColor(@switch);
+      }
+      img{
+        width: 118px;
       }
     }
   }

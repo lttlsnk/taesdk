@@ -14,12 +14,12 @@
         <footer>footer.json</footer>
     </global>
     <themes default="default">
-        <theme name="default">
-            <css>assets/stylesheets/default/extra.css</css>
+        <theme name="sky">
+            <css>assets/stylesheets/sky/extra.css</css>
             <thumbnail>assets/images/default-thumbnail.png</thumbnail>
         </theme>
-		<theme name="sky">
-            <css>assets/stylesheets/sky/extra.css</css>
+        <theme name="default">
+            <css>assets/stylesheets/default/extra.css</css>
             <thumbnail>assets/images/default-thumbnail.png</thumbnail>
         </theme>
     </themes>

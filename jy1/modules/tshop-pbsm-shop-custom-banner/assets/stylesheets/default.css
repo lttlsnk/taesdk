@@ -10,6 +10,16 @@
 
 .tshop-pbsm-shop-custom-banner {}
 
-.tshop-pbsm-shop-custom-banner .banner-box{
-  
+.tshop-pbsm-shop-custom-banner .skin-box-bd .banner-box{
+  background-image: url(assets/images/banner.jpg);
+}
+.grid-m0 .tshop-pbsm-shop-custom-banner .skin-box-bd .title, 
+.grid-m .tshop-pbsm-shop-custom-banner .skin-box-bd .title,
+.tshop-pbsm-shop-custom-banner .skin-box-bd .title {
+  background: none;
+  left: 88px; 
+  bottom: 35px;
+  color: #FFFA3E;
+  font-family: 'Î¢ÈíÑÅºÚ';
+  font-weight: normal;
 }

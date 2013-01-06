@@ -1,10 +1,11 @@
 {
-  "title" : "ƒ¨»œ±¶±¥œÍ«È“≥",
   "layouts" : [ {
     "type" : "grid-s5m0",
     "modules" : {
-      "main" : [ ],
-      "sub" : [ ]
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ],
+      "main" : [ ]
     }
   } ]
 }

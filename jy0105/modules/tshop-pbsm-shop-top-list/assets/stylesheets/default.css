@@ -10,4 +10,29 @@
 
 .tshop-pbsm-shop-top-list {}
 
- 
+ /*190*/
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-hd{
+  border: none;
+  height: 28px;
+  background: #FFF url(../../assets/images/190hd.gif) no-repeat;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-hd h3 span{
+  font-size: 14px;
+  font-family: 'Î¢ÈíÑÅºÚ';
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-bd{
+  border:none;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .top-list-tab{
+  width: 190px;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .top-list-tab li{
+  background-color: #AAA;
+  width: 95px;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .top-list-tab .selected{
+  background-color: #860001;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .top-list-tab span{
+  color: #FFF;
+}

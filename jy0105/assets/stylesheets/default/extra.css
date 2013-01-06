@@ -1,0 +1,25 @@
+#content {
+	background-color:#980101 ;
+	background-image:url(assets/images/haibao.jpg) ;
+	background-repeat:no-repeat ;
+	background-position:top center ;
+}
+
+#hd {
+	background-color:#980101 ;
+}
+
+.skin-box .skin-box-hd {
+	border-style:solid;
+}
+
+.skin-box .skin-box-hd h3 span {
+	color:#FFFFFF;
+	font-weight:normal;
+	font-size:12px;
+	font-family:Microsoft YaHei;
+}
+
+.skin-box .skin-box-bd {
+	border-style:solid;
+}

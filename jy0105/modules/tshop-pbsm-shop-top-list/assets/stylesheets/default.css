@@ -23,6 +23,9 @@
 .grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-bd{
   border:none;
 }
+.grid-s5m0 .tshop-pbsm-shop-top-list .skin-box-bd a{
+  color: #AE0003;
+}
 .grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .top-list-tab{
   width: 190px;
 }

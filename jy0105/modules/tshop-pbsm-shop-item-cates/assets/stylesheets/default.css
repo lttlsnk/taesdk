@@ -27,7 +27,8 @@
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .cats-tree .fst-cat-hd{
   background-image: url(assets/images/fold.gif);
   background-repeat: no-repeat;
-  height: 35px;
+  min-height: 35px;
+  _height: 35px;
   margin: 5px 0 5px 6px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .cats-tree .cat-hd .fst-cat-name{
@@ -69,6 +70,3 @@
   background-image: url(assets/images/default.gif);
 }
 
-.grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .cats-tree .cat-hd .fst-cat-name img{
-  display: none;
-}

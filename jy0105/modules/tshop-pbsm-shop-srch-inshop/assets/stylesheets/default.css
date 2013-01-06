@@ -12,33 +12,51 @@
 
 
 
-/*950*/
-.grid-m0 .tshop-pbsm-shop-srch-inshop{
+/*950|750*/
+.grid-m0 .tshop-pbsm-shop-srch-inshop,
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop{
   margin-top: 640px;
   height: 147px;
   background: url(assets/images/bgm0.gif) no-repeat;
-  padding-left: 50px;
+  padding-left: 45px;
   padding-top: 10px;
 }
-.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
+.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
   font-weight: bold;
   font-size: 14px;
 }
-.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
+.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
   color: #FFF;
   font-family: 'Î¢ÈíÑÅºÚ';
   margin-right: 10px;
 }
-.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
+.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
   background: url(assets/images/btn.gif) no-repeat;
-  text-indent: -2000px;
+  font-family: 'Î¢ÈíÑÅºÚ';
+  font-size: 14px;
+  font-weight: bold;
   width: 56px;
   height: 26px;
+  color: #714500;
 }
-.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
+.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
   color: #FFF;
 }
-
+/*750*/
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop{
+  height: 70px;
+  margin: 0;
+}
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
+  width: 585px;
+}
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys{
+  width: 180px;
+}
 /*190*/
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop{
   background: #FFF url(../../assets/images/190hd.gif) no-repeat;
@@ -60,19 +78,21 @@
   margin-top: 3px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd ul{
-  border-bottom: 1px dotted #CCC;
+  border-top: 1px dotted #CCC;
+  padding-top: 5px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
-  background-color: #C30006;
+  background: url(assets/images/btn190.gif) no-repeat;
+  width: 45px;
   color: #FFF;
   font-family: 'Î¢ÈíÑÅºÚ';
+  border:none;
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border: 1px solid #000;
 }
-.grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd li{
-  margin-bottom:5px;
+.grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys{
+  
 }
 
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{

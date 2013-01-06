@@ -11,3 +11,25 @@
 .tshop-pbsm-other-liangzi {}
 
  
+/*190*/
+.grid-s5m0 .col-sub .tshop-pbsm-other-liangzi .skin-box-hd{
+  border: none;
+  height: 28px;
+  background: #FFF url(../../assets/images/190hd.gif) no-repeat;
+  text-align: left;
+  padding: 4px 10px 3px;
+  margin: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-other-liangzi .skin-box-hd h3{
+  text-align: left;
+  margin: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-other-liangzi .skin-box-hd h3 span{
+  font-size: 14px;
+  font-family: 'Î¢ÈíÑÅºÚ';
+  color: #FFF;
+  top: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-other-liangzi .skin-box-bd{
+	border: none;
+}

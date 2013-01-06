@@ -11,3 +11,52 @@
 .tshop-pbsm-shop-friend-link {}
 
  
+/*950*/
+.grid-m0 .tshop-pbsm-shop-friend-link{
+  background: none;
+}
+.grid-m0 .tshop-pbsm-shop-friend-link .skin-box-hd{
+  background: url(../../assets/images/950hd.png) no-repeat;
+  height: 75px;
+  border: none;
+  background-color:none;
+  padding: 4px 0;
+}
+.grid-m0 .tshop-pbsm-shop-friend-link .skin-box-hd .skin-box-act{
+  top: 40px;
+  right: 15px;
+}
+.grid-m0 .tshop-pbsm-shop-friend-link .skin-box-hd .skin-box-act .more{
+  color: #FFF;
+}
+.grid-m0 .tshop-pbsm-shop-friend-link .skin-box-hd h3{
+  text-align: center;
+  margin-top: 10px;
+}
+.grid-m0 .tshop-pbsm-shop-friend-link .skin-box-hd h3 span{
+  font-family: 'Î¢ÈíÑÅºÚ';
+  font-size: 35px;
+  color: #AE0003;
+  position: relative;
+  top: 10px;
+}
+
+/*190*/
+.grid-s5m0 .col-sub .tshop-pbsm-shop-friend-link .skin-box-hd{
+  border: none;
+  height: 28px;
+  background: #FFF url(../../assets/images/190hd.gif) no-repeat;
+  text-align: left;
+  padding: 4px 10px 3px;
+  margin: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-friend-link .skin-box-hd h3{
+  text-align: left;
+  margin: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-friend-link .skin-box-hd h3 span{
+  font-size: 14px;
+  font-family: 'Î¢ÈíÑÅºÚ';
+  color: #FFF;
+  top: 0;
+}

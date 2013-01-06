@@ -125,6 +125,9 @@
   width: 190px;
   background-color: #FFF;
 }
+.grid-s5m0 .col-sub .tshop-pbsm-shop-item-recommend .skin-box-bd .last{
+  padding-bottom: 10px;
+}
 .grid-s5m0 .col-sub  .tshop-pbsm-shop-item-recommend .skin-box-bd .item .photo a{
   display: inline-block;
   font-size: 12px;

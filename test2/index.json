@@ -2,7 +2,9 @@
   "layouts" : [ {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ],
       "main" : [ ]
     }
   }, {

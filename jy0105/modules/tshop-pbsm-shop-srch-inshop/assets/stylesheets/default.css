@@ -19,12 +19,19 @@
   height: 147px;
   background: url(assets/images/bgm0.gif) no-repeat;
   padding-left: 45px;
+  _padding-left: 25px;
   padding-top: 10px;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
   font-weight: bold;
   font-size: 14px;
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd li{
+  _margin-right: 5px;
+}
+.grid-m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
+  width: 780px;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
@@ -48,7 +55,7 @@
 }
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop{
-  height: 70px;
+  height: 67px;
   margin: 0;
 }
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
@@ -67,6 +74,9 @@
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
   font-size: 14px;
   font-family: 'Î¢ÈíÑÅºÚ';
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd{
+  border:none;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .keyword input,
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .price input{

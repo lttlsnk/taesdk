@@ -14,7 +14,9 @@
   }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-shop-main-slide"
+      } ],
       "main" : [ {
         "moduleID" : "tshop-pbsm-shop-srch-inshop"
       } ]

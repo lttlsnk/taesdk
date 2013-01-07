@@ -49,3 +49,22 @@
 .grid-s5m0 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd{
   background-image: url(../../assets/images/750hd.png);
 }
+/*190*/
+.grid-s5m0 .col-sub .tshop-pbsm-shop-main-slide .skin-box-hd{
+  border: none;
+  height: 28px;
+  background: #FFF url(../../assets/images/190hd.gif) no-repeat;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-main-slide .skin-box-hd h3{
+  text-align: left;
+  margin: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-main-slide .skin-box-hd h3 span{
+  font-size: 14px;
+  font-family: 'Î¢ÈíÑÅºÚ';
+  color: #FFF;
+  position: static;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-main-slide .slide-box .slide-content li a img{
+  width: 190px;
+}

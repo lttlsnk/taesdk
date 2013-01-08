@@ -2,20 +2,20 @@
   "layouts" : [ {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ {
+      "sub" : [ ],
+      "main" : [ ]
+    }
+  }, {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ ]
+    }
+  }, {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ {
         "moduleID" : "tshop-pbsm-shop-item-recommend"
-      } ],
-      "main" : [ ]
-    }
-  }, {
-    "type" : "grid-m0",
-    "modules" : {
-      "main" : [ ]
-    }
-  }, {
-    "type" : "grid-m0",
-    "modules" : {
-      "main" : [ ]
+      } ]
     }
   }, {
     "type" : "grid-m0",

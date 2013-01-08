@@ -14,15 +14,16 @@
 /*190*/
 .grid-s5m0 .col-sub .tshop-pbsm-other-customer-service .skin-box-hd{
   border: none;
-  height: 28px;
+  height: 32px;
   background: #FFF url(../../assets/images/190hd.gif) no-repeat;
   text-align: left;
-  padding: 4px 10px 3px;
+  padding: 0 10px 3px;
   margin: 0;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-other-customer-service .skin-box-hd h3{
   text-align: left;
-  margin: 0;
+  display: inline-block;
+  margin-top: 6px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-other-customer-service .skin-box-hd h3 span{
   font-size: 14px;

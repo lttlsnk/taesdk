@@ -13,15 +13,21 @@
  /*190*/
 .grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-hd{
   border: none;
-  height: 28px;
+  height: 32px;
   background: #FFF url(../../assets/images/190hd.gif) no-repeat;
+  padding-top: 0;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-hd h3 span{
   font-size: 14px;
   font-family: 'Î¢ÈíÑÅºÚ';
+  display: inline-block;
+  margin-top: 6px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-top-list .skin-box-bd{
   border:none;
+}
+.grid-s5m0 .tshop-pbsm-shop-top-list .skin-box-bd a{
+  color: #000;
 }
 .grid-s5m0 .tshop-pbsm-shop-top-list .skin-box-bd a:hover{
   color: #AE0003;

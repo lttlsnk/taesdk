@@ -23,15 +23,17 @@
   border: none;
   background: none;
   text-indent: -2000px;
+  margin-right: 10px;
 }
 .tshop-pbsm-shop-nav-ch .menu-list .link{
-  margin-left: 20px;
+  margin-left: 5px;
   background: none;
   border:none;
   color: #FFF;
   margin-top: 9px;
   height: 35px;
   cursor: pointer;
+  padding-top: 2px;
 }
 /*sb°´Å¥*/
 .tshop-pbsm-shop-nav-ch .menu-list .menu-hover .link{

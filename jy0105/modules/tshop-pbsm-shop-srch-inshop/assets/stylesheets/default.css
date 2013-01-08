@@ -52,6 +52,11 @@
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
   color: #FFF;
+  text-decoration: none;
+}
+.grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover{
+  color: #FFFA3E;
 }
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop{
@@ -70,6 +75,11 @@
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-hd{
   height: 35px;
+  padding-top: 0;
+}
+.grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-hd h3{
+  display: inline-block;
+  margin-top: 2px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
   font-size: 14px;

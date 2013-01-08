@@ -20,6 +20,8 @@
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .skin-box-hd h3 span{
   font-size: 14px;
   font-family: 'Î¢ÈíÑÅºÚ';
+  display: inline-block;
+  margin-top: 2px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .skin-box-bd{
   padding-top: 2px;

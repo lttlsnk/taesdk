@@ -15,7 +15,12 @@
 /*950|750|550*/
 .grid-m0 .tshop-pbsm-shop-srch-inshop,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop,
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop{
   margin-top: 640px;
   height: 147px;
   background: url(assets/images/bgm0.gif) no-repeat;
@@ -25,20 +30,35 @@
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
   font-weight: bold;
   font-size: 14px;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
   color: #FFF;
   font-family: 'Î¢ÈíÑÅºÚ';
   margin-right: 10px;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
   background: url(assets/images/btn.gif) no-repeat;
   font-family: 'Î¢ÈíÑÅºÚ';
   font-size: 14px;
@@ -49,13 +69,23 @@
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
   color: #FFF;
   text-decoration: none;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover{
   color: #FFFA3E;
 }
 /*950*/
@@ -74,14 +104,29 @@
   width: 180px;
 }
 /*550*/
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop{
   height: 67px;
   margin: 0;
 }
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
   width: 390px;
 }
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit{
   margin: 0;
 }
 /*190*/

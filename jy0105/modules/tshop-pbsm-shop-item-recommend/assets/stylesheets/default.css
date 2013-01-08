@@ -42,7 +42,10 @@
 .tshop-pbsm-shop-item-recommend .skin-box-bd{
   border: none;
   background-color: #FFF;
-  padding: 10px 0 10px;
+  padding: 10px 0 0;
+}
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item{
+  margin-bottom: 10px;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .photo a:hover{
   border-color: #AE0003;
@@ -61,12 +64,14 @@
   text-decoration: none;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute{
-  height: 38px;
+  min-height: 38px;
+  _height: 38px;
   cursor: pointer;
+  background: url(assets/images/price260.gif) no-repeat right top;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .cprice-area{
   font-family: 'Î¢ÈíÑÅºÚ';
-  margin: 3px 0 0px;
+  margin: 3px 5px 0px;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .cprice-area .symbol{
   color: #FFFA3E;
@@ -78,25 +83,90 @@
   font-size: 20px;
   font-weight: normal;
 }
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .sprice-area{
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .sprice-area .symbol{
+  color: #FFFA3E;
+}
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .sale-area{
   color: #FFF;
   font-family: 'Î¢ÈíÑÅºÚ';
+  margin-bottom: 0;
+  margin-top: 12px;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .sale-area .sale-num{
   color: #FFFA3E;
+  margin-right: 3px;
 }
-
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .sprice-area .s-price{
+  color: #FFF;
+}
+/*only img*/
+.grid-m0 .col-main .tshop-pbsm-shop-item-recommend .item7line1,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1{
+  margin-bottom: 0;
+}
+.grid-m0 .tshop-pbsm-shop-item-recommend .item7line1 .item .detail .attribute,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute{
+  background: none;
+  min-height: 1px;
+  _height: 1px;
+}
+.grid-m0 .tshop-pbsm-shop-item-recommend .item7line1 .item .detail .item-name,
+.grid-m0 .tshop-pbsm-shop-item-recommend .item7line1 .item .detail .attribute .cprice-area,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .item-name, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .item-name, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .item-name, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .item-name, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .item-name, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .item-name,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .cprice-area, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .cprice-area, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .cprice-area, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .cprice-area, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .cprice-area, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .cprice-area{
+  display: none;
+}
+.grid-m0 .tshop-pbsm-shop-item-recommend .item7line1 .item .detail .attribute .sprice-area .symbol,
+.grid-m0 .tshop-pbsm-shop-item-recommend .item7line1 .item .detail .attribute .sprice-area .s-price,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .symbol, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .symbol, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .symbol, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .symbol, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .symbol, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .symbol,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .s-price, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .s-price, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .s-price, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .s-price, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .s-price, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item4line1 .item .detail .attribute .sprice-area .s-price{
+  color: #333;
+}
 
 /*950*/
 .grid-m0 .tshop-pbsm-shop-item-recommend .skin-box-hd{
   background: url(../../assets/images/950hd.png) no-repeat;
 }
-/*950 item3line1 310*/
-.grid-m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
+.grid-m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1,
+.grid-m0 .col-main .tshop-pbsm-shop-item-recommend .item4line1{
   margin-bottom: 0;
 }
 .grid-m0 .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
-  background: url(assets/images/pricem0.gif) no-repeat;
+  background: url(assets/images/price310.gif) no-repeat;
 }
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
@@ -105,23 +175,26 @@
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
   background: url(../../assets/images/750hd.png) no-repeat;
 }
-/*750 item4line1 240*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
   margin-bottom: 0;
 }
-.grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
-  background: url(assets/images/prices5m0.gif) no-repeat;
-}
 
 /*550*/
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
   background: url(../../assets/images/550hd.png) no-repeat;
 }
-.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item3line1, 
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-item-recommend .item3line1, 
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1, 
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1, 
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-item-recommend .item3line1, 
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
   margin-bottom: 0;
-}
-.grid-s5m0e5 .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
-  background: url(assets/images/prices5m0.gif) no-repeat right top;
 }
 /*550 item3line1 310*/
 
@@ -158,7 +231,6 @@
 .grid-s5m0 .col-sub  .tshop-pbsm-shop-item-recommend .skin-box-bd .item .photo a{
   display: inline-block;
   font-size: 12px;
-  margin-top: 5px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute{
   background: url(assets/images/price180.gif) no-repeat;

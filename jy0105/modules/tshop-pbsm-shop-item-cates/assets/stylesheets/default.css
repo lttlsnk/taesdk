@@ -57,9 +57,11 @@
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .cats-tree .snd-cat-name{
   color: #000;
+  text-decoration: none;
 }
-
-
+.grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .cats-tree .snd-cat-name:hover{
+  color: #AE0003;
+}
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-cates .cats-tree .float .fst-cat-bd .cat-name{
   color: #000;
 }

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="GBK"?>
 <site>
-    <id>bd777f9eab63404e932e3c8c3d8061f1</id>
-    <name>简易0105</name>
+    <id>86d703c006dc4abdbc98bcf1fda3514c</id>
+    <name>跨年</name>
     <author wangwang="[提示：请添加模板作者的旺旺]" url="http://www.yourwebsite.com" name="[提示：请添加模板作者名称]"></author>
     <thumbnail>assets/images/default-thumbnail.png</thumbnail>
     <language>PHP</language>
-    <version>1.0.1</version>
-    <apply-sites>2</apply-sites>
+    <version>1.0.15</version>
+    <apply-sites>2,</apply-sites>
     <apply-user></apply-user>
     <template-type>1</template-type>
-    <change-notes>[提示：请添加模板修改日志]</change-notes>
-    <description>商城红简易模板</description>
+    <change-notes>[提示：bugfix 显示元素15]</change-notes>
+    <description>跨年</description>
     <global>
         <header>header.json</header>
         <footer>footer.json</footer>
@@ -29,16 +29,16 @@
             <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">[提示：请添加首页的描述]</description>
         </page>
         <page type="detail">
-            <name>默认宝贝详情页</name>
-            <file>detail.json</file>
+            <name>宝贝详情页</name>
+            <file>xiangqing.json</file>
             <thumbnail>assets/images/default-thumbnail.png</thumbnail>
-            <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">[提示：请添加默认宝贝详情页的描述]</description>
+            <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">宝贝详情页</description>
         </page>
         <page type="list">
-            <name>默认宝贝分类页</name>
-            <file>list.json</file>
+            <name>宝贝分类页</name>
+            <file>fenlei.json</file>
             <thumbnail>assets/images/default-thumbnail.png</thumbnail>
-            <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">[提示：请添加默认宝贝分类页的描述]</description>
+            <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">宝贝分类页</description>
         </page>
     </pages>
 </site>

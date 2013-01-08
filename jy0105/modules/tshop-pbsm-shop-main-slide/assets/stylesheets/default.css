@@ -46,7 +46,12 @@
   background-image: url(../../assets/images/950hd.png);
 }
 /*750*/
-.grid-s5m0 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd{
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd,
+.grid-m0s5e5 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd,
+.grid-s5e5m0 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd,
+.grid-e5s5m0 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd,
+.grid-e5m0s5 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd,
+.grid-m0e5s5 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd{
   background-image: url(../../assets/images/750hd.png);
 }
 /*550*/

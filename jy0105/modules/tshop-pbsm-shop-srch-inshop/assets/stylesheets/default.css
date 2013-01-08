@@ -8,13 +8,14 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-pbsm-shop-srch-inshop {}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd li{
+  _margin-right: 5px;
+}
 
-
-
-/*950|750*/
+/*950|750|550*/
 .grid-m0 .tshop-pbsm-shop-srch-inshop,
-.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop{
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop{
   margin-top: 640px;
   height: 147px;
   background: url(assets/images/bgm0.gif) no-repeat;
@@ -23,24 +24,21 @@
   padding-top: 10px;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
-.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span{
   font-weight: bold;
   font-size: 14px;
 }
-.tshop-pbsm-shop-srch-inshop .skin-box-bd li{
-  _margin-right: 5px;
-}
-.grid-m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
-  width: 780px;
-}
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
-.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .price label .key{
   color: #FFF;
   font-family: '微软雅黑';
   margin-right: 10px;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
-.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .btn{
   background: url(assets/images/btn.gif) no-repeat;
   font-family: '微软雅黑';
   font-size: 14px;
@@ -50,13 +48,19 @@
   color: #714500;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
-.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
   color: #FFF;
   text-decoration: none;
 }
 .grid-m0 .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
-.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover{
+.grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover,
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a:hover{
   color: #FFFA3E;
+}
+/*950*/
+.grid-m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
+  width: 780px;
 }
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop{
@@ -68,6 +72,17 @@
 }
 .grid-s5m0 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys{
   width: 180px;
+}
+/*550*/
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop{
+  height: 67px;
+  margin: 0;
+}
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd{
+  width: 390px;
+}
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-srch-inshop .skin-box-bd .submit{
+  margin: 0;
 }
 /*190*/
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop{
@@ -111,10 +126,6 @@
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
 }
-.grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys{
-  
-}
-
 .grid-s5m0 .col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
   color: #C30006;
 }

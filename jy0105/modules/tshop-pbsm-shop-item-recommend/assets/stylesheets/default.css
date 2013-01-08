@@ -12,10 +12,10 @@
   background: none;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-hd{
-  height: 75px;
+  height: 79px;
   border: none;
-  background-color:none;
-  padding: 4px 0;
+  background-color:transparent;
+  padding: 2px 0;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-hd .skin-box-act{
   top: 40px;
@@ -37,7 +37,7 @@
   font-size: 35px;
   color: #AE0003;
   position: relative;
-  top: 10px;
+  top: 12px;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd{
   border: none;
@@ -49,7 +49,6 @@
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .photo a:hover img{
   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  -moz-opacity:0.8;
   opacity: 0.8;
 }
 .tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail a.item-name{
@@ -92,6 +91,13 @@
 .grid-m0 .tshop-pbsm-shop-item-recommend .skin-box-hd{
   background: url(../../assets/images/950hd.png) no-repeat;
 }
+/*950 item3line1 310*/
+.grid-m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
+  margin-bottom: 0;
+}
+.grid-m0 .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
+  background: url(assets/images/pricem0.gif) no-repeat;
+}
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
   margin-top: -27px;
@@ -99,20 +105,25 @@
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
   background: url(../../assets/images/750hd.png) no-repeat;
 }
-/*item3line1 310*/
-.grid-m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
-  margin-bottom: 0;
-}
-.grid-m0 .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
-  background: url(assets/images/pricem0.gif) no-repeat;
-}
-/*item4line1 240*/
+/*750 item4line1 240*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
   margin-bottom: 0;
 }
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
   background: url(assets/images/prices5m0.gif) no-repeat;
 }
+
+/*550*/
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
+  background: url(../../assets/images/550hd.png) no-repeat;
+}
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
+  margin-bottom: 0;
+}
+.grid-s5m0e5 .tshop-pbsm-shop-item-recommend .item3line1 .item .detail .attribute{
+  background: url(assets/images/prices5m0.gif) no-repeat right top;
+}
+/*550 item3line1 310*/
 
 /*190*/
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-recommend .skin-box-hd{

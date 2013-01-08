@@ -8,22 +8,22 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-pbsm-shop-main-slide {}
 
 .tshop-pbsm-shop-main-slide .skin-box-hd{
-  height: 75px;
+  height: 79px;
   background-repeat: no-repeat;
+  padding: 2px 0;
 }
 .tshop-pbsm-shop-main-slide .skin-box-hd h3{
   text-align: center;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 .tshop-pbsm-shop-main-slide .skin-box-hd h3 span{
   font-family: '微软雅黑';
   font-size: 35px;
   color: #AE0003;
   position: relative;
-  top: 10px;
+  top: 12px;
 }
 .tshop-pbsm-shop-main-slide .skin-box-bd{
   border: none;
@@ -48,6 +48,10 @@
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd{
   background-image: url(../../assets/images/750hd.png);
+}
+/*550*/
+.grid-s5m0e5 .col-main .tshop-pbsm-shop-main-slide .skin-box-hd{
+  background: url(../../assets/images/550hd.png) no-repeat;
 }
 /*190*/
 .grid-s5m0 .col-sub .tshop-pbsm-shop-main-slide .skin-box-hd{

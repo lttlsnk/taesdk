@@ -10,6 +10,7 @@
 }
 
 .skin-box .skin-box-hd {
+	border-width:0;
 	border-style:solid;
 }
 
@@ -21,5 +22,6 @@
 }
 
 .skin-box .skin-box-bd {
+	border-width:0;
 	border-style:solid;
 }

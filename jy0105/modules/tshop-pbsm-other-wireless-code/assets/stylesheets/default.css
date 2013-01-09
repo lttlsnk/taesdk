@@ -9,8 +9,8 @@
  */
 
 
-/*190*/
-.grid-s5m0 .col-sub .tshop-pbsm-other-wireless-code .skin-box-hd{
+
+.tshop-pbsm-other-wireless-code .skin-box-hd{
   border: none;
   height: 32px;
   background: #FFF url(../../assets/images/190hd.gif) no-repeat;
@@ -18,14 +18,17 @@
   padding: 0 10px 3px;
   margin: 0;
 }
-.grid-s5m0 .col-sub .tshop-pbsm-other-wireless-code .skin-box-hd h3{
+.tshop-pbsm-other-wireless-code .skin-box-hd h3{
   text-align: left;
   display: inline-block;
   margin-top: 6px;
 }
-.grid-s5m0 .col-sub .tshop-pbsm-other-wireless-code .skin-box-hd h3 span{
+.tshop-pbsm-other-wireless-code .skin-box-hd h3 span{
   font-size: 14px;
   font-family: 'Î¢ÈíÑÅºÚ';
   color: #FFF;
   top: 0;
+}
+.tshop-pbsm-other-wireless-code .skin-box-bd{
+  border: none;
 }

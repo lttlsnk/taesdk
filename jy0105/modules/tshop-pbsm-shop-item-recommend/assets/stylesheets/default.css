@@ -170,9 +170,6 @@
 }
 /*750*/
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
-  margin-top: -27px;
-}
-.grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .skin-box-hd{
   background: url(../../assets/images/750hd.png) no-repeat;
 }
 .grid-s5m0 .col-main .tshop-pbsm-shop-item-recommend .item3line1{
@@ -220,6 +217,10 @@
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-recommend .skin-box-hd .skin-box-act{
   top: 5px;
+}
+.grid-s5m0 .col-sub  .tshop-pbsm-shop-item-recommend .skin-box-hd .skin-box-act .more{
+  position: relative;
+  top: 2px;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-item-recommend .skin-box-bd .item{
   width: 190px;

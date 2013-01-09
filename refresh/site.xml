@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="GBK"?>
 <site>
-    <id>9041b02e53f04390b71459bca5dbca0f</id>
-    <name>TAE模板</name>
+    <id>0253c898da6f4d6ebc2762adbd71ed52</id>
+    <name>1.0翻新</name>
     <author wangwang="[提示：请添加模板作者的旺旺]" url="http://www.yourwebsite.com" name="[提示：请添加模板作者名称]"></author>
     <thumbnail>assets/images/default-thumbnail.png</thumbnail>
     <language>PHP</language>
     <version>1.0.0</version>
-    <apply-sites>2,</apply-sites>
+    <apply-sites>2</apply-sites>
+    <apply-user>susan_15</apply-user>
+    <template-type>2</template-type>
     <change-notes>[提示：请添加模板修改日志]</change-notes>
-    <description></description>
+    <description>二十多个设计师模块&#xd;
+新增瀑布流模块等。</description>
     <global>
         <header>header.json</header>
         <footer>footer.json</footer>
     </global>
     <themes default="default">
-        <theme name="default">
-            <css>assets/stylesheets/default/extra.css</css>
+        <theme name="sky">
+            <css>assets/stylesheets/sky/extra.css</css>
             <thumbnail>assets/images/default-thumbnail.png</thumbnail>
         </theme>
-        <theme name="天蓝">
-            <css>assets/stylesheets/sky/extra.css</css>
+        <theme name="default">
+            <css>assets/stylesheets/default/extra.css</css>
             <thumbnail>assets/images/default-thumbnail.png</thumbnail>
         </theme>
     </themes>

@@ -1,0 +1,30 @@
+{
+  "layouts" : [ {
+    "type" : "grid-s5m0e5",
+    "modules" : {
+      "extra" : [ ],
+      "sub" : [ ],
+      "main" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ]
+    }
+  }, {
+    "type" : "grid-m0s5e5",
+    "modules" : {
+      "extra" : [ ],
+      "sub" : [ ],
+      "main" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ]
+    }
+  }, {
+    "type" : "grid-s5e5m0",
+    "modules" : {
+      "extra" : [ ],
+      "sub" : [ ],
+      "main" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ]
+    }
+  } ]
+}

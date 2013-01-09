@@ -1,29 +1,17 @@
 {
   "layouts" : [ {
-    "type" : "grid-s5m0e5",
+    "type" : "grid-m0",
     "modules" : {
-      "extra" : [ ],
-      "sub" : [ ],
       "main" : [ {
-        "moduleID" : "tshop-pbsm-shop-item-recommend"
+        "moduleID" : "tshop-um-systempie"
       } ]
     }
   }, {
-    "type" : "grid-m0s5e5",
+    "type" : "grid-s5m0",
     "modules" : {
-      "extra" : [ ],
       "sub" : [ ],
       "main" : [ {
-        "moduleID" : "tshop-pbsm-shop-item-recommend"
-      } ]
-    }
-  }, {
-    "type" : "grid-s5e5m0",
-    "modules" : {
-      "extra" : [ ],
-      "sub" : [ ],
-      "main" : [ {
-        "moduleID" : "tshop-pbsm-shop-item-recommend"
+        "moduleID" : "tshop-um-systempie"
       } ]
     }
   } ]

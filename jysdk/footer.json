@@ -1,5 +1,5 @@
 {
-  "title" : "Footer",
+  "title" : null,
   "layouts" : [ {
     "type" : "grid-m",
     "modules" : {

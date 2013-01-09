@@ -1,10 +1,28 @@
 {
-  "title" : "Ê×Ò³",
+  "title" : null,
   "layouts" : [ {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ {
+        "moduleID" : "tshop-um-item-recommend"
+      } ]
+    }
+  }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "main" : [ ],
-      "sub" : [ ]
+      "sub" : [ ],
+      "main" : [ {
+        "moduleID" : "tshop-um-item-recommend"
+      } ]
+    }
+  }, {
+    "type" : "grid-s5m0e5",
+    "modules" : {
+      "extra" : [ ],
+      "sub" : [ ],
+      "main" : [ {
+        "moduleID" : "tshop-um-item-recommend"
+      } ]
     }
   } ]
 }

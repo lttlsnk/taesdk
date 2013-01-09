@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-item-recommend</id>
+    <name>宝贝推荐</name>
+    <file>tshop-um-item-recommend.php</file>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <description>设计师模块 宝贝推荐</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>550,750,950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="模块">
+            <section folded="false" title="基本设置">
+                <param ptype="text" name="itemnum" label="宝贝个数" formType="text" description="显示宝贝个数">3</param>
+                <param ptype="text" name="itemline" label="展示方式" formType="select" description="选择一行显示几个宝贝">
+                    <option selected="selected"
+                        value="3">一行3个宝贝</option>
+                    <option value="4">一行4个宝贝</option>
+                    <option value="5">一行5个宝贝</option>
+                    <option value="7">一行7个宝贝</option>
+                </param>
+                <param ptype="text" name="itempro" label="是否显示" formType="checkbox" description="">
+                     <option value="sprice">折扣价</option>
+                     <option
+                        value="soldCount">最近30天销售数据</option>
+                     <option value="ratesNum">累计评价数</option>
+                     <option value="ratesDetail">评论</option>
+                </param>
+            </section>
+        </group>
+    </parameters>
+</module>

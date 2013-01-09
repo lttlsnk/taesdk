@@ -1,10 +1,19 @@
 {
-  "title" : "±¶±¥œÍ«È“≥",
   "layouts" : [ {
     "type" : "grid-s5m0",
     "modules" : {
-      "main" : [ ],
-      "sub" : [ ]
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-other-customer-service"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-item-cates"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-top-list"
+      }, {
+        "moduleID" : "tshop-pbsm-other-wireless-code"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ],
+      "main" : [ ]
     }
   } ]
 }

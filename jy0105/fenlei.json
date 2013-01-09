@@ -7,29 +7,21 @@
       } ]
     }
   }, {
+    "type" : "grid-m0",
+    "modules" : {
+      "main" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ]
+    }
+  }, {
     "type" : "grid-s5m0",
     "modules" : {
       "sub" : [ ],
       "main" : [ ]
     }
   }, {
-    "type" : "grid-s5m0e5",
+    "type" : "grid-m0",
     "modules" : {
-      "extra" : [ ],
-      "sub" : [ ],
-      "main" : [ ]
-    }
-  }, {
-    "type" : "grid-m0s5",
-    "modules" : {
-      "sub" : [ ],
-      "main" : [ ]
-    }
-  }, {
-    "type" : "grid-m0s5e5",
-    "modules" : {
-      "extra" : [ ],
-      "sub" : [ ],
       "main" : [ ]
     }
   } ]

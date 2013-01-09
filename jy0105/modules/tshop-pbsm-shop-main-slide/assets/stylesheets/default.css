@@ -62,7 +62,7 @@
   border: none;
   background: #FFF url(../../assets/images/190hd.gif) no-repeat;
   height: 32px;
-  padding-top: 0;
+  padding: 0 10px 0;
 }
 .grid-s5m0 .col-sub .tshop-pbsm-shop-main-slide .skin-box-hd h3{
   text-align: left;

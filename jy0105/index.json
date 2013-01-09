@@ -1,4 +1,5 @@
 {
+  "title" : null,
   "layouts" : [ {
     "type" : "grid-m0",
     "modules" : {
@@ -21,6 +22,8 @@
         "moduleID" : "tshop-pbsm-shop-item-cates"
       }, {
         "moduleID" : "tshop-pbsm-shop-top-list"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-main-slide"
       } ],
       "main" : [ {
         "moduleID" : "tshop-pbsm-shop-main-slide"

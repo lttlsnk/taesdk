@@ -4,7 +4,7 @@
     <name>顶部导航</name>
     <file>tshop-um-topnav.php</file>
     <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
-    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"></description>
+    <description></description>
     <requiredCache>true</requiredCache>
     <supportedWidth>950</supportedWidth>
     <themes default="default">
@@ -19,11 +19,13 @@
         <group title="基本设置">
             <section folded="false" title="基本">
                 <param ptype="text" name="catesshow" label="是否显示全部分类" formType="select" description="设置选择是否显示标头">
-                    <option value="1">显示</option>
+                    <option selected="selected"
+                        value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
                 <param ptype="text" name="rateshow" label="是否信用评价" formType="select" description="设置选择是否显示标头">
-                    <option value="1">显示</option>
+                    <option selected="selected"
+                        value="1">显示</option>
                     <option value="2">不显示</option>
                 </param>
             </section>
@@ -40,7 +42,8 @@
             <section folded="false" title="导航">
                 <param ptype="text" name="navmode" label="导航模式" formType="select" description="设置选择是否显示标头">
                     <option value="1">自动分类导航</option>
-                    <option value="2" selected="selected">选择分类导航</option>
+                    <option
+                        selected="selected" value="2">选择分类导航</option>
                     <option value="3">系统导航</option>
                 </param>
                 <param ptype="category" name="selectcates" label="选择分类（大类）" formType="categoryForm" description="选择分类，即一级类目"/>

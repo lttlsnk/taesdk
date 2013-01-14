@@ -1,18 +1,17 @@
 {
+  "title" : null,
   "layouts" : [ {
     "type" : "grid-m0",
     "modules" : {
       "main" : [ {
-        "moduleID" : "tshop-um-systempie"
+        "moduleID" : "tshop-um-topnav"
       } ]
     }
   }, {
     "type" : "grid-s5m0",
     "modules" : {
       "sub" : [ ],
-      "main" : [ {
-        "moduleID" : "tshop-um-systempie"
-      } ]
+      "main" : [ ]
     }
   } ]
 }

@@ -3,15 +3,17 @@
   "layouts" : [ {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ {
-        "moduleID" : "tshop-um-topnav"
-      } ]
+      "main" : [ ]
     }
   }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
-      "main" : [ ]
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-shop-top-list"
+      } ],
+      "main" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ]
     }
   } ]
 }

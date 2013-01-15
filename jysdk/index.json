@@ -10,7 +10,9 @@
   }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-shop-top-list"
+      } ],
       "main" : [ {
         "moduleID" : "tshop-um-item-recommend"
       } ]
@@ -19,10 +21,20 @@
     "type" : "grid-s5m0e5",
     "modules" : {
       "extra" : [ ],
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ],
       "main" : [ {
         "moduleID" : "tshop-um-item-recommend"
       } ]
+    }
+  }, {
+    "type" : "grid-s5m0",
+    "modules" : {
+      "sub" : [ {
+        "moduleID" : "tshop-pbsm-other-customer-service"
+      } ],
+      "main" : [ ]
     }
   } ]
 }

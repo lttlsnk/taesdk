@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-KA_HAIBAO</id>
+    <name>轮播设置</name>
+    <file>tshop-um-KA_HAIBAO.php</file>
+    <thumbnail>assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">大图海报【可以设置店铺的最热销宝贝，轮播大图片，自定义图片，文字，链接，颜色，动画方式】</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="【轮播设置】">
+            <section folded="false" title="图片设置">
+                <param ptype="text" name="pic_img" label="轮播图片" formType="textarea" description="请填写轮播图片路径，多个以@分隔">assets/images/1.png@assets/images/2.png@assets/images/1.png@assets/images/2.png@assets/images/2.png</param>
+                <param ptype="text" name="pic_title" label="轮播图片标题" formType="textarea" description="请填写轮播图片的标题，多个以@分隔">说明吧@说明吧@说明吧@说明吧@说明吧</param>
+                <param ptype="text" name="pic_href" label="轮播图片链接" formType="textarea" description="请填写轮播图片的链接，多个以@分隔">http://www.taobao.com/?1@&#xd;
+http://www.taobao.com/?2@&#xd;
+http://www.taobao.com/?3@&#xd;
+http://www.taobao.com/?4@&#xd;
+http://www.taobao.com/?5@</param>
+            </section>
+            <section folded="false" title="打开方式">
+                <param ptype="text" name="target" label="打开方式" formType="range" description="默认为新窗口打开">
+                    <option selected="selected" value="_blank">在新窗口打开</option>
+                    <option value="_parent">在父窗口打开</option>
+                    <option value="_self">在当前窗口打开</option>
+                    <option value="_top">在浏览器窗口打开</option>
+		        </param>
+            </section>
+        </group>
+        <group title="【效果设置】">
+            <section folded="false" title="风格设置">
+                <param ptype="text" name="height" label="模块高度" formType="text" description="填写广告图片的高度，默认高度400像素">400</param>
+                <param ptype="text" name="style" label="请选择风格" formType="range" description="默认风格一">
+                    <option selected="selected" value="1">风格一</option>
+                    <option value="2">风格二</option>
+                    <option value="3">风格三</option>
+			    </param>
+                <param ptype="text" name="triggerType" label="触发方式" formType="range" description="触发方式 默认为鼠标滑过">
+                    <option selected="selected" value="mouse">鼠标滑过</option>
+                    <option value="click">鼠标单击</option>
+			    </param>
+            </section>
+            <section folded="false" title="图片效果">
+                <param ptype="text" name="pic_xiaoguo" label="请选择图片效果" formType="range" description="默认为水平滚动">
+                    <option value="scrolly">垂直滚动</option>
+                    <option selected="selected" value="scrollx">水平滚动</option>
+                    <option value="fade">淡隐淡现</option>
+                    <option value="none">无效果</option>
+			    </param>
+            </section>
+            <section folded="false" title="动画效果">
+                <param ptype="text" name="pic_flash" label="动画效果" formType="range" description="默认动感">
+                    <option value="easeBothStrong">动感</option>
+                    <option value="backOut">跑过返回</option>
+                    <option value="easeOutStrong">快到慢-强</option>
+                    <option value="easeInStrong">慢到快-强</option>
+                    <option value="elasticIn">抖动后切换</option>
+                    <option selected="selected" value="elasticOut">切换后抖动</option>
+                    <option value="bounceOut">反弹</option>
+                    <option value="bounceBoth">抖动反弹</option>
+                    <option value="easeIn">慢到快-弱</option>
+                    <option value="easeOut">快到慢-弱</option>
+		        </param>
+            </section>
+        </group>
+    </parameters>
+</module>

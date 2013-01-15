@@ -1,0 +1,59 @@
+/**
+ * 模块：tshop-pbsm-shop-item-recommend 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-pbsm-shop-item-recommend"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+ 
+.tshop-pbsm-shop-item-recommend .skin-box-hd{ border:0 none;background:url(assets/images/title.png) 0 0 no-repeat; height:40px; border:0px}
+
+.tshop-pbsm-shop-item-recommend .skin-box-hd h3{color:#FFF; font-family:"微软雅黑"; line-height:40px; font-size:16px; text-indent:35px; font-weight:normal}
+
+.tshop-pbsm-shop-item-recommend .skin-box-hd .skin-box-act .more{display:none}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd{margin:0px; padding:0}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item3line1{margin-bottom:10px}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .photo a{background:#111; border:0 none}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail{background:#111}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .price{color:#00B4FF}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .item-name{color:#999}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item3line1{margin-bottom:10px}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail a.item-name{margin:0px; height:auto; text-decoration:none; font-size:14px; font-family:"微软雅黑"; color:#FFF}
+
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail a.item-name:hover{color:#00b4FF; text-decoration:none; font-weight:bold}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .detail .attribute .cprice-area .c-price{font-size:14px; font-family:"微软雅黑"; color:#00b4FF}
+
+.tshop-pbsm-shop-item-recommend .skin-box-bd .item .photo a{background:#111}
+
+
+
+
+
+
+
+
+
+
+.col-sub .tshop-pbsm-shop-item-recommend,
+.col-extra .tshop-pbsm-shop-item-recommend{border:0 none}
+
+.col-sub .tshop-pbsm-shop-item-recommend .skin-box-hd h3{font-size:14px; font-weight:bold}
+
+.col-sub .tshop-pbsm-shop-item-recommend .skin-box-bd .item3line1{padding:0px; margin:0}
+
+.col-sub .tshop-pbsm-shop-item-recommend .skin-box-bd .item{width:190px; background:#111; margin-bottom:10px}
+
+.col-sub .tshop-pbsm-shop-item-recommend .item1line1,
+.col-extra .tshop-pbsm-shop-item-recommend .item1line1{border:0 none}

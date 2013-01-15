@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-KA_JUHE</id>
+    <name>聚合宝贝展示</name>
+    <file>tshop-um-KA_JUHE.php</file>
+    <thumbnail>assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">聚合宝贝展示【大气的方块模式展示宝贝】</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="第一列宝贝">
+            <section folded="false" title="第一个">
+                <param ptype="text" name="juhe_1_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_1_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/8.png</param>
+                <param ptype="text" name="juhe_1_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">原价：210RMB       折扣价：200RMB</param>
+                <param ptype="text" name="juhe_1_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_1_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">1223</param>
+            </section>
+            <section folded="false" title="第二个">
+                <param ptype="text" name="juhe_2_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_2_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/2.png</param>
+                <param ptype="text" name="juhe_2_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">原价：210RMB       折扣价：200RMB</param>
+                <param ptype="text" name="juhe_2_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_2_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">4332</param>
+            </section>
+            <section folded="false" title="第三个">
+                <param ptype="text" name="juhe_3_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_3_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/4.png</param>
+                <param ptype="text" name="juhe_3_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">原价：210RMB       折扣价：200RMB</param>
+                <param ptype="text" name="juhe_3_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_3_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">534</param>
+            </section>
+        </group>
+        <group title="第二列宝贝">
+            <section folded="false" title="第一个">
+                <param ptype="text" name="juhe_4_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_4_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/1.png</param>
+                <param ptype="text" name="juhe_4_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">234</param>
+                <param ptype="text" name="juhe_4_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_4_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">342</param>
+            </section>
+            <section folded="false" title="第二个">
+                <param ptype="text" name="juhe_5_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_5_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/3.png</param>
+                <param ptype="text" name="juhe_5_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">653</param>
+                <param ptype="text" name="juhe_5_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_5_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">453</param>
+            </section>
+        </group>
+        <group title="第三列宝贝">
+            <section folded="false" title="第一个">
+                <param ptype="text" name="juhe_6_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_6_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/5.png</param>
+                <param ptype="text" name="juhe_6_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">原价：210RMB       折扣价：200RMB</param>
+                <param ptype="text" name="juhe_6_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_6_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">324</param>
+            </section>
+            <section folded="false" title="第二个">
+                <param ptype="text" name="juhe_7_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_7_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/6.png</param>
+                <param ptype="text" name="juhe_7_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">原价：210RMB       折扣价：200RMB</param>
+                <param ptype="text" name="juhe_7_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_7_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">2343</param>
+            </section>
+            <section folded="false" title="第三个">
+                <param ptype="text" name="juhe_8_title" label="宝贝标题" formType="text" description="请填写宝贝标题">请填写宝贝标题</param>
+                <param ptype="text" name="juhe_8_img" label="宝贝图片" formType="text" description="请填写宝贝的图片路径">assets/images/7.png</param>
+                <param ptype="text" name="juhe_8_jia" label="宝贝价格" formType="text" description="请填写宝贝的价格">原价：210RMB       折扣价：200RMB</param>
+                <param ptype="text" name="juhe_8_href" label="宝贝链接" formType="text" description="请填写宝贝的链接">http://www.taobao.com/?id=2222&amp;s=333&amp;id=4444</param>
+                <param ptype="text" name="juhe_8_shou" label="宝贝售出" formType="text" description="请填写宝贝的售出量">765</param>
+            </section>
+        </group>
+        <group title="功能设置">
+            <section folded="false" title="标题栏设置">
+                <param ptype="text" name="title_open" label="标题栏" formType="range" description="默认为 显示">
+                    <option selected="selected" value="yes">显示</option>
+                    <option value="no">不显示</option>
+		        </param>
+                <param ptype="text" name="title" label="主标题" formType="text" description="请填写标题栏目名称">自定义导航栏目</param>
+                <param ptype="text" name="more" label="更多链接" formType="text" description="请填写更多按钮的链接">http://www.taobao.com/?s</param>
+                <param ptype="text" name="title_wenzi" label="分类文字" formType="textarea" description="请填写标题栏目上的分类文字，多个以 | 分隔">标题一|标题二|标题三|标题四|标题五</param>
+                <param ptype="text" name="title_href" label="分类链接" formType="textarea" description="请填写标题栏目上的分类文字的链接，多个以 | 分隔">http://www.taobao.com/?s|http://www.taobao.com/?d|http://www.taobao.com/?s|http://www.taobao.com/?s|http://www.taobao.com/?s</param>
+            </section>
+            <section folded="false" title="功能设置">
+                <param ptype="text" name="target" label="打开方式" formType="range" description="默认为新窗口打开">
+                    <option selected="selected" value="_blank">在新窗口打开</option>
+                    <option value="_parent">在父窗口打开</option>
+                    <option value="_self">在当前窗口打开</option>
+                    <option value="_top">在浏览器窗口打开</option>
+		        </param>
+            </section>
+        </group>
+    </parameters>
+</module>

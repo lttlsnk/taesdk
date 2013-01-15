@@ -1,0 +1,22 @@
+ /* 头部店招 */ 
+#content {
+	background-image:url(assets/images/bg.png) ;
+	background-color:#000;
+	background-repeat:no-repeat ;
+	background-position:center 149px ;
+}
+
+#hd {
+	background-image:url(assets/images/hd.png) ;
+	background-repeat:repeat-x ;
+	background-position:top center ;
+	margin-bottom:0px;
+}
+/****************************************
+ * 版  本：SA.1.0                        *
+ * 时  间：2012.10.13 PM                 *
+ * 作  者：Allen                         *
+ * 旺  铺：http://xjcqc.taobao.com       *
+ * 联系QQ：584643662（希望能与您为朋友！）  *
+ * T E L: 18623601682                   *
+ ****************************************/ 

@@ -1,0 +1,44 @@
+/**
+ * 模块：tshop-um-KA_CLASS 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-KA_CLASS"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+.tshop-um-KA_CLASS {width:190px; background:#111; font-family:"微软雅黑"; margin-bottom:5px; overflow:hidden}
+
+.tshop-um-KA_CLASS .clearfix:after{clear: both;content: "."; display: block; font-size: 0; height: 0; visibility: hidden;	overflow:hidden;}
+
+
+.tshop-um-KA_CLASS .a_hd{width:190px; height:40px; font-size:14px; line-height:37px; color:#FFF; font-weight:bold; text-indent:36px; margin-bottom:5px; background:url(assets/images/title.png)}
+
+.tshop-um-KA_CLASS .a_class{width:190px; cursor:pointer}
+
+.tshop-um-KA_CLASS .a_class .a_title{width:190px; height:30px; text-indent:35px; line-height:30px; position:relative; background:url(assets/images/t.png);}
+
+.tshop-um-KA_CLASS .a_class .a_title i{width:11px; height:11px;background:url(assets/images/y.png) 0 0 no-repeat; position:absolute; left:10px; top:10px;}
+
+.tshop-um-KA_CLASS .a_class .ks-active i{width:11px; height:11px;background:url(assets/images/n.png) 0 0 no-repeat; position:absolute; left:10px; top:10px;}
+
+.tshop-um-KA_CLASS .a_class .a_title a{font-weight:bold; color:#FFF; font-size:14px; text-decoration:none}
+
+.tshop-um-KA_CLASS .a_class .a_c .a_cb{width:190px; height:30px; text-decoration:none; line-height:30px; color:#FFF; text-indent:45px; background:url(assets/images/xian.png) 15px 11px no-repeat; float:left}
+
+
+.tshop-um-KA_CLASS .a_class .a_c .a_cl{padding:0 5px; line-height:35px; height:35px; color:#999; text-decoration:none; float:left}
+
+.tshop-um-KA_CLASS .a_class .a_c .a_cl:hover,
+.tshop-um-KA_CLASS .a_class .a_c .a_cb:hover,
+.tshop-um-KA_CLASS .a_class .a_title a:hover{color:#00B4FF}
+
+/********************************************
+ * 版  本：SA.1.0                           *
+ * 时  间：2012.10.20 AM                    *
+ * 作  者：Allen                            *
+ * 旺  铺：http://xjcqc.taobao.com          *
+ * 联系QQ：584643662（希望能与您为朋友！）  *
+ * T E L: 18623601682                       *
+ ********************************************/ 

@@ -1,0 +1,24 @@
+/**
+ * 模块：tshop-um-KA_DIANZHAO 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-KA_DIANZHAO"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+.tshop-um-KA_DIANZHAO {height:104px}
+.tshop-um-KA_DIANZHAO .dianzhao_left{width:180px; height:20px; line-height:20px; margin:40px 0 0 28px; float:left}
+.tshop-um-KA_DIANZHAO .dianzhao_center{width:510px; height:100px; float:left}
+.tshop-um-KA_DIANZHAO .dianzhao_right{width:200px; height:20px; line-height:20px; margin:40px 32px 0 0px; float:right}
+.tshop-um-KA_DIANZHAO .dianzhao_left a{float:left}
+.tshop-um-KA_DIANZHAO .dianzhao_right a{float:right}
+/********************************************
+ * 版  本：KA.1.0                           *
+ * 时  间：2012.10.13 PM                    *
+ * 作  者：Allen                            *
+ * 旺  铺：http://xjcqc.taobao.com          *
+ * 联系QQ：584643662（希望能与您为朋友！）  *
+ * T E L: 18623601682                       *
+ ********************************************/ 

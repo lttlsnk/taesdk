@@ -1,0 +1,23 @@
+{
+  "layouts" : [ {
+    "type" : "grid-s5m0",
+    "modules" : {
+      "sub" : [ {
+        "moduleID" : "tshop-um-KA_KEFU"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-srch-inshop"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-top-list"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-item-cates"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-item-recommend"
+      } ],
+      "main" : [ {
+        "moduleID" : "tshop-um-KA_MAIN2"
+      }, {
+        "moduleID" : "tshop-um-KA_MAIN"
+      } ]
+    }
+  } ]
+}

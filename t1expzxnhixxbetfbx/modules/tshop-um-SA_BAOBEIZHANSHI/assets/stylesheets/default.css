@@ -1,0 +1,63 @@
+/**
+ * 模块：tshop-um-SA_BAOBEIZHANSHI 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-SA_BAOBEIZHANSHI"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+.tshop-um-SA_BAOBEIZHANSHI {width:950px; height:541px; overflow:hidden}
+
+.tshop-um-SA_BAOBEIZHANSHI .baobeititle{width:950px; height:40px; background:url(assets/images/srt.png) 0 0 no-repeat; overflow:hidden; margin-bottom:5px;}
+
+.tshop-um-SA_BAOBEIZHANSHI .baobeititle .title{width:200px; height:40px; padding-left:35px;color:#FFF; font-family:"微软雅黑"; line-height:40px; font-size:16px; float:left}
+
+.tshop-um-SA_BAOBEIZHANSHI .baobeititle .title_wenzi{width:645px; height:40px; padding-right:40px; line-height:40px; float:right}
+
+.tshop-um-SA_BAOBEIZHANSHI .baobeititle .title_wenzi a{font-size:12px;  float:right;color:#FFF; font-family:"微软雅黑"; text-decoration:none}
+.tshop-um-SA_BAOBEIZHANSHI .baobeititle .more{width:30px; height:40px; float:right}
+
+.tshop-um-SA_BAOBEIZHANSHI .baobeititle .more a{width:30px; height:40px; display:block}
+
+
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzs{width:950px; height:491px; overflow:hidden; margin-bottom:5px;}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsd{width:293px; height:491px; margin-right:3px; float:left}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsd a{width:293px; height:491px}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsd a img{width:293px; height:491px; border:0 none}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsd span{width:293px; height:40px; display:block; line-height:40px; color:#FFF; font-family:"微软雅黑"; font-size:14px; text-align:center; overflow:hidden; background:#000; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);opacity:0.6;}
+
+.tshop-um-SA_BAOBEIZHANSHI .hidden{display:none}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx{width:654px; height:491px; float:right}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl{width:216px; height:243px; display:inline; margin-bottom:5px; float:left}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl dt{width:216px; height:216px; margin-bottom:3px;  float:left}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl dt a{width:216px; height:216px; display:block; float:left}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl dt a img{border:0 none; width:216px; height:216px;}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl dt span{width:216px; height:40px; display:block; line-height:40px; color:#FFF; font-family:"微软雅黑"; font-size:14px; text-align:center; overflow:hidden; background:#000; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);opacity:0.6;}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl dd{width:216px; height:24px; background:url(assets/images/title.png) 0 0 no-repeat; overflow:hidden; float:left}
+
+.tshop-um-SA_BAOBEIZHANSHI .bbzsx dl dd a{width:216px; height:24px; line-height:24px; padding-left:20px; color:#FFF; font-family:"微软雅黑"; text-decoration:none; font-size:14px; float:left}
+
+
+ 
+/********************************************
+ * 版  本：SA.1.0                           *
+ * 时  间：2012.10.16 PM                    *
+ * 作  者：Allen                            *
+ * 旺  铺：http://xjcqc.taobao.com          *
+ * 联系QQ：584643662（希望能与您为朋友！）  *
+ * T E L: 18623601682                       *
+ ********************************************/ 

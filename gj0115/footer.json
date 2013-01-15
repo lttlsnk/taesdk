@@ -1,0 +1,9 @@
+{
+  "title" : "Footer",
+  "layouts" : [ {
+    "type" : "grid-m",
+    "modules" : {
+      "main" : [ ]
+    }
+  } ]
+}

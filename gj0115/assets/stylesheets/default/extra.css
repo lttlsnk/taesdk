@@ -1,0 +1,30 @@
+#content {
+	background-color:#000000 ;
+	background-image:url(assets/images/bdbg.jpg) ;
+	background-repeat:no-repeat ;
+	background-position:0 150px ;
+}
+
+#hd {
+	background-color:#000000 ;
+	background-image:url(assets/images/hdbg.jpg) ;
+	background-repeat:no-repeat ;
+	background-position:top center ;
+	margin-bottom:0px;
+}
+
+.skin-box .skin-box-hd {
+	border-width:0;
+	border-style:solid;
+}
+
+.skin-box .skin-box-hd h3 span {
+	font-weight:normal;
+	font-size:12px;
+	font-family:SimSun;
+}
+
+.skin-box .skin-box-bd {
+	border-width:0;
+	border-style:solid;
+}

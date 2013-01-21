@@ -1,0 +1,52 @@
+/**
+ * 模块：tshop-pbsm-shop-nav-ch 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-pbsm-shop-nav-ch"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+/**导航**/
+.tshop-pbsm-shop-nav-ch{height:46px}/**导航外框高度**/
+.tshop-pbsm-shop-nav-ch .skin-box-bd{height:42px; border:0px; font-family:"微软雅黑"; font-size:14px}/**导航内框高度，字体，边框**/
+/**分类导航**/
+.tshop-pbsm-shop-nav-ch .all-cats .link{width:154px;background:none; height:42px; line-height:42px; border:0 none}/**分类高，边框，背景**/
+.tshop-pbsm-shop-nav-ch .all-cats .link .title{display:none}
+.tshop-pbsm-shop-nav-ch .all-cats .link .popup-icon{display:none}
+/**分类导航一级菜单**/
+.tshop-pbsm-shop-nav-ch .popup-content{width:172px; background:url(assets/images/classbg.png); border:0 none}/*最外层边框与底色*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .cat-hd-hover .fst-cat-icon,
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-icon{background:url(assets/images/jt.gif) 0px 0px no-repeat; margin:16px 5px 0 5px; width:18px; height:9px}/*鼠标放上去或者移开后的ICON图标*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-name{width:144px; overflow:hidden}/*一级菜单文字的宽度*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat,
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-hd,
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-name{height:35px; line-height:35px}/*一级导航菜单的高度*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree{margin:0px}/*解决Firefox一级菜单上面的边距突出问题*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat{margin:0px; padding:0px; float:left}/*解决一级菜单上下边距问题*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .cat-hd-hover{background:#000 none}/*鼠标放上一级菜单上的背景色和二级菜单的背景色*/
+.tshop-pbsm-shop-nav-ch .skin-box-bd a{color:#00B4FF}/*一级菜单的文字颜色*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .cat-hd-hover .fst-cat-name{color:#FFF}/*鼠标经过一级菜单的颜色*/
+/**二级导航**/
+
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-name{width:160px}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-pop-inner{height:auto; margin:0; padding:0px; background:url(assets/images/classbg1.png)}/*二级菜单外边框的高度与边距和背景*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-hd{height:35px; line-height:35px;}/*二级菜单的高度*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-icon{background:url(assets/images/jt1.gif); width:14px; height:8px; margin:15px 6px 0 10px}/*二级菜单的ICON*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .by-sale{width:120px; overflow:hidden; float:left}/*二级菜单文字宽度*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-hd-hover{background-color:#000}/*二级菜单鼠标放上去的背景色*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-hd-hover a{color:#FFF}/*二级菜单鼠标放上去的颜色*/
+/**主导航**/
+.tshop-pbsm-shop-nav-ch .menu-list .link{background:none; border:0 none; height:44px; color:#00B4FF; padding:0px; line-height:44px}
+.tshop-pbsm-shop-nav-ch .menu-list .link .title{width:110px; text-align:center; cursor:pointer}
+.tshop-pbsm-shop-nav-ch .menu-list .menu-hover .link,
+.tshop-pbsm-shop-nav-ch .skin-box-bd .menu-list .menu-selected .link .title{background:url(assets/images/nav.png) center bottom no-repeat; color:#FFF}
+/********************************************
+ * 版  本：KA.1.0                           *
+ * 时  间：2012.10.13 PM                    *
+ * 作  者：Allen                            *
+ * 旺  铺：http://xjcqc.taobao.com          *
+ * 联系QQ：584643662（希望能与您为朋友！）  *
+ * T E L: 18623601682                       *
+ ********************************************/ 

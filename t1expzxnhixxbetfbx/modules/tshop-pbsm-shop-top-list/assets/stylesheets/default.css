@@ -1,0 +1,42 @@
+/**
+ * 模块：tshop-pbsm-shop-top-list 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-pbsm-shop-top-list"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+
+.tshop-pbsm-shop-top-list .skin-box-bd{border:0 none; background:#111}
+.tshop-pbsm-shop-top-list .skin-box-hd{width:190px; height:40px; border:0 none; overflow:hidden; margin-bottom:5px; padding:0px; background:url(assets/images/title.png) 0 0 no-repeat;}
+
+.tshop-pbsm-shop-top-list .skin-box-hd h3 span{height:40px; color:#FFF; border:0 none; line-height:37px; margin-left:33px; overflow:hidden}
+
+.tshop-pbsm-shop-top-list .panels li{width:190px; background:url(assets/images/bg.png) 0 0 no-repeat; margin:0px; padding:10px 0 0 0; border:0px; height:100px}
+
+.tshop-pbsm-shop-top-list .panels li .img a img{width:80px; height:80px; margin-right:5px;}
+
+.tshop-pbsm-shop-top-list .panels li .more img{width:90px; height:90px}
+
+.tshop-pbsm-shop-top-list .panels li .img a{border:0 none}
+
+.tshop-pbsm-shop-top-list .panels li .more{left:0px; top:0px}
+
+.tshop-pbsm-shop-top-list .panels li .detail{margin-top:15px}
+
+.tshop-pbsm-shop-top-list .top-list-tab li{background:none; width:95px;}
+
+.tshop-pbsm-shop-top-list .top-list-tab li span{color:#FFF;font-size:14px; font-weight:bold}
+
+.tshop-pbsm-shop-top-list .top-list-tab .selected span{color:#00b4FF; font-weight:bold}
+
+.tshop-pbsm-shop-top-list .top-list-tab .selected{background:none}
+
+.tshop-pbsm-shop-top-list .top-list-tab{border:0 none; background:#111;width:190px;}
+
+.tshop-pbsm-shop-top-list .control-group{width:190px; height:25px; line-height:20px}
+
+.tshop-pbsm-shop-top-list .control-group a{color:#FFF}
+
+.tshop-pbsm-shop-top-list .skin-box-bd a{color:#FFF}

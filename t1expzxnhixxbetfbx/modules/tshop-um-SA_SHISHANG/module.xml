@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-SA_SHISHANG</id>
+    <name>时尚大集合</name>
+    <file>tshop-um-SA_SHISHANG.php</file>
+    <thumbnail>assets/images/default-thumbnail.png</thumbnail>
+    <description xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">时尚大集合【可以设置店铺内最热销的宝贝和最新款和宝贝】</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="default">
+        <theme name="default">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="图片设置">
+            <section folded="false" title="第一张图片">
+                <param ptype="text" name="img_1" label="第一张图片" formType="text" description="请填写第一张图片路径">assets/images/1.png</param>
+                <param ptype="text" name="img_1_href" label="第一张图片链接" formType="text" description="请填写第一张图片的链接">http://www.taobao.com/?1</param>
+                <param ptype="text" name="img_1_title" label="第一张图片标题" formType="text" description="请填写第一张图片标题">新款男装</param>
+                <param ptype="text" name="img_1_color" label="第一张图片标题颜色" formType="text" description="请填写第一张图片标题颜色">#FFF</param>
+                <param ptype="text" name="img_1_back" label="第一张图片标题底色" formType="text" description="请填写第一张图片标题底色">#000</param>
+            </section>
+            <section folded="false" title="第二张图片">
+                <param ptype="text" name="img_2" label="第二张图片" formType="text" description="请填写第二张图片路径">assets/images/2.png</param>
+                <param ptype="text" name="img_2_href" label="第二张图片链接" formType="text" description="请填写第二张图片的链接">http://www.taobao.com/?2</param>
+                <param ptype="text" name="img_2_title" label="第二张图片标题" formType="text" description="请填写第二张图片标题">新款男装   ￥58</param>
+                <param ptype="text" name="img_2_color" label="第二张图片标题颜色" formType="text" description="请填写第二张图片标题颜色">#FFF</param>
+                <param ptype="text" name="img_2_back" label="第二张图片标题底色" formType="text" description="请填写第二张图片标题底色">#000</param>
+            </section>
+            <section folded="false" title="第三张图片">
+                <param ptype="text" name="img_3" label="第三张图片" formType="text" description="请填写第三张图片路径">assets/images/3.png</param>
+                <param ptype="text" name="img_3_href" label="第三张图片链接" formType="text" description="请填写第三张图片的链接">http://www.taobao.com/?3</param>
+                <param ptype="text" name="img_3_title" label="第三张图片标题" formType="text" description="请填写第三张图片标题">新款男装   ￥58</param>
+                <param ptype="text" name="img_3_color" label="第三张图片标题颜色" formType="text" description="请填写第三张图片标题颜色">#FFF</param>
+                <param ptype="text" name="img_3_back" label="第三张图片标题底色" formType="text" description="请填写第三张图片标题底色">#000</param>
+            </section>
+            <section folded="false" title="第四张图片">
+                <param ptype="text" name="img_4" label="第四张图片" formType="text" description="请填写第四张图片路径">assets/images/4.png</param>
+                <param ptype="text" name="img_4_href" label="第四张图片链接" formType="text" description="请填写第四张图片的链接">http://www.taobao.com/?4</param>
+                <param ptype="text" name="img_4_title" label="第四张图片标题" formType="text" description="请填写第四张图片标题">新款男装   ￥58</param>
+                <param ptype="text" name="img_4_color" label="第四张图片标题颜色" formType="text" description="请填写第四张图片标题颜色">#FFF</param>
+                <param ptype="text" name="img_4_back" label="第四张图片标题底色" formType="text" description="请填写第四张图片标题底色">#000</param>
+            </section>
+            <section folded="false" title="第五张图片">
+                <param ptype="text" name="img_5" label="第五张图片" formType="text" description="请填写第五张图片路径">assets/images/5.png</param>
+                <param ptype="text" name="img_5_href" label="第五张图片链接" formType="text" description="请填写第五张图片的链接">http://www.taobao.com/?5</param>
+                <param ptype="text" name="img_5_title" label="第五张图片标题" formType="text" description="请填写第五张图片标题">新款男装   ￥58</param>
+                <param ptype="text" name="img_5_color" label="第五张图片标题颜色" formType="text" description="请填写第五张图片标题颜色">#FFF</param>
+                <param ptype="text" name="img_5_back" label="第五张图片标题底色" formType="text" description="请填写第五张图片标题底色">#000</param>
+            </section>
+        </group>
+        <group title="功能设置">
+            <section folded="false" title="功能设置">
+                <param ptype="text" name="title_open" label="是否显示标题" formType="range" description="默认为Yes">
+                    <option selected="selected" value="yes">yes</option>
+                    <option value="no">no</option>
+		        </param>
+                <param ptype="text" name="target" label="打开方式" formType="range" description="默认为新窗口打开">
+                    <option selected="selected" value="_blank">在新窗口打开</option>
+                    <option value="_parent">在父窗口打开</option>
+                    <option value="_self">在当前窗口打开</option>
+                    <option value="_top">在浏览器窗口打开</option>
+		        </param>
+            </section>
+        </group>
+    </parameters>
+</module>

@@ -1,0 +1,55 @@
+/**
+ * 模块：tshop-um-KA_BOTTOM 
+ * 皮肤（主题）: default
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-KA_BOTTOM"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+ 
+.tshop-um-KA_BOTTOM{width:950px; height:145px; overflow:hidden; background:url(assets/images/b.png) 0 0 no-repeat; font-family:"微软雅黑"}
+
+.tshop-um-KA_BOTTOM .clearfix:after{clear: both;content: "."; display: block; font-size: 0; height: 0; visibility: hidden;	overflow:hidden;}
+ 
+.tshop-um-KA_BOTTOM .b_title{width:725px; height:40px; padding-left:225px; line-height:40px; overflow:hidden}
+ 
+.tshop-um-KA_BOTTOM .b_title a{line-height:40px; padding:0 18px; color:white; text-decoration:none;background:url(assets/images/s.png) right 9px no-repeat; float:left}
+
+.tshop-um-KA_BOTTOM .b_title a:hover{color:#F30}
+ 
+.tshop-um-KA_BOTTOM .b_list{width:715px; padding:18px 0 0 235px; overflow:hidden}
+
+.tshop-um-KA_BOTTOM .b_list a{text-decoration:none; color:#FFF;}
+
+.tshop-um-KA_BOTTOM .b_list b{color:#0F0; float:left}
+
+.tshop-um-KA_BOTTOM .b_list .b_r{width:69px; font-size:14px; color:#FFF; text-align:center; font-weight:bold; line-height:30px; float:left}
+
+.tshop-um-KA_BOTTOM .b_list .b_x{width:69px; margin-left:141px; font-size:14px; color:#FFF; text-align:center; font-weight:bold; line-height:30px; float:left}
+
+.tshop-um-KA_BOTTOM .b_list .b_k{width:69px; margin-left:131px; font-size:14px; color:#FFF; text-align:center; font-weight:bold; line-height:30px; float:left}
+
+.tshop-um-KA_BOTTOM .b_list .b_h{width:130px; margin-left:20px; line-height:30px; float:left}
+ 
+.tshop-um-KA_BOTTOM .b_list .b_hh{float:left; position:relative; width:65px; line-height:20px; height:20px; background:url(assets/images/w.png) 0 2px no-repeat; text-indent:17px; color:#FFF}
+
+
+.tshop-um-KA_BOTTOM .b_list .b_hh a{padding:0 5px; width:50px; height:20px; text-decoration:none; display:block; color:white; position:absolute; left:0px; top:0px}
+
+.tshop-um-KA_BOTTOM .b_list .b_hh a img{display:none}
+
+
+
+ 
+ 
+/********************************************
+ * 版  本：SA.1.0                           *
+ * 时  间：2012.10.16 PM                    *
+ * 作  者：Allen                            *
+ * 旺  铺：http://xjcqc.taobao.com          *
+ * 联系QQ：584643662（希望能与您为朋友！）  *
+ * T E L: 18623601682                       *
+ ********************************************/ 
+
+ 

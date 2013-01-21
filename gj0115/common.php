@@ -9,4 +9,18 @@
 /**
  * ¿ªÊ¼ÊéÐ´Ä£¿é¹²Ïíº¯Êý
  */
+  //main vars
+  $globalUrl = "../../assets/images";
+  $pageLinks =$shopManager->getShopPageLinks();
+  //shop
+  $shopUrl = $pageLinks[0]->href;   //µêÆÌÁ¬½Ó
+  $shopId = $_shop->id;   //µêÆÌID
+  $shopTitle = $_shop->title;   //µêÆÌ±êÌâ
+  $shopIntr = $uriManager->shopIntrURI();   //µêÆÌ½éÉÜ
+  $shopFavorite = $uriManager->favoriteLink();  //µêÆÌÊÕ²Ø
+  $shopRate = $uriManager->rateURI();   //µêÆÌÆÀ¼Û
+  //item
+  $allProduct = $uriManager->searchURI();   //ËùÓÐ±¦±´
+  //user
+  $userNick=$_user->nick;   //µêÖ÷êÇ³Æ
 ?>

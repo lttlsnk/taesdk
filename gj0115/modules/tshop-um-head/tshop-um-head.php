@@ -16,6 +16,38 @@
 /**
  * 开始设计PHP页面
  */
+  extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
+  //self value
+  //text_left
+  $textLeft = $tbm_text_left ? explode("|",$tbm_text_left) : array("文字一","文字二","文字三");
+  $textLeftLink = $tbm_text_left_link ? explode("|", $tbm_text_left_link) : array("#","#","#");
+  //text_right
+  $textRight = $tbm_text_right ? explode("|",$tbm_text_right) : array("文字四","文字五","文字六");
+  $textRightLink = $tbm_text_right_link ? explode("|", $tbm_text_right_link) : array("#","#","#");
+  //text_style
+  $textColor = $text_color ? $text_color : "#86f6fa";
+  $textStyle = "color:".$textColor."; font-weight:".$tbm_text_weight.
+                "; font-size:".$tbm_text_size."; text-decoration:".$tbm_text_underline.";";
 ?>
-<div>店铺招牌</div>
+  <div class="logo">
+    <img src="<?=$tbm_logo_img?>" title="<?=$shopTitle?>" width="500" height="100" />
+  </div>
+  <div class="text_left">
+    <?php
+      foreach($textLeft as $k=>$v){
+        $textlink = $textLeftLink[$k];
+        $icon = $k == count($textLeft)-1 ? "" : $tbm_text_icon;
+        echo "<a style='{$textStyle}' target='$tbm_text_target' href='{$textLeftLink[$k]}'>$v<em>$icon</em></a>";
+      }
+    ?>
+  </div>
+  <div class="text_right">
+    <?php
+      foreach($textRight as $k=>$v){
+        $textlink = $textRightLink[$k];
+        $icon = $k == count($textRight)-1 ? "" : $tbm_text_icon;
+        echo "<a style='{$textStyle}' target='$tbm_text_target' href='{$textRightLink[$k]}'>$v<em>$icon</em></a>";
+      }
+    ?>
+  </div>
 </div>

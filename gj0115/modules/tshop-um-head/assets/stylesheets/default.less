@@ -8,6 +8,34 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-um-head {}
+.tshop-um-head {
+  height: 100px;
+  position: relative;
 
- 
+  .logo{
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .text_left, .text_right{
+    width: 190px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    //
+    a{
+      margin-right: 3px;
+      //
+      em{
+        padding:0 2px;
+      }
+    }
+  }
+  .text_left{
+    left: 32px;
+  }
+  .text_right{
+    right: 24px;
+    text-align: right;
+  }
+}

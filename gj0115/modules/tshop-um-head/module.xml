@@ -3,7 +3,7 @@
     <id>tshop-um-head</id>
     <name>店招</name>
     <file>tshop-um-head.php</file>
-    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
     <description>店铺招牌</description>
     <requiredCache>true</requiredCache>
     <supportedWidth>950</supportedWidth>
@@ -13,6 +13,11 @@
         </theme>
     </themes>
     <parameters>
+        <group title="店招设置">
+            <section folded="false" title="图片设置">
+                <param ptype="text" name="logo_img" label="店招图片" formType="text" description="填写店铺招牌图片路径：及店铺的名称 尺寸：500*100">assets/images/logo.jpg</param>
+            </section>
+        </group>
         <group title="文字设置">
             <section folded="false" title="左边文字">
                 <param ptype="text" name="text_left" label="文字" formType="text" description="请输入左边要显示的文字必须以'|'分隔">文三字一|方三字二|文字三三</param>
@@ -59,24 +64,6 @@
                     <option
                         value="_self">在当前窗口打开</option>
                     <option value="_top">在浏览器窗口打开</option>
-                </param>
-            </section>
-        </group>
-        <group title="店招设置">
-            <section folded="false" title="图片设置">
-                <param ptype="text" name="logo_img" label="店招图片" formType="text" description="填写店铺招牌图片路径：及店铺的名称 尺寸：500*100">assets/images/logo.jpg</param>
-                <param ptype="text" name="logo_align" label="对齐方式" formType="range" description="默认为左对齐">
-                    <option selected="selected"
-                        value="0 0">左对齐</option>
-                    <option value="center 0">居中</option>
-                    <option value="right 0">右对齐</option>
-                </param>
-                <param ptype="text" name="logo_repeat" label="填充设置" formType="range" description="默认为不填充">
-                    <option selected="selected"
-                        value="no-repeat">不填充</option>
-                    <option value="">平铺</option>
-                    <option value="repeat-x">横向平铺</option>
-                    <option value="repeat-y">纵向平铺</option>
                 </param>
             </section>
         </group>

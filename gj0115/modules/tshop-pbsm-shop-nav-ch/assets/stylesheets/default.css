@@ -17,7 +17,8 @@
   background: none;
   border: none;
   padding: 0;
-  height: 50px;
+  height: 46px;
+  _height: 44px;
 }
 .tshop-pbsm-shop-nav-ch .all-cats .link .title{
   text-indent: -2000px;
@@ -26,24 +27,79 @@
   background: none;
 }
 /*/menu-list/*/
-.tshop-pbsm-shop-nav-ch .menu-list .link,
-.tshop-pbsm-shop-nav-ch .menu-list .link:hover{
-  background: none;
-  border: none;
-}
 .tshop-pbsm-shop-nav-ch .menu-list .menu{
   margin-top: 12px;
 }
 .tshop-pbsm-shop-nav-ch .menu-list .link{
+  background: none;
+  border: none;
   color: #23D9FF;
   padding: 0;
+  height: 36px;
+  _height: 31px;
+}
+.tshop-pbsm-shop-nav-ch .menu-list .menu-hover .link{
+  color: #FFF;
+  background: url(assets/images/bghover.png) no-repeat center bottom;
+  _background-image: url(assets/images/bghover.jpg);
 }
 .tshop-pbsm-shop-nav-ch .menu-list .link .title{
   width: 110px;
   text-align: center;
+  cursor: pointer;
 }
 /*popup-content*/
 .tshop-pbsm-shop-nav-ch .popup-content{
   border: none;
-  background: #000;
+  width: 172px;
+  background: none;
+}
+.tshop-pbsm-shop-nav-ch .all-cats-popup .popup-inner{
+  background:url(assets/images/classbg.png);
+  _background:#999 transparent;
+}
+/*fst-cat*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-name{
+  width: 144px;
+  color: #23D9FF;
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .cat-hd-hover{
+  background-color: #000;
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat,
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-hd,
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-name{
+  height:35px; 
+  line-height:35px
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-icon,
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .cat-hd-hover .fst-cat-icon{
+  background:url(assets/images/jt.gif) no-repeat; 
+  margin:16px 5px 0 5px; 
+  width:18px; 
+  height:9px
+}
+/*snd*/
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-pop-inner{
+  height:auto; 
+  margin:0;
+  padding:0px; 
+  background:url(assets/images/classbg1.png);
+  _background:#999 transparent;
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-hd{
+  height:35px; 
+  line-height:35px;
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-name{
+  color: #23D9FF;
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-hd-hover{
+  background-color:#000;
+}
+.tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-icon{
+  background:url(assets/images/jt1.gif); 
+  width:14px;
+  height:8px; 
+  margin:15px 6px 0 10px;
 }

@@ -3,7 +3,7 @@
     <id>tshop-um-head</id>
     <name>µÍ’–</name>
     <file>tshop-um-head.php</file>
-    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
     <description>µÍ∆Ã’–≈∆</description>
     <requiredCache>true</requiredCache>
     <supportedWidth>950</supportedWidth>
@@ -29,8 +29,8 @@
             </section>
             <section folded="true" title="Œƒ◊÷∑÷∏Ù∑˚">
                 <param ptype="text" name="text_icon" label="∑˚∫≈" formType="range" description="ƒ¨»œŒ™|">
-                    <option value="|">|</option>
-                    <option selected="selected"
+                    <option selected="selected" value="|">|</option>
+                    <option
                         value="°Ò">°Ò</option>
                     <option value="°Ù">°Ù</option>
                     <option value="°¢">°¢</option>

@@ -1,0 +1,99 @@
+/**
+ * 模块：tshop-um-textrecommend 
+ * 皮肤（主题）: 默认
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-textrecommend"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+.tshop-um-textrecommend .notice {
+  width: 850px;
+  margin: 6px 0 0 56px;
+  line-height: 20px;
+}
+.tshop-um-textrecommend .notice .content {
+  padding: 0;
+  height: 23px;
+  overflow: hidden;
+}
+.tshop-um-textrecommend .notice .ks-switchable-nav {
+  display: none;
+}
+.tshop-um-textrecommend .text_recommend {
+  height: 86px;
+  margin-top: 11px;
+}
+.tshop-um-textrecommend .text_recommend dl dt,
+.tshop-um-textrecommend .text_recommend dl dd,
+.tshop-um-textrecommend .text_recommend dl dd li {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+.tshop-um-textrecommend .text_recommend dl dt {
+  font-size: 14px;
+  width: 75px;
+  text-align: right;
+}
+.tshop-um-textrecommend .text_recommend .title2,
+.tshop-um-textrecommend .text_recommend .sub2 {
+  margin-top: 10px;
+}
+.tshop-um-textrecommend .text_recommend .text_left,
+.tshop-um-textrecommend .text_recommend .text_right {
+  width: 455px;
+  overflow-x: hidden;
+}
+.tshop-um-textrecommend .text_recommend .clear {
+  clear: both;
+}
+.tshop-um-textrecommend .text_recommend .text_left {
+  float: left;
+}
+.tshop-um-textrecommend .text_recommend .text_left dl dt {
+  margin-right: 15px;
+}
+.tshop-um-textrecommend .text_recommend .text_left dl dd li {
+  margin-right: 8px;
+}
+.tshop-um-textrecommend .text_recommend .text_left dl dd em {
+  margin-left: 6px;
+}
+.tshop-um-textrecommend .text_recommend .text_left .title1 {
+  margin-left: 65px;
+  display: inline;
+}
+.tshop-um-textrecommend .text_recommend .text_left .title2 {
+  margin-left: 30px;
+  display: inline;
+}
+.tshop-um-textrecommend .text_recommend .text_right {
+  float: right;
+  margin-right: 10px;
+  width: 445px;
+}
+.tshop-um-textrecommend .text_recommend .text_right dl dt,
+.tshop-um-textrecommend .text_recommend .text_right dl dd {
+  float: right;
+}
+.tshop-um-textrecommend .text_recommend .text_right dl dt {
+  text-align: left;
+  margin-left: 15px;
+}
+.tshop-um-textrecommend .text_recommend .text_right dl dd li {
+  margin-left: 8px;
+}
+.tshop-um-textrecommend .text_recommend .text_right dl dd em {
+  margin-left: 6px;
+}
+.tshop-um-textrecommend .text_recommend .text_right .title1 {
+  margin-right: 65px;
+  display: inline;
+  _margin-right: 55px;
+}
+.tshop-um-textrecommend .text_recommend .text_right .title2 {
+  margin-right: 30px;
+  display: inline;
+  _margin-right: 20px;
+}

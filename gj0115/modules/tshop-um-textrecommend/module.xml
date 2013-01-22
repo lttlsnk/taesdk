@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-textrecommend</id>
+    <name>文字分类推荐</name>
+    <file>tshop-um-textrecommend.php</file>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <description>店铺公告，文字分类推荐。</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="公告设置">
+            <section folded="false" title="文字编辑">
+                <param ptype="text" name="notice_text" label="文字" formType="textarea" description="请输入公告文字，多条必须以'|'分隔">心若简单、世间纷扰皆成空，有句话说不在乎天长地久，只在乎曾经拥有，不知道有多少人崇拜这句话，也不知道有多少人看到这句话会叹息，总之我们拥有的时候要珍惜，失去了那就把它当成一笔财富@@所有的错误我们都知道，然而终究改不掉，能改的叫做缺点，不能改的叫做弱点！|放弃并不代表你没有本事，有时候就是因为你足够强大，才能够放开曾经紧握的手</param>
+                <param ptype="text" name="notice_link" label="链接" formType="textarea" description="请输入公告文字的链接，多条对应必须以'|'分隔">http://www.taobao.com/?1|http://www.taobao.com/?2|http://www.taobao.com/?3</param>
+            </section>
+            <section folded="true" title="格式设置">
+                <param ptype="text" name="interval" label="滚动间隔" formType="text" description="默认为3秒">3</param>
+                <param ptype="text" name="fontcolor" label="文字颜色" formType="text" description="默认为#8F8D8E">#8F8D8E</param>
+                <param ptype="text" name="fontweight" label="文字加粗" formType="range" description="默认为常规">
+                    <option selected="selected" value="normal">常规</option>
+                    <option value="bold">粗体</option>
+                </param>
+                <param ptype="text" name="fontsize" label="文字大小" formType="range" description="默认为12px">
+                    <option selected="selected" value="12px">12px</option>
+                    <option value="13px">13px</option>
+                    <option value="14px">14px</option> 
+                </param>
+                <param ptype="text" name="fontfamily" label="文字字体" formType="range" description="默认为宋体">
+                    <option value="宋体">宋体</option>
+                    <option selected="selected" value="微软雅黑">微软雅黑</option>
+                    <option value="黑体">黑体</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Palatino Linotype">Palatino Linotype</option>
+                </param>
+            </section>
+        </group>
+        <group title="左侧分类一">
+            <section folded="false" title="标题设置">
+                <param ptype="text" name="text_left1" label="主题文字" formType="text" description="请输入分类的标题">时尚运动装</param>
+                <param ptype="text" name="text_left_link1" label="主题链接" formType="text" description="请输入分类标题的链接">http://www.taobao.com/?1</param>
+            </section>
+            <section folded="false" title="子类设置">
+                <param ptype="text" name="text_left_sub1" label="宝贝文字" formType="text" description="请输入子分类的标题，多个请用|分开">运动衣服|运动裤子|宽松牛仔|学生套装</param>
+                <param ptype="text" name="text_left_sub_link1" label="宝贝链接" formType="textarea" description="请输入子分类标题的链接，多个请用|分开">http://www.taobao.com/?1|http://www.taobao.com/?2|http://www.taobao.com/?3|http://www.taobao.com/?4</param>
+                <param ptype="text" name="text_left_sub_icon1" label="推荐样式" formType="text" description="热点小图标,使用|分开,位置与上面对应,0=无、1=HOT、2=NEW">0|1|2|0</param>
+            </section>
+        </group>
+        <group title="左侧分类二">
+            <section folded="false" title="标题设置">
+                <param ptype="text" name="text_left2" label="主题文字" formType="text" description="请输入分类的标题">时尚男装</param>
+                <param ptype="text" name="text_left_link2" label="主题链接" formType="text" description="请输入分类标题的链接">http://www.taobao.com/?1</param>
+            </section>
+            <section folded="false" title="子类设置">
+                <param ptype="text" name="text_left_sub2" label="宝贝文字" formType="text" description="请输入子分类的标题，多个请用|分开">运动衣服|运动裤子|宽松牛仔|学生套装</param>
+                <param ptype="text" name="text_left_sub_link2" label="宝贝链接" formType="textarea" description="请输入子分类标题的链接，多个请用|分开">http://www.taobao.com/?1|http://www.taobao.com/?2|http://www.taobao.com/?3|http://www.taobao.com/?4</param>
+                <param ptype="text" name="text_left_sub_icon2" label="推荐样式" formType="text" description="热点小图标,使用|分开,位置与上面对应,0=无、1=HOT、2=NEW">0|2|2|1</param>
+            </section>
+        </group>
+        <group title="右侧分类一">
+            <section folded="false" title="标题设置">
+                <param ptype="text" name="text_right1" label="主题文字" formType="text" description="请输入分类的标题">标题自定义</param>
+                <param ptype="text" name="text_right_link1" label="主题链接" formType="text" description="请输入分类标题的链接">http://www.taobao.com/?1</param>
+            </section>
+            <section folded="false" title="子类设置">
+                <param ptype="text" name="text_right_sub1" label="宝贝文字" formType="text" description="请输入子分类的标题，多个请用|分开">运动衣服|运动裤子|宽松牛仔|学生套装</param>
+                <param ptype="text" name="text_right_sub_link1" label="宝贝链接" formType="textarea" description="请输入子分类标题的链接，多个请用|分开">http://www.taobao.com/?1|http://www.taobao.com/?2|http://www.taobao.com/?3|http://www.taobao.com/?4</param>
+                <param ptype="text" name="text_right_sub_icon1" label="推荐样式" formType="text" description="热点小图标,使用|分开,位置与上面对应,0=无、1=HOT、2=NEW">0|1|2|0</param>
+            </section>
+        </group>
+        <group title="右侧分类二">
+            <section folded="false" title="标题设置">
+                <param ptype="text" name="text_right2" label="主题文字" formType="text" description="请输入分类的标题">时尚运动装</param>
+                <param ptype="text" name="text_right_link2" label="主题链接" formType="text" description="请输入分类标题的链接">http://www.taobao.com/?1</param>
+            </section>
+            <section folded="false" title="子类设置">
+                <param ptype="text" name="text_right_sub2" label="宝贝文字" formType="text" description="请输入子分类的标题，多个请用|分开">运动衣服|运动裤子|宽松牛仔|学生套装</param>
+                <param ptype="text" name="text_right_sub_link2" label="宝贝链接" formType="textarea" description="请输入子分类标题的链接，多个请用|分开">http://www.taobao.com/?1|http://www.taobao.com/?2|http://www.taobao.com/?3|http://www.taobao.com/?4</param>
+                <param ptype="text" name="text_right_sub_icon2" label="推荐样式" formType="text" description="热点小图标,使用|分开,位置与上面对应,0=无、1=HOT、2=NEW">0|2|2|1</param>
+            </section>
+        </group>
+        <group title="分类格式设置">
+            <section folded="false" title="标题设置">                
+                <param ptype="text" name="title_color" label="主题文字颜色" formType="text" description="默认为#00B4FF">#00B4FF</param>
+                <param ptype="text" name="title_fontweight" label="主题文字加粗" formType="range" description="默认为粗体">
+                    <option value="normal">常规</option>
+                    <option selected="selected" value="bold">粗体</option>
+                </param>
+            </section>
+            <section folded="false" title="子类设置">
+                <param ptype="text" name="sub_color" label="宝贝文字颜色" formType="text" description="请输入子分类标题的颜色">#C6C2C3</param>
+                <param ptype="text" name="sub_fontweight" label="宝贝文字加粗" formType="range" description="默认为常规">
+                    <option selected="selected" value="normal">常规</option>
+                    <option value="bold">粗体</option>
+                </param>
+                <param ptype="text" name="sub_fontsize" label="宝贝文字大小" formType="range" description="默认为12px">
+                    <option selected="selected" value="12px">12px</option>
+                    <option value="13px">13px</option>
+                    <option value="14px">14px</option> 
+                </param>
+            </section>
+        </group>
+    </parameters>
+</module>

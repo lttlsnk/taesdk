@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-banner</id>
+    <name>海报</name>
+    <file>tshop-um-banner.php</file>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <description>海报</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="轮播图片">
+                <param ptype="text" name="pic_url" label="图片地址" formType="textarea" description="图片地址，尺寸：950*400，多个图片用|分隔"></param>
+                <param ptype="text" name="pic_link" label="链接地址" formType="textarea" description="图片链接,多个链接用|分隔"></param>
+                <param ptype="text" name="pic_title" label="图片标题" formType="textarea" description="图片标题,多个标题用|分隔"></param>
+            </section>
+        </group>
+        <group title="轮播设置">
+            <section folded="false" title="轮播效果">
+                <param ptype="text" name="type" label="展示风格" formType="select" description="轮播的展示风格">
+                    <option selected="selected" value="stylebar">标题风格</option>
+                    <option value="stylenum">数字风格</option>
+                    <option value="stylethumb">小图风格</option>
+                    <option value="hidden">不显示</option>
+                </param>
+                <param ptype="text" name="num" label="图片张数" formType="select" description="图片张数">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option selected="selected" value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </param>
+                <param ptype="text" name="arrow" label="轮播箭头" formType="select" description="轮播箭头">
+                    <option selected="selected" value="show">显示</option>
+                    <option value="hidden">不显示</option>
+                </param>
+                <param ptype="text" name="autoplay" label="自动播放" formType="select" description="是否自动播放设置">
+                    <option selected="selected" value="true">是(默认)</option>
+                    <option value="false">否</option>
+                </param>
+                <param ptype="text" name="easing" label="动画效果" formType="select" description="滚动的动画方方式">
+                    <option value="easeNone">匀速(默认)</option>
+                    <option value="easeIn">由慢到快</option>
+                    <option value="easeOut">由快到慢</option>
+                    <option value="easeInStrong">由慢到快-强</option>
+                    <option selected="selected" value="easeOutStrong">由快到慢-强</option>
+                    <option value="elasticOut">来回震动</option>
+                    <option value="bounceOut">动感弹跳</option>
+                    <option value="easeBothStrong">动感弹性</option>
+                    <option value="bounceBoth">动感抖动</option>
+                    <option value="elasticIn">变换抖动</option>
+                </param>
+                <param ptype="text" name="effect" label="滚动方式" formType="select" description="切换时的动画效果">
+                    <option value="none">显示/隐藏效果</option>
+                    <option value="fade">淡隐淡现</option>
+                    <option selected="selected" value="scrollx">水平滚动(默认)</option>
+                    <option value="scrolly">垂直滚动</option>
+                </param>
+                <param ptype="text" name="duration" label="动画时间" formType="text" description="动画时间(秒)">1</param>
+                <param ptype="text" name="delay" label="停留间隔" formType="text" description="停留时间(秒)">2</param>
+            </section>
+        </group>
+    </parameters>
+</module>

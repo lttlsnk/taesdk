@@ -22,7 +22,7 @@
   $notesLink = !$tbm_notice_link ? explode("|",$tbm_notice_link) : array("#","#","#");
   $noteStyle = "color:".$tbm_fontcolor."; font-weight:".$tbm_fontweight."; font-size:".$tbm_fontsize.
                 "; font-family:".$tbm_fontfamily;
-  $interval = $tbm_interval ? $tbm_interval: "1";
+  $interval = $tbm_interval ? $tbm_interval: "3";
   //textLeft
   $leftSub1 = $tbm_text_left_sub1 ? explode("|",$tbm_text_left_sub1) : array("运动衣服","运动裤子","宽松牛仔","学生套装");
   $leftSubLink1 = $tbm_text_left_sub_link1 ? explode("|",$tbm_text_left_sub_link1) : array("#","#","#","#");

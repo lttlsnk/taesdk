@@ -56,7 +56,7 @@
 }
 .tshop-pbsm-shop-nav-ch .all-cats-popup .popup-inner{
   background:url(assets/images/classbg.png);
-  _background:#999 transparent;
+  _background:#333 none;
 }
 /*fst-cat*/
 .tshop-pbsm-shop-nav-ch .popup-content .cats-tree .fst-cat-name{
@@ -85,7 +85,7 @@
   margin:0;
   padding:0px; 
   background:url(assets/images/classbg1.png);
-  _background:#999 transparent;
+  _background:#333 none;
 }
 .tshop-pbsm-shop-nav-ch .popup-content .cats-tree .snd-cat-hd{
   height:35px; 

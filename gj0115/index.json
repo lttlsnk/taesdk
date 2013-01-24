@@ -3,7 +3,11 @@
   "layouts" : [ {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ ]
+      "main" : [ {
+        "moduleID" : "tshop-um-textrecommend"
+      }, {
+        "moduleID" : "tshop-um-banner"
+      } ]
     }
   }, {
     "type" : "grid-s5m0",

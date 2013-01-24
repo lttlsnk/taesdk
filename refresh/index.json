@@ -8,12 +8,8 @@
   }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ {
-        "moduleID" : "tshop-pbsm-shop-top-list"
-      } ],
-      "main" : [ {
-        "moduleID" : "tshop-pbsm-shop-item-recommend"
-      } ]
+      "sub" : [ ],
+      "main" : [ ]
     }
   } ]
 }

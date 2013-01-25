@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-bannerArea</id>
+    <name>小招牌</name>
+    <file>tshop-um-bannerArea.php</file>
+    <thumbnail>assets/images/default-thumbnail.png</thumbnail>
+    <description>三块小招牌banner</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>190,550,750,950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="基本设置">
+            <section folded="false" title="设置">
+                <param ptype="text" name="datafrom" label="数据来源" formType="select" description="数据来源">
+                    <option value="1">选取宝贝</option>
+                    <option
+                        selected="selected" value="2">自定义</option>
+                </param>
+                <param ptype="item" name="itemselecter" label="宝贝选择器(限3个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝"/>
+            </section>
+            <section folded="false" title="图片设置">
+                <param ptype="textarea" name="bannerpic" label="图片地址" formType="textarea" description=" 设置图片地址,用竖杆[|]分割 [说明:限3个]"/>
+                <param ptype="textarea" name="bannerlink" label="图片链接" formType="textarea" description=" 设置图片链接,用竖杆[|]分割 [说明:限3个]"/>
+            </section>
+        </group>
+    </parameters>
+</module>

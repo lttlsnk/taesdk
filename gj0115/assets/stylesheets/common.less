@@ -1,13 +1,104 @@
 //global vars
 @global-url: "../../assets/images";
-@global-sprite: "@{global-url}/global/global.png";
+@global-sprite: "@{global-url}/sprites.png";
 @skin-url: "@{global-url}/skin";
 //default-默认
-@default-color: #23D9FF;
+@default-color: #000;
 @default-skin-bg: "@{skin-url}/default.png";
 @default-collect-bg: "@{skin-url}/default_collectbg.jpg";
 
+//global class
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+.clearfix (){
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+//sprite
+.globalSprite (){
+  background: url(@global-sprite) no-repeat;
+}
+//alphaBg
+.mixinAlphabg (@alpha){
+  @percentAlpha: @alpha * 100;
+  opacity: @alpha; 
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=@percentAlpha);
+}
 //color
-.defaultColor () {
+.mixinColor (defaultColor) {
   color: @default-color;
+}
+//bgColor
+.mixinBgColor (defaultColor) {
+  background-color: @default-color;
+}
+//borderColor
+.mixinBorderColor (defaultColor) {
+  border-color: @default-color;
+}
+
+
+//mainbox
+// mainbox hd
+.mainbox_hd (@skinColor){
+  background: url("@{global-url}/950hdbg.png") no-repeat;
+  _background: url("@{global-url}/950hdbg.gif") no-repeat;
+  height: 35px; 
+  position: relative; 
+  line-height: 35px; 
+  padding:0 43px;
+  color: #FFF;
+  //
+  h3{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+  }
+  a{color: #FFF;}
+  .link_list{
+    position: absolute; 
+    right: 10px; 
+    top: 10px; 
+    line-height: 14px; 
+    height: 14px;
+    //
+    a{
+      margin-left: 8px; 
+      padding-left: 8px; 
+      display: inline-block;  
+      border-left: 1px solid #FFF;
+    }
+    .first{border:none;}
+  }
+}
+
+
+// item piece
+.itemtitle (){
+  text-align: center; 
+  line-height: 20px; 
+  margin-top: 3px;
+  //
+  a{color: #6D6D6D;}
+}
+.itempic (){
+  border:1px solid #E5E5E5;
+  width: 222px;
+  //
+  a{
+    width: 220px; 
+    height: 220px; 
+    display: block; 
+    border:1px solid #FFF; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+  }
 }

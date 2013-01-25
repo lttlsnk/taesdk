@@ -23,6 +23,7 @@
 .tshop-um-textrecommend .text_recommend {
   height: 86px;
   margin-top: 11px;
+  overflow-y: hidden;
 }
 .tshop-um-textrecommend .text_recommend dl dt,
 .tshop-um-textrecommend .text_recommend dl dd,

@@ -18,22 +18,13 @@
  */
   extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
   //self value
-  $numArr = array('一','二','三','四','五','六','七','八');
-  $pageLinks =$shopManager->getShopPageLinks();
-  $shopUrl = $pageLinks[0]->href;
-  //init value
   //pic数据初始化
-  for($i=1; $i<=$tbm_num; $i++){
-    $url = ${'tbm_pic'.$i.'_url'};
-    ${'tbm_pic'.$i.'_url'} = $url ? $url : $globalUrl.'/default/topbanner.jpg';
-    $title = ${'tbm_pic'.$i.'_title'};
-    ${'tbm_pic'.$i.'_title'} = $title ? $title : '第'.$numArr[$i-1].'张轮播文字';
-    $link = ${'tbm_pic'.$i.'_link'};
-    ${'tbm_pic'.$i.'_link'} = $link ? $link : "#";
-  }
+  $urlArr = $tbm_pic_url ? explode("|", $tbm_pic_url) : array();
+  $picNum = count($url)>0 ? count($url) : 4;
+  $titleArr = $tbm_pic_title ? explode("|", $tbm_pic_title) : array("第一张轮播文字","第二张轮播文字","第三张轮播文字","第四张轮播文字");
+  $linkArr = $tbm_pic_link ? explode("|", $tbm_pic_link) : array("#","#","#","#");
 ?>
-<div style="">海报</div>
-  <div class="banner_slide J_TWidget" data-widget-type="Carousel" style="height:<?php echo $tbm_mainheight.'px' ?>;" data-widget-config="{
+  <div class="banner_slide J_TWidget" data-widget-type="Carousel" data-widget-config="{
         'navCls':'banner_nav_con',
         'effect': '<?php echo $tbm_effect ?>',
         'easing': '<?php echo $tbm_easing ?>', 
@@ -47,12 +38,12 @@
         'nextBtnCls': 'next',
         'disableBtnCls': 'disable'
         }">
-    <div  class="banner_content clearfix" style="height:<?php echo $tbm_mainheight.'px' ?>;">
+    <div  class="banner_content clearfix">
       <ul class="ks-switchable-content">
         <?php
-          for($i=1; $i<=4; $i++){
-            $url = ${'tbm_pic'.$i.'_url'};
-            $link = ${'tbm_pic'.$i.'_link'};
+          for($i=0; $i<4; $i++){
+            $url = $urlArr[$i] ? $urlArr[$i] : 'assets/images/1.jpg';
+            $link = $linkArr[$i];
             echo "<li><a target='_blank' href='{$link}' style='background-image:url({$url});'></a></li>";
           }
         ?>
@@ -74,30 +65,31 @@
       <ul class="banner_nav_con">
         <?php
           if($tbm_type == "stylebar"){//标题
-            for($i=1; $i<=$tbm_num; $i++){
-              $title = ${'tbm_pic'.$i.'_title'};
+            for($i=0; $i<$picNum; $i++){
+              $title = $titleArr[$i];
               $activClass = '';
-              if($i==1){
+              if($i==0){
                 $activClass = "ks-active";
               }
               echo "<li class='{$activClass}'>".$title."</li>";
             }
           }else if($tbm_type == "stylethumb"){//缩略图
-            for($i=1; $i<=$tbm_num; $i++){
-              $thumb = ${'tbm_pic'.$i.'_url'};
+            for($i=0; $i<$picNum; $i++){
+              $thumb = $urlArr[$i] ? $urlArr[$i] : 'assets/images/1.jpg';
               $activClass = '';
-              if($i==1){
+              if($i==0){
                 $activClass = 'class = "ks-active"';
               }
               echo "<li {$activClass}><img src='{$thumb}' /></li>";
             }
           }else{//数字
-            for($i=1; $i<=$tbm_num; $i++){
+            for($i=0; $i<$picNum; $i++){
+              $curNum = $i+1;
               $activClass = '';
-              if($i==1){
+              if($i==0){
                 $activClass = 'class = "ks-active"';
               }
-              echo "<li {$activClass}>".$i."</li>";
+              echo "<li {$activClass}>".$curNum."</li>";
             }
           }
         ?>

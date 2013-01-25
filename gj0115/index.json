@@ -7,6 +7,12 @@
         "moduleID" : "tshop-um-textrecommend"
       }, {
         "moduleID" : "tshop-um-banner"
+      }, {
+        "moduleID" : "tshop-um-bannerArea"
+      }, {
+        "moduleID" : "tshop-pbsm-shop-srch-inshop"
+      }, {
+        "moduleID" : "tshop-um-hotsell"
       } ]
     }
   }, {

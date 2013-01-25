@@ -7,7 +7,173 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
+//color set
+@switch: defaultColor;
 
 .tshop-um-banner {
   height: 400px;
+  position: relative;
+  top: 5px;
+  //
+  .banner_slide{
+    width: 950px; 
+    height: 400px;
+    overflow: hidden; 
+    position: relative;
+  }
+  .banner_content{
+    width: 950px; 
+    height: 400px; 
+    overflow: hidden; 
+    margin:0 auto;
+    //
+    a{
+      width: 950px; 
+      height: 400px; 
+      display: block; 
+      background-position: center top;
+    }
+  }
+  .ks-switchable-content li{
+    float: left;
+  }
+  .btns{
+    width: 950px; 
+    height: 0px; 
+    position: relative;
+    //
+    &.hidden .pre, &.hidden .next{
+      display: none;
+    }
+    .pre, .next{
+      .mixinBgColor(@switch);
+      .mixinAlphabg(0.5);
+      width:45px; 
+      height: 80px; 
+      display: block; 
+      position: absolute; 
+      cursor: pointer; 
+      top: 0px;
+      //
+      &:hover{
+        .mixinAlphabg(0.8);
+        i{
+          .mixinAlphabg(1);
+        }
+      }
+      //
+      i{
+        .globalSprite;
+        .mixinAlphabg(0.3);
+        display: block; 
+        width: 36px; 
+        height: 37px;
+        margin:22px auto;
+      }
+    }
+    .pre{
+      left: 10px;
+    }
+    .next{
+      right: 10px;
+      //
+      i{
+        background-position: -40px 0;
+      }
+    }
+  }
+  //banner_nav BEGIN
+  .banner_nav{
+    width: 950px;
+    position: absolute; 
+    bottom: 0; 
+    text-align: center; 
+    z-index: 10;
+    //
+    &.hidden{
+      display: none;
+    }
+    ul{
+      margin:0 auto; 
+      display: inline-block; 
+      *display: inline; 
+      *zoom: 1;
+      //
+      li{
+        float: left; 
+        cursor: pointer;
+      }
+    }
+  }
+  //banner_nav END
+  .stylebar{
+    height: 30px;
+    //
+    .alphabg{
+      .mixinBgColor(@switch);
+      .mixinAlphabg(0.5);
+      position: absolute; 
+      height: 30px; 
+      width: 950px; 
+      left: 0;
+    }
+    ul{
+      position: relative; 
+      z-index: 99;
+      //
+      li{
+        .mixinColor(@switch);
+        padding:0 10px; 
+        line-height: 30px;
+        height: 30px;
+        color:#FFF;
+        //
+        &.ks-active{
+          .mixinBgColor(@switch);
+        }
+      }
+    }
+  }
+  .stylenum{
+    height: 30px;
+    //
+    ul li{
+      .mixinBgColor(@switch);
+      width: 16px;
+      height: 16px; 
+      border:1px solid #FFF; 
+      margin:0 10px; 
+      color: #FFF; 
+      line-height: 16px; 
+      .mixinAlphabg(0.6);
+      // opacity: 0.6; 
+      // filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+      //
+      &.ks-active{
+        .mixinAlphabg(1);
+        // opacity: 1; 
+        // filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+      }
+    }
+  }
+  .stylethumb{
+    height: 73px;
+    //
+    ul li{
+      background-position: center center; 
+      border:1px solid #FFF; 
+      margin:0 6px; 
+      width: 118px; 
+      height: 50px; 
+      overflow: hidden;
+      background-repeat: no-repeat;
+      //
+      &.ks-active{
+        .mixinBorderColor(@switch);
+      }
+      img{
+        width: 118px;
+      }
+    }
+  }
 }

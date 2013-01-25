@@ -8,6 +8,69 @@
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
 
-.tshop-pbsm-shop-srch-inshop {}
-
- 
+.tshop-pbsm-shop-srch-inshop {
+  height:40px;
+  font-family:"微软雅黑";
+  overflow:hidden;
+  background:url(../../assets/images/mhdbg.png) no-repeat;
+  _background:url(../../assets/images/mhdbg.gif) no-repeat;
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-hd {
+  max-width:950px
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span {
+  margin-left:25px
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-hd h3 {
+  height:40px;
+  line-height:40px
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd {
+  margin:6px 0 0 13px;
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span,
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .price label,
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .price .connect-line,
+.col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd .keyword .key,
+.col-extra .tshop-pbsm-shop-srch-inshop .skin-box-bd .keyword .key,
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
+  color:#FFF
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd input,
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .btn {
+  background-color:#666;
+  border:1px solid #000;
+  color:#FFF
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .submit{
+  border:1px solid #000;
+  height: 26px;
+  margin: 0;
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .submit input{
+  border: none;
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys{
+  margin-left: 10px;
+}
+.tshop-pbsm-shop-srch-inshop .skin-box-bd .hot-keys a{
+  margin-right: 12px;
+}
+.col-sub .tshop-pbsm-shop-srch-inshop {
+  border:0 none;
+  background:#111
+}
+.col-sub .tshop-pbsm-shop-srch-inshop .skin-box-hd {
+  width:190px;
+  height:40px;
+  background:url(assets/images/title.png) 0 0 no-repeat
+}
+.col-sub .tshop-pbsm-shop-srch-inshop .skin-box-hd h3 span {
+  margin-left:30px;
+  line-height:37px;
+  font-size:14px
+}
+.col-sub .tshop-pbsm-shop-srch-inshop .skin-box-bd,
+.col-extra .tshop-pbsm-shop-srch-inshop .skin-box-bd {
+  border:0 none
+}

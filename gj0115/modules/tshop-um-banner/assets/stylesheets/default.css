@@ -9,4 +9,159 @@
  */
 .tshop-um-banner {
   height: 400px;
+  position: relative;
+  top: 5px;
+}
+.tshop-um-banner .banner_slide {
+  width: 950px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.tshop-um-banner .banner_content {
+  width: 950px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.tshop-um-banner .banner_content a {
+  width: 950px;
+  height: 400px;
+  display: block;
+  background-position: center top;
+}
+.tshop-um-banner .ks-switchable-content li {
+  float: left;
+}
+.tshop-um-banner .btns {
+  width: 950px;
+  height: 0px;
+  position: relative;
+}
+.tshop-um-banner .btns.hidden .pre,
+.tshop-um-banner .btns.hidden .next {
+  display: none;
+}
+.tshop-um-banner .btns .pre,
+.tshop-um-banner .btns .next {
+  background-color: #000000;
+  opacity: 0.5;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+  width: 45px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+}
+.tshop-um-banner .btns .pre:hover,
+.tshop-um-banner .btns .next:hover {
+  opacity: 0.8;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+}
+.tshop-um-banner .btns .pre:hover i,
+.tshop-um-banner .btns .next:hover i {
+  opacity: 1;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+}
+.tshop-um-banner .btns .pre i,
+.tshop-um-banner .btns .next i {
+  background: url("../../assets/images/sprites.png") no-repeat;
+  opacity: 0.3;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+  display: block;
+  width: 36px;
+  height: 37px;
+  margin: 22px auto;
+}
+.tshop-um-banner .btns .pre {
+  left: 10px;
+}
+.tshop-um-banner .btns .next {
+  right: 10px;
+}
+.tshop-um-banner .btns .next i {
+  background-position: -40px 0;
+}
+.tshop-um-banner .banner_nav {
+  width: 950px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  z-index: 10;
+}
+.tshop-um-banner .banner_nav.hidden {
+  display: none;
+}
+.tshop-um-banner .banner_nav ul {
+  margin: 0 auto;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.tshop-um-banner .banner_nav ul li {
+  float: left;
+  cursor: pointer;
+}
+.tshop-um-banner .stylebar {
+  height: 30px;
+}
+.tshop-um-banner .stylebar .alphabg {
+  background-color: #000000;
+  opacity: 0.5;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+  position: absolute;
+  height: 30px;
+  width: 950px;
+  left: 0;
+}
+.tshop-um-banner .stylebar ul {
+  position: relative;
+  z-index: 99;
+}
+.tshop-um-banner .stylebar ul li {
+  color: #000000;
+  padding: 0 10px;
+  line-height: 30px;
+  height: 30px;
+  color: #FFF;
+}
+.tshop-um-banner .stylebar ul li.ks-active {
+  background-color: #000000;
+}
+.tshop-um-banner .stylenum {
+  height: 30px;
+}
+.tshop-um-banner .stylenum ul li {
+  background-color: #000000;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FFF;
+  margin: 0 10px;
+  color: #FFF;
+  line-height: 16px;
+  opacity: 0.6;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+}
+.tshop-um-banner .stylenum ul li.ks-active {
+  opacity: 1;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=50);
+}
+.tshop-um-banner .stylethumb {
+  height: 73px;
+}
+.tshop-um-banner .stylethumb ul li {
+  background-position: center center;
+  border: 1px solid #FFF;
+  margin: 0 6px;
+  width: 118px;
+  height: 50px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+.tshop-um-banner .stylethumb ul li.ks-active {
+  border-color: #000000;
+}
+.tshop-um-banner .stylethumb ul li img {
+  width: 118px;
 }

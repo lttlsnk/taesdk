@@ -11,6 +11,7 @@
  */
   //main vars
   $globalUrl = "../../assets/images";
+  $assetsUrl = "assets/images/";
   $pageLinks =$shopManager->getShopPageLinks();
   //shop
   $shopUrl = $pageLinks[0]->href;   //店铺连接
@@ -23,4 +24,19 @@
   $allProduct = $uriManager->searchURI();   //所有宝贝
   //user
   $userNick=$_user->nick;   //店主昵称
+
+
+  
+  //main fun
+  //share btn config::return str
+  function getShareConfig($type,$key,$title){
+    $shareConfig = '{'.
+      '"type":"'.$type.'",'.
+      '"key":"'.$key.'",'.
+      // '"title":"'.$title.'",'.
+      '"skinType":"1",'.
+      '"client_id":"68"'.
+    '}';
+    return $shareConfig;
+  }
 ?>

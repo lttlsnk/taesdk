@@ -3,7 +3,9 @@
   "layouts" : [ {
     "type" : "grid-m0",
     "modules" : {
-      "main" : [ ]
+      "main" : [ {
+        "moduleID" : "tshop-um-hotsell"
+      } ]
     }
   }, {
     "type" : "grid-s5m0",

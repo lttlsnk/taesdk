@@ -51,16 +51,12 @@
   </div>
   <div class="hotsell_bd">
     <div class="mall-slide J_TWidget" data-widget-type="Carousel" data-widget-config="{
-        'effect': 'scrollx',
-                'easing': 'easeOutStrong',
-                'steps':1,
-                'autoplay': false,
-                'viewSize': [950],
-                'prevBtnCls': 'hotsell-prev',
-                'nextBtnCls': 'hotsell-next'
-            }">
-      <a title="上一页" href="#" class="hotsell-prev"><i></i></a>
-      <a title="下一页" href="#" class="hotsell-next"><i></i></a>
+        'effect': 'fade',
+        'easing': 'easeOutStrong',
+        'steps':1,
+        'autoplay': false,
+        'viewSize': [950]
+    }">
       <div  class="mall-content">
           <ul class="ks-switchable-content">
             <?php

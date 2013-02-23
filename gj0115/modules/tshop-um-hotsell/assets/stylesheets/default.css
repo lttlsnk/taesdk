@@ -10,7 +10,7 @@
 .tshop-um-hotsell .hotsell_hd {
   background: url("../../assets/images/950hdbg.png") no-repeat;
   _background: url("../../assets/images/950hdbg.gif") no-repeat;
-  height: 35px;
+  height: 40px;
   position: relative;
   line-height: 35px;
   padding: 0 43px;
@@ -26,8 +26,8 @@
 }
 .tshop-um-hotsell .hotsell_hd .link_list {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 40px;
+  top: 12px;
   line-height: 14px;
   height: 14px;
 }
@@ -41,27 +41,31 @@
   border: none;
 }
 .tshop-um-hotsell .hotsell_bd {
-  margin-bottom: 20px;
+  margin: 20px 0;
+  background: url(assets/images/bg.jpg) no-repeat;
 }
 .tshop-um-hotsell .hotsell_bd .mall-slide {
   position: relative;
   padding-bottom: 20px;
+  height: 400px;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content {
   width: 950px;
-  height: 355px;
+  height: 402px;
   overflow: hidden;
+  position: relative;
+  z-index: 4;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li {
-  width: 910px;
+  width: 948px;
   float: left;
-  padding: 20px;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .pic {
   border: 1px solid #E5E5E5;
   width: 222px;
-  width: 312px;
-  float: left;
+  width: 400px;
+  float: right;
+  border-color: #6B6D6A;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .pic a {
   width: 220px;
@@ -72,53 +76,33 @@
   background-repeat: no-repeat;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .pic a {
-  width: 310px;
-  height: 310px;
+  width: 400px;
+  height: 400px;
+  border: none;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail {
-  width: 570px;
+  width: 500px;
   float: left;
   margin-left: 20px;
-  color: #727272;
+  color: #FFF;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail a {
-  color: #727272;
+  color: #FFF;
   text-decoration: none;
 }
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip {
-  background: url("../../assets/images/sprites.png") no-repeat;
-  width: 341px;
-  height: 75px;
-  background-position: 0 -90px;
-  position: relative;
-  margin-top: 4px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .saletip em {
-  width: 60px;
-  height: 38px;
-  overflow: hidden;
-  display: block;
-  font-size: 28px;
-  color: #FFF;
-  position: absolute;
-  left: 4px;
-  top: 20px;
-  text-align: center;
-  font-family: "Î¢ÈíÑÅºÚ";
-}
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail h3 {
-  font-size: 22px;
-  font-weight: bold;
-  height: 62px;
+  font-size: 14px;
+  font-weight: normal;
+  height: 36px;
   overflow-y: hidden;
-  margin-top: 5px;
+  margin: 10px 0 0 30px;
   font-family: "Î¢ÈíÑÅºÚ";
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail .price {
-  font-size: 24px;
-  color: #CB0A0F;
-  margin-top: 35px;
+  font-size: 50px;
+  font-weight: bold;
   font-family: "Î¢ÈíÑÅºÚ";
+  position: relative;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail .price i {
   background: url("../../assets/images/sprites.png") no-repeat;
@@ -128,123 +112,74 @@
   background-position: -135px 0;
   margin: 10px 5px 0 0;
 }
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum {
-  margin-top: 12px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum i {
-  background: url("../../assets/images/sprites.png") no-repeat;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 3px 3px 0 0;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum em {
-  font-weight: bold;
-  margin: 0 2px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum .colect {
-  margin-left: 15px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum .count i {
-  background-position: -100px -20px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .salenum .colect i {
-  width: 16px;
-  height: 13px;
-  background-position: -100px -40px;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .price a {
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: 82px;
+  width: 190px;
+  height: 77px;
 }
 .tshop-um-hotsell .hotsell_bd .mall-content li .detail .info {
-  margin-top: 8px;
+  margin: 15px 0 0 20px;
+  width: 430px;
+  height: 130px;
 }
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .itemurl {
-  width: 300px;
-  height: 20px;
-  display: inline-block;
-  line-height: 20px;
-  border: 1px solid #E5E3E4;
-  padding-left: 5px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info a {
-  display: inline-block;
-  width: 58px;
-  height: 23px;
-  line-height: 23px;
-  text-align: center;
-  color: #FFF;
-  margin-left: 10px;
-  position: relative;
-  top: -3px;
-  text-decoration: none;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .ratebtn {
-  background-color: #000000;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .detailbtn {
-  background-color: #FF8A07;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .share {
-  margin-top: 10px;
-}
-.tshop-um-hotsell .hotsell_bd .mall-content li .detail .share em {
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .salecon li {
   float: left;
+  border-right: 1px dashed #55BBD4;
+  width: 135px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Î¢ÈíÑÅºÚ";
 }
-.tshop-um-hotsell .hotsell_bd .hotsell-prev,
-.tshop-um-hotsell .hotsell_bd .hotsell-next {
-  background-color: #000000;
-  display: inline-block;
-  width: 17px;
-  height: 89px;
-  position: absolute;
-  bottom: 23px;
-  _bottom: 77px;
-  z-index: 10;
-  cursor: pointer;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .salecon li.last {
+  border: none;
 }
-.tshop-um-hotsell .hotsell_bd .hotsell-prev i,
-.tshop-um-hotsell .hotsell_bd .hotsell-next i {
-  background: url("../../assets/images/sprites.png") no-repeat;
-  display: inline-block;
-  width: 9px;
-  height: 13px;
-  position: relative;
-  top: 37px;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .salecon li em {
+  display: block;
+  padding-bottom: 5px;
+  color: #AEFFFF;
 }
-.tshop-um-hotsell .hotsell_bd .hotsell-prev {
-  left: 0;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .salecon li del,
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .salecon li span {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
 }
-.tshop-um-hotsell .hotsell_bd .hotsell-prev i {
-  background-position: -100px 0;
-  left: 3px;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .salecon li del {
+  color: #58B5D6;
 }
-.tshop-um-hotsell .hotsell_bd .hotsell-next {
-  right: 0;
-  color: blue;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .tip {
+  clear: both;
+  font-family: "Î¢ÈíÑÅºÚ";
+  text-align: center;
+  color: #94F1FF;
 }
-.tshop-um-hotsell .hotsell_bd .hotsell-next i {
-  background-position: -115px 0;
-  right: -3px;
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .tip span {
+  display: block;
+  font-size: 16px;
+  padding: 5px 0 10px;
+}
+.tshop-um-hotsell .hotsell_bd .mall-content li .detail .info .tip span em {
+  padding: 0 5px;
+  font-weight: bold;
+  color: #FFF;
 }
 .tshop-um-hotsell .hotsell_bd .ks-switchable-nav {
-  clear: both;
-  position: relative;
-  top: 0;
-  left: 20px;
-}
-.tshop-um-hotsell .hotsell_bd .ks-switchable-nav:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+  position: absolute;
+  bottom: 20px;
+  left: -1px;
+  z-index: 5;
 }
 .tshop-um-hotsell .hotsell_bd .ks-switchable-nav li {
   border: 1px solid #E5E5E5;
   width: 222px;
   float: left;
-  margin: 0 4px 0 3px;
+  margin: 0 8px 0 3px;
   color: red;
-  width: 92px;
+  width: 116px;
+  border-color: #6B6D6A;
 }
 .tshop-um-hotsell .hotsell_bd .ks-switchable-nav li a {
   width: 220px;
@@ -255,9 +190,10 @@
   background-repeat: no-repeat;
 }
 .tshop-um-hotsell .hotsell_bd .ks-switchable-nav li.ks-active {
-  border-color: #000000;
+  border-color: #FFF;
 }
 .tshop-um-hotsell .hotsell_bd .ks-switchable-nav li a {
-  width: 90px;
-  height: 90px;
+  width: 116px;
+  height: 116px;
+  border: none;
 }

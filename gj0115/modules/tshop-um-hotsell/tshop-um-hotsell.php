@@ -20,8 +20,11 @@
     //self value
     $tipArr = array("折扣","折扣","折扣","折扣","折扣","折扣","折扣","折扣","折扣");
     $tipArr = $tbm_tip ? array_merge(explode("|", $tbm_tip), $tipArr) : $tipArr;
+    $textlink = $tbm_textlink ? explode("|", $tbm_textlink) : array("关键词1","关键词2","关键词3","关键词4");
+    $rebateArr = array(10,10,10,10);
+    $rebateArr = $tbm_rebate ? array_merge(explode("|", $tbm_rebate), $rebateArr) : $rebateArr;
     //宝贝
-    $itemNum = 9;
+    $itemNum = 4;
     if($tbm_resources == 1){//按类目自动获取
       if($tbm_cate){
         $ids=json_decode($cates);
@@ -47,7 +50,15 @@
 
   <div class="mainbox_hd hotsell_hd">
     <h3><?php echo $tbm_moduletitle; ?></h3>
-    <p class="link_list"><?php echo $tbm_moduleintro; ?></p>
+    <p class="link_list">
+        <?php
+          foreach ($textlink as $key => $value) {
+            $firstClass = $key == 0 ? "first" : "";
+            $url = "http://shop".$_shop->id.".taobao.com?search=y&keyword=".urlencode($value);
+            echo "<a href='{$url}' class='{$firstClass}'>".$value."</a>";
+          }
+        ?>
+      </p>
   </div>
   <div class="hotsell_bd">
     <div class="mall-slide J_TWidget" data-widget-type="Carousel" data-widget-config="{
@@ -62,29 +73,29 @@
             <?php
               foreach ($itemsArr as $k => $v) {
                 $item = $itemsArr[$k];
-                $id = $item->id;
-                $url = $uriManager->detailURI($item);
-                $pic = $item->getPicUrl(310);
-                $tip = substr($tipArr[$k], 0, 2);
+                $pic = $item->getPicUrl(400);
                 $price = $item->price;
                 $title = $item->title;
                 $sale =$item->soldCount;
-                $collect = $item->collectedCount;
-                $shareConfig = getShareConfig("item",$id,$title);
-                $shareStr = "<div class='sns-widget' data-sharebtn=".$shareConfig."></div>";
+                $rebate = $rebateArr[$k];
+                $rebate = is_numeric($rebate) ? $rebate : 10;
+                $original = round($price/($rebate/10));
+                $saving = $original - $price;
                 echo "<li>".
+                          "<div class='detail'>".
+                          "<h3><a href='{$url}' target='_blank'>".$title."</a></h3>".
+                            "<div class='price'><i></i>".$price.".00<a href='{$url}' target='_blank'></a></div>".
+                            "<div class='info'>".
+                              "<ul class='salecon'>".
+                                "<li><em>原价</em><del>￥".$original."</del></li>".
+                                "<li><em>折扣</em><span>".$rebate."</span></li>".
+                                "<li class='last'><em>节省</em><span>￥".$saving."</span></li>".
+                              "</ul>".
+                              "<p class='tip'><span><em>".$sale."</em>人已购买</span>数量有限，赶快下单吧</p>".
+                            "</div>".
+                          "</div>".
                           "<div class='pic itempic'>".
                           "<a href='{$url}' style='background-image:url({$pic});' target='_blank'></a>".
-                          "</div>".
-                          "<div class='detail'>".
-                            "<p class='saletip'><em>".$tip."</em></p>".
-                            "<h3><a href='{$url}' target='_blank'>".$title."</a></h3>".
-                            "<div class='price'><i></i>￥".$price.".00</div>".
-                            "<div class='salenum'>".
-                              "<span class='count'><i></i>宝贝已售出：<em>".$sale."</em>笔</span><span class='colect'><i></i>人气收藏：<em>".$collect."</em>人</span>".
-                            "</div>".
-                            "<div class='info'><span class='itemurl'>".$url."</span><a class='ratebtn' href='#' target='_blank'>查看好评</a><a class='detailbtn' href='{$url}' target='_blank'>宝贝详情</a></div>".
-                            $shareStr.
                           "</div>".
                         "</li>";
               }

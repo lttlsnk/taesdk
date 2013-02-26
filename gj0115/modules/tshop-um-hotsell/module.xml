@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="GBK"?>
 <module>
     <id>tshop-um-hotsell</id>
-    <name>促销专区</name>
+    <name>聚划算</name>
     <file>tshop-um-hotsell.php</file>
-    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
     <description></description>
     <requiredCache>true</requiredCache>
-    <supportedWidth>750,950</supportedWidth>
+    <supportedWidth>950</supportedWidth>
     <themes default="默认">
         <theme name="默认">
             <css>assets/stylesheets/default.css</css>
@@ -18,7 +18,7 @@
                 <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">聚划算热销推荐</param>
             </section>
             <section folded="false" title="标题右侧">
-                <param ptype="textarea" name="textlink" label="文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"></param>
+                <param ptype="textarea" name="textlink" label="文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"/>
             </section>
         </group>
         <group title="宝贝">

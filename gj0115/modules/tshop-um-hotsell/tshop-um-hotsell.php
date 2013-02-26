@@ -62,7 +62,7 @@
   </div>
   <div class="hotsell_bd">
     <div class="mall-slide J_TWidget" data-widget-type="Carousel" data-widget-config="{
-        'effect': 'fade',
+        'effect': 'scrollx',
         'easing': 'easeOutStrong',
         'steps':1,
         'autoplay': false,

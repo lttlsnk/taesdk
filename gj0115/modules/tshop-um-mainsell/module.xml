@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-mainsell</id>
+    <name>不规则主推</name>
+    <file>tshop-um-mainsell.php</file>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <description>950不规则主推模块</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+</module>

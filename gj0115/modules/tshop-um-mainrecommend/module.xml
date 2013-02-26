@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-mainrecommend</id>
+    <name>950无规则推荐</name>
+    <file>tshop-um-mainrecommend.php</file>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <description>950无规则推荐模块</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+</module>

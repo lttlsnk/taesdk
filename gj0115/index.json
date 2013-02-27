@@ -13,12 +13,18 @@
         "moduleID" : "tshop-pbsm-shop-srch-inshop"
       }, {
         "moduleID" : "tshop-um-hotsell"
+      }, {
+        "moduleID" : "tshop-um-mainsell"
+      }, {
+        "moduleID" : "tshop-um-mainrecommend"
       } ]
     }
   }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-um-service"
+      } ],
       "main" : [ ]
     }
   } ]

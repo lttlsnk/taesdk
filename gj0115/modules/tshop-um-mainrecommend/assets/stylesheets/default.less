@@ -7,7 +7,124 @@
  *		3. CSS样式文件中z-index属性值必须在1-99之间
  *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
  */
+//color set
+@switch: defaultColor;
 
-.tshop-um-mainrecommend {}
-
- 
+.tshop-um-mainrecommend {
+  .mainrecommend_hd{
+    .mainbox_hd(@switch);
+  }
+  //mainrecommend_bd BEGIN
+  .mainrecommend_bd{
+    .clearfix ();
+    margin-top: 10px;
+    //toppic BEGIN
+    .toppic{
+      width: 290px;
+      //
+      &.left{
+        float: left;        
+      }
+      &.right{
+        float: right;
+      }
+      .pic{
+        .itempic();
+        width: 290px;
+        border: none;
+        background-color: #252525;        
+        font-family: '微软雅黑';
+        //
+        a{
+          width: 290px;
+          height: 490px;
+          border: none;
+          position: relative;
+        }
+        .itemMask ();
+        .itemMaskPrice ();
+        .itemMaskTitle ();
+        h3{
+          width: 280px;
+          height: 25px;
+          left: 5px;
+          bottom: 23px;
+          color: #FFF;
+          font-size: 14px;
+        }
+        .mask{
+          width: 290px;
+          height: 55px;
+        }
+        .price{
+          color: #A9AB2E;
+          font-weight: bold;
+          font-size: 12px;
+          width: 290px;
+          //
+          em{
+            font-size: 18px;
+          }
+        }
+      }
+    }//toppic END
+    //items BEGIN
+    .items{
+      width: 650px;
+      float: right;
+      //
+      &.right li{
+        margin: 0 6px 20px 0;
+      }
+      li{
+        float: left;
+        margin: 0 0 20px 6px;
+      }
+      .row1{
+        margin-bottom: 0;
+      }
+      .pic{
+        .itempic ();
+        border: none;
+        width: 210px;
+        border: none;
+        background-color: #FFF;
+        border-bottom: 1px solid #959394;
+        a{
+          width: 210px; 
+          height: 210px;
+          border: none;
+          position: relative;
+          text-decoration: none;
+          //
+          .itemMask ();
+          .itemMaskTitle ();
+        }
+      }
+      .price{
+        background: url(assets/images/price.png) no-repeat;
+        width: 210px;
+        height: 24px;
+        color: #FFF;
+        position: relative;
+        //
+        span{
+          width: 143px;
+          height: 24px;
+          display: block;
+          text-align: center;
+          overflow: hidden;
+          line-height: 24px;
+        }
+        a{
+          display: block;
+          width: 67px;
+          height: 24px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }//items END
+  }//mainrecommend_bd END
+}

@@ -17,35 +17,35 @@
  * 开始设计PHP页面
  */
   extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
-    //self value
-    $tipArr = array("折扣","折扣","折扣","折扣","折扣","折扣","折扣","折扣","折扣");
-    $tipArr = $tbm_tip ? array_merge(explode("|", $tbm_tip), $tipArr) : $tipArr;
-    $textlink = $tbm_textlink ? explode("|", $tbm_textlink) : array("关键词1","关键词2","关键词3","关键词4");
-    $rebateArr = array(10,10,10,10);
-    $rebateArr = $tbm_rebate ? array_merge(explode("|", $tbm_rebate), $rebateArr) : $rebateArr;
-    //宝贝
-    $itemNum = 4;
-    if($tbm_resources == 1){//按类目自动获取
-      if($tbm_cate){
-        $ids=json_decode($cates);
-        $rid=$ids[0]->{rid};
-        $itemsArr=$itemManager-> queryByCategory ($rid,$tbm_orders,$itemNum);
-      }
-    }elseif ($tbm_resources == 2) {//手动选择
-      $ids = $tbm_item ? explode(',',$tbm_item) : NULL;
-      if($ids){
-        foreach($ids as $k=>$v){
-          $itemsArr[$k]=$itemManager->queryById($v);
-        }
-      }
-    }elseif ($tbm_resources == 3) {//按关键字获取
-      $ids = $tbm_keyword;
-      $itemsArr = $itemManager->queryByKeyword($ids,$tbm_orders,$itemNum);
+  //self value
+  $tipArr = array("折扣","折扣","折扣","折扣","折扣","折扣","折扣","折扣","折扣");
+  $tipArr = $tbm_tip ? array_merge(explode("|", $tbm_tip), $tipArr) : $tipArr;
+  $textlink = $tbm_textlink ? explode("|", $tbm_textlink) : array("关键词1","关键词2","关键词3","关键词4");
+  $rebateArr = array(10,10,10,10);
+  $rebateArr = $tbm_rebate ? array_merge(explode("|", $tbm_rebate), $rebateArr) : $rebateArr;
+  //宝贝
+  $itemNum = 4;
+  if($tbm_resources == 1){//按类目自动获取
+    if($tbm_cate){
+      $ids=json_decode($cates);
+      $rid=$ids[0]->{rid};
+      $itemsArr=$itemManager-> queryByCategory ($rid,$tbm_orders,$itemNum);
     }
-    //默认取热销宝贝
-    if(!$itemsArr){
-      $itemsArr = $itemManager->queryByKeyword(" ","hotsell",$itemNum);
+  }elseif ($tbm_resources == 2) {//手动选择
+    $ids = $tbm_item ? explode(',',$tbm_item) : NULL;
+    if($ids){
+      foreach($ids as $k=>$v){
+        $itemsArr[$k]=$itemManager->queryById($v);
+      }
     }
+  }elseif ($tbm_resources == 3) {//按关键字获取
+    $ids = $tbm_keyword;
+    $itemsArr = $itemManager->queryByKeyword($ids,$tbm_orders,$itemNum);
+  }
+  //默认取热销宝贝
+  if(!$itemsArr){
+    $itemsArr = $itemManager->queryByKeyword(" ","hotsell",$itemNum);
+  }
 ?>
 
   <div class="mainbox_hd hotsell_hd">

@@ -16,7 +16,7 @@
   width: 960px;
   height: 112px;
 }
-.tshop-um-bannerArea ul:after {
+.tshop-um-bannerArea ul:after:after {
   visibility: hidden;
   display: block;
   font-size: 0;

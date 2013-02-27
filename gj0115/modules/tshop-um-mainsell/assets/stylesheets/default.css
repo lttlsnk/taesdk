@@ -147,20 +147,8 @@
   position: relative;
   text-decoration: none;
 }
-.tshop-um-mainsell .mainsell_bd .pic a:hover .price,
 .tshop-um-mainsell .mainsell_bd .pic a:hover .mask {
   display: block;
-}
-.tshop-um-mainsell .mainsell_bd .pic a .price {
-  display: none;
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  z-index: 3;
-  color: #B5BAC0;
-  width: 210px;
-  font-size: 14px;
-  text-align: center;
 }
 .tshop-um-mainsell .mainsell_bd .pic a .mask {
   display: none;
@@ -173,6 +161,20 @@
   filter: progid:dximagetransform.microsoft.alpha(opacity=60);
   left: 0;
   bottom: 0;
+}
+.tshop-um-mainsell .mainsell_bd .pic a:hover .price {
+  display: block;
+}
+.tshop-um-mainsell .mainsell_bd .pic a .price {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  z-index: 3;
+  color: #B5BAC0;
+  width: 210px;
+  font-size: 14px;
+  text-align: center;
 }
 .tshop-um-mainsell .mainsell_bd .detail {
   color: #7B7D7A;

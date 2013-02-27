@@ -6,7 +6,7 @@
     <thumbnail>assets/images/default-thumbnail.png</thumbnail>
     <description>三块小招牌banner</description>
     <requiredCache>true</requiredCache>
-    <supportedWidth>190,550,750,950</supportedWidth>
+    <supportedWidth>950</supportedWidth>
     <themes default="默认">
         <theme name="默认">
             <css>assets/stylesheets/default.css</css>
@@ -23,7 +23,7 @@
                 <param ptype="item" name="itemselecter" label="宝贝选择器(限3个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝"/>
             </section>
             <section folded="false" title="图片设置">
-                <param ptype="textarea" name="bannerpic" label="图片地址" formType="textarea" description=" 设置图片地址,用竖杆[|]分割 [说明:限3个]"/>
+                <param ptype="textarea" name="bannerpic" label="图片地址" formType="textarea" description=" 设置图片地址310*67,用竖杆[|]分割 [说明:限3个]"/>
                 <param ptype="textarea" name="bannerlink" label="图片链接" formType="textarea" description=" 设置图片链接,用竖杆[|]分割 [说明:限3个]"/>
             </section>
         </group>

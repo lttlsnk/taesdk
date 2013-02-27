@@ -18,8 +18,6 @@
  */
   extract($_MODULE, EXTR_PREFIX_ALL | EXTR_OVERWRITE, 'tbm');
   //self value
-  $tipArr = array("уш©ш","уш©ш","уш©ш","уш©ш","уш©ш","уш©ш","уш©ш","уш©ш","уш©ш");
-  $tipArr = $tbm_tip ? array_merge(explode("|", $tbm_tip), $tipArr) : $tipArr;
   $textlink = $tbm_textlink ? explode("|", $tbm_textlink) : array("╧ь╪Э╢й1","╧ь╪Э╢й2","╧ь╪Э╢й3","╧ь╪Э╢й4");
   //╠╕╠╢
   $itemNum = 8;

@@ -16,9 +16,7 @@
   }
   //mainsell_bd BEGIN
   .mainsell_bd{
-    &:after{
-      .clearfix();
-    }
+    .clearfix();
     //
     .item_left, .item_right{
       width: 210px;
@@ -114,32 +112,8 @@
         position: relative;
         text-decoration: none;
         //
-        &:hover .price, &:hover .mask{
-          display: block;
-        }
-        .price{
-          display: none;
-          position: absolute;
-          left: 0;
-          bottom: 2px;
-          z-index: 3;
-          color: #B5BAC0;
-          width: 210px;
-          font-size: 14px;
-          text-align: center;
-        }
-        .mask{
-            display: none;
-            background-color: #000;
-            width: 210px;
-            height: 23px;
-            position: absolute;
-            z-index: 1;
-            opacity: 0.6;
-            filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
-            left: 0;
-            bottom: 0;
-          }
+        .itemMask ();
+        .itemMaskPrice ();
       }
     }//pic END
     //detail BEGIN
@@ -147,9 +121,7 @@
       color: #7B7D7A;
       *zoom: 1;
       //
-      &:after{
-        .clearfix();
-      }
+      .clearfix();
       h3{
         font-weight: normal;
         padding: 6px 5px;

@@ -25,6 +25,10 @@
   text-indent: -2000px;
   margin-right: 10px;
 }
+.tshop-pbsm-shop-nav-ch .menu-list{
+  width: 722px;
+  overflow: hidden;
+}
 .tshop-pbsm-shop-nav-ch .menu-list .link{
   margin-left: 5px;
   background: none;

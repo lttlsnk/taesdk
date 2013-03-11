@@ -5,12 +5,16 @@
     "modules" : {
       "main" : [ {
         "moduleID" : "tshop-um-hotsell"
+      }, {
+        "moduleID" : "tshop-um-systempie"
       } ]
     }
   }, {
     "type" : "grid-s5m0",
     "modules" : {
-      "sub" : [ ],
+      "sub" : [ {
+        "moduleID" : "tshop-um-service"
+      } ],
       "main" : [ ]
     }
   } ]

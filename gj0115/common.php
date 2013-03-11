@@ -33,7 +33,7 @@
     $shareConfig = '{'.
       '"type":"'.$type.'",'.
       '"key":"'.$key.'",'.
-      // '"title":"'.$title.'",'.
+      '"title":"'.$title.'",'.
       '"skinType":"1",'.
       '"client_id":"68"'.
     '}';

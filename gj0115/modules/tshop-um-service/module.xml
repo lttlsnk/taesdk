@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-service</id>
+    <name>190客服收藏</name>
+    <file>tshop-um-service.php</file>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <description>190客服收藏模块</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>190</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="客服">
+            <section folded="false" title="售前客服">
+                <param ptype="text" name="servicehead1" label="标题" formType="text" description="售前客服">售前导购</param>
+                <param ptype="textarea" name="servicenick1" label="昵称" formType="textarea" description=" 设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称1|昵称2|昵称3|昵称4|昵称5|昵称6</param>
+                <param ptype="textarea" name="serviceid1" label="旺ID" formType="textarea" description=" 阿里旺旺登录帐号,方法同上">客服|客服|客服|客服|客服|客服</param>
+            </section>
+            <section folded="true" title="售后客服">
+                <param ptype="text" name="servicehead2" label="标题" formType="text" description="售后客服">售后服务</param>
+                <param ptype="textarea" name="servicenick2" label="昵称" formType="textarea" description="设置客服昵称[四字最佳],用竖杆[|]分割 [说明:昵称个数需和下面ID个数要一致]">昵称|昵称|昵称|昵称</param>
+                <param ptype="textarea" name="serviceid2" label="旺ID" formType="textarea" description="阿里旺旺登录帐号,方法同上">客服|客服|客服|客服</param>
+            </section>
+        </group>
+        <group title="收藏|工作时间">
+            <section folded="false" title="收藏图片">
+                <param ptype="text" name="collectpic" label="输入图片地址" formType="text" description="输入图片地址"></param>
+                <param ptype="text" name="collectheight" label="输入此图片高度" formType="text" description="输入此图片高度，例如：150">120</param>
+            </section>
+            <section folded="false" title="工作时间">
+                <param ptype="text" name="worktimetxt" label="说明" formType="text" description="工作时间说明">工作时间：09:00-24:00</param>
+            </section>
+        </group>
+    </parameters>
+</module>

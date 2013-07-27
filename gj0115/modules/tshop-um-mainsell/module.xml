@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="GBK"?>
+<module>
+    <id>tshop-um-mainsell</id>
+    <name>950不规则主推</name>
+    <file>tshop-um-mainsell.php</file>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
+    <description>950不规则主推模块</description>
+    <requiredCache>true</requiredCache>
+    <supportedWidth>950</supportedWidth>
+    <themes default="默认">
+        <theme name="默认">
+            <css>assets/stylesheets/default.css</css>
+        </theme>
+    </themes>
+    <parameters>
+        <group title="模块">
+            <section folded="false" title="基本设置">
+                <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">不规则主推模块</param>
+            </section>
+            <section folded="false" title="标题右侧">
+                <param ptype="textarea" name="textlink" label="文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"/>
+            </section>
+        </group>
+        <group title="宝贝">
+            <section folded="false" title="数据">
+                <param ptype="text" name="resources" label="数据来源" formType="select" description="选择数据的来源">
+                    <option selected="selected"
+                        value="1">按所选类目自动获取宝贝</option>
+                    <option value="2">按宝贝选择器手动选择宝贝</option>
+                    <option value="3">按关键字自动获取宝贝</option>
+                </param>
+                <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"/>
+                <param ptype="item" name="item" label="宝贝选择器(限8个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限8个">1,2,3,4,5</param>
+                <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）">裙</param>
+                <param ptype="text" name="order" label="宝贝排序" formType="select" description="选择宝贝的排列顺序">
+                    <option selected="selected"
+                        value="price">按宝贝价格的升序排列</option>
+                    <option value="_price">按宝贝价格的降序排列</option>
+                    <option
+                        value="ceofp">人气宝贝升序排序</option>
+                    <option value="_ceofp">人气宝贝降序排序</option>
+                    <option
+                        value="hotsell">热销宝贝升序排序</option>
+                    <option value="_hotsell">热销宝贝降序排序</option>
+                    <option
+                        value="newOn">以最新上架宝贝升序排序</option>
+                    <option value="_newOn">以最新上架宝贝降序排序</option>
+                    <option
+                        value="HotKeep">以热门搜藏升序排序</option>
+                    <option value="_HotKeep">以热门搜藏降序排序</option>
+                </param>
+            </section>
+        </group>
+        <group title="中间列宝贝图片">
+            <section folded="false" title="图片地址">
+                <param ptype="text" name="cpic1" label="图片一" formType="text" description="图片尺寸450*210">assets/images/1.png</param>
+                <param ptype="text" name="cpic2" label="图片二" formType="text" description="图片尺寸450*510">assets/images/2.png</param>
+            </section>
+        </group>
+    </parameters>
+</module>

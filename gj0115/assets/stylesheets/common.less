@@ -14,12 +14,14 @@
   -moz-border-radius: @radius;
 }
 .clearfix (){
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+  &:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
 }
 
 //sprite
@@ -51,7 +53,7 @@
 .mainbox_hd (@skinColor){
   background: url("@{global-url}/950hdbg.png") no-repeat;
   _background: url("@{global-url}/950hdbg.gif") no-repeat;
-  height: 35px; 
+  height: 40px; 
   position: relative; 
   line-height: 35px; 
   padding:0 43px;
@@ -65,8 +67,8 @@
   a{color: #FFF;}
   .link_list{
     position: absolute; 
-    right: 10px; 
-    top: 10px; 
+    right: 40px; 
+    top: 12px; 
     line-height: 14px; 
     height: 14px;
     //
@@ -79,7 +81,51 @@
     .first{border:none;}
   }
 }
-
+// mainbox190
+.mainbox190_hd (@skinColor){
+  .mixinBgColor (@skinColor);
+  height: 26px; 
+  line-height: 26px; 
+  font-weight: bold; 
+  color: #FFF; 
+  padding: 0 10px; 
+}
+.mainbox190_bd (){
+  border: 1px solid #E3E3E1;
+  padding: 8px;
+ }
+//wangwang
+.info-wangwang (){
+  clear: both; 
+  height: 40px; 
+  margin:0 2px; 
+  border-top: 1px solid #ECECEC; 
+  color: #7F7D7E; 
+  position: relative; 
+  *margin-top: -20px;
+  //
+  li{
+    float: left; 
+    margin: 8px 0 0 20px; 
+    _margin-left: 10px;
+    //
+    span{margin-right: 13px;}
+    span a{position: relative; top: 2px;}
+    span em{cursor: pointer;}
+  }
+  .title{
+    font-weight: normal; 
+    color: #7F7D7E; 
+    margin: 0; 
+    font-weight: bold;
+  }
+  .worktime{
+    float: right; 
+    position: relative; 
+    top:2px; 
+    right: 20px;
+  }
+}
 
 // item piece
 .itemtitle (){
@@ -100,5 +146,56 @@
     border:1px solid #FFF; 
     background-position: center center; 
     background-repeat: no-repeat;
+  }
+}
+.itemMask (){
+  &:hover .mask{
+    display: block;
+  }
+  .mask{
+      display: none;
+      background-color: #000;
+      width: 210px;
+      height: 23px;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.6;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+      left: 0;
+      bottom: 0;
+    }
+}
+.itemMaskPrice (){
+  &:hover .price{
+    display: block;
+  }
+  .price{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    z-index: 3;
+    color: #B5BAC0;
+    width: 210px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.itemMaskTitle (){
+  &:hover .title, &:hover h3{
+    display: block;
+  }
+  .title, h3{
+    width: 200px;
+    height: 23px;
+    overflow: hidden;
+    color: #B5BAC0;
+    font-size: 14px;
+    position: absolute;
+    text-align: center;
+    left: 5px;
+    bottom: 0;
+    z-index: 3;
+    display: none; 
   }
 }

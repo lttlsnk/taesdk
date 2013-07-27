@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="GBK"?>
 <module>
     <id>tshop-um-hotsell</id>
-    <name>促销专区</name>
+    <name>聚划算</name>
     <file>tshop-um-hotsell.php</file>
-    <thumbnail>../../assets/images/default-thumbnail.png</thumbnail>
+    <thumbnail>/assets/images/default-thumbnail.png</thumbnail>
     <description></description>
     <requiredCache>true</requiredCache>
-    <supportedWidth>750,950</supportedWidth>
+    <supportedWidth>950</supportedWidth>
     <themes default="默认">
         <theme name="默认">
             <css>assets/stylesheets/default.css</css>
@@ -16,7 +16,9 @@
         <group title="模块">
             <section folded="false" title="基本设置">
                 <param ptype="text" name="moduletitle" label="标题" formType="text" description="留空则不显示">聚划算热销推荐</param>
-                <param ptype="text" name="moduleintro" label="右侧文字" formType="text" description="头部右侧的说明文字">说明：收藏有礼哦，收藏本店凭截图可获店铺优惠券一张哦！</param>
+            </section>
+            <section folded="false" title="标题右侧">
+                <param ptype="textarea" name="textlink" label="文字链" formType="textarea" description="顶部右侧的文字链，用竖杆[|]分割"/>
             </section>
         </group>
         <group title="宝贝">
@@ -27,7 +29,7 @@
                     <option value="2">按宝贝选择器手动选择宝贝</option>
                     <option value="3">按关键字自动获取宝贝</option>
                 </param>
-                <param ptype="textarea" name="tip" label="角标文字" formType="textarea" description="(限2个字)宝贝详情上的角标文字，用竖杆[|]分割">5折|3折</param>
+                <param ptype="textarea" name="rebate" label="折扣" formType="text" description="(限数字)宝贝的折扣，用竖杆[|]分割">5|3</param>
                 <param ptype="category" name="cates" label="类目选择器(限1个)" formType="categoryForm" description="通过类目选择器自动获取宝贝"/>
                 <param ptype="item" name="item" label="宝贝选择器(限9个)" formType="itemForm" description="通过宝贝选择器手动选取宝贝，限9个">1,2,3,4,5</param>
                 <param ptype="text" name="keyword" label="关 键 字" formType="text" description="通过关键字自动获取宝贝（当数据来源选择为按关键字自动获取宝贝时输入有效）">裙</param>

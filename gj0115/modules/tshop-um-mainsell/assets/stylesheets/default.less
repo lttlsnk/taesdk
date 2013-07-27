@@ -1,0 +1,161 @@
+/**
+ * 模块：tshop-um-mainsell 
+ * 皮肤（主题）: 默认
+ * 规则:
+ * 		1. CSS选择器必须包含 ".tshop-um-mainsell"，禁止使用模块页面元素的ID选择器
+ *		2. CSS样式声明的position属性值不能使用:fixed
+ *		3. CSS样式文件中z-index属性值必须在1-99之间
+ *		4. CSS URL地址必须是淘宝URL白名单中或者本地（相对或绝对）URL 
+ */
+ //color set
+@switch: defaultColor;
+
+.tshop-um-mainsell {
+  .mainsell_hd{
+    .mainbox_hd(@switch);
+  }
+  //mainsell_bd BEGIN
+  .mainsell_bd{
+    .clearfix();
+    //
+    .item_left, .item_right{
+      width: 210px;
+      margin-left: 15px;
+      float: left;
+    }
+    .item_right{
+      float: right;
+      margin: 0 15px 0;
+    }
+    .item_center{
+      width: 450px;
+      float: left;
+      margin-left: 23px;
+      //
+      .pic{
+        width: 450px;
+        a{
+          width: 450px;
+          height: 450px;
+        }
+      }
+      .detail{
+        position: relative;
+        //
+        .tip{
+          background: url(assets/images/hot.png) no-repeat;
+          width: 37px;
+          height: 37px;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        h3{
+          padding-left: 37px;
+        }
+        .sell{
+          float: left;
+        }
+        .price{
+          float: right;
+          margin-right: 10px;
+          *margin-top: 2px;
+          background: url(assets/images/price.png) no-repeat;
+          width: 187px;
+          height: 24px;
+          position: relative;
+          //
+          span{
+            color: #FFF;
+            font-weight: bold;
+            position: relative;
+            left: 26px;
+            top: 4px;
+          }
+          a{
+            display: block;
+            width: 66px;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+      .item3{
+        .pic, .pic a{
+          height: 210px;
+        }
+      }
+      .item4{
+        .pic, .pic a{
+          height: 510px;
+        }
+      }
+    }
+    li{
+      background-color: #252525;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+    //pic BEGIN
+    .pic{
+      .itempic;
+      width: 210px;
+      border: none;
+      border-bottom: 1px solid #959394;
+      a{
+        width: 210px; 
+        height: 210px;
+        border: none;
+        position: relative;
+        text-decoration: none;
+        //
+        .itemMask ();
+        .itemMaskPrice ();
+      }
+    }//pic END
+    //detail BEGIN
+    .detail{
+      color: #7B7D7A;
+      *zoom: 1;
+      //
+      .clearfix();
+      h3{
+        font-weight: normal;
+        padding: 6px 5px;
+        height: 36px;
+        overflow: hidden;
+        //
+        a{
+          color: #7B7D7A;
+        }
+      }
+      .common-like{
+        background: none;
+        border: none;
+        float: left;
+        //
+        a{
+          text-decoration: none;
+        }
+        .dig-button-title{
+          color: #7B7D7A;
+        }
+        .dig-count{
+          color: #FFF;
+        }
+      }
+      .sell{
+        float: right;
+        margin: 2px 5px 0 0;
+        //
+        em{
+          color: #FFF;
+        }
+      }
+    }//detail END
+
+  }//mainsell_bd END
+}

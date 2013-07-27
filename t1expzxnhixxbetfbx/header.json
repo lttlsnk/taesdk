@@ -5,8 +5,6 @@
     "modules" : {
       "main" : [ {
         "moduleID" : "tshop-um-KA_DIANZHAO"
-      }, {
-        "moduleID" : "tshop-pbsm-shop-nav-ch"
       } ]
     }
   } ]

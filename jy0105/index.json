@@ -19,8 +19,6 @@
       "sub" : [ {
         "moduleID" : "tshop-pbsm-shop-srch-inshop"
       }, {
-        "moduleID" : "tshop-pbsm-shop-item-cates"
-      }, {
         "moduleID" : "tshop-pbsm-shop-top-list"
       }, {
         "moduleID" : "tshop-pbsm-shop-main-slide"
